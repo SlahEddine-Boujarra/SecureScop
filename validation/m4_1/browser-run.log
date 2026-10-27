@@ -1,0 +1,17 @@
+{
+  "result": "passed",
+  "checks": [
+    "Actual route and Components v2: seven fixture rows",
+    "Two verified fixtures, including zero-alert collection health",
+    "Active-only agent stays telemetry unverified",
+    "Escape closes inspector",
+    "Quiet-agent health provenance visible",
+    "Scope limits visible",
+    "Search, empty search and reset",
+    "State filter",
+    "Native connection/collection action transitions with synthetic service",
+    "Existing CSV download reachable",
+    "Existing Excel workbook download reachable",
+    "390px view: inspector usable, no document horizontal overflow"
+  ]
+}

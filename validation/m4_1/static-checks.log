@@ -1,0 +1,7 @@
+All done! ✨ 🍰 ✨
+7 files would be left unchanged.
+
+compileall: passed (src and new Python tests/harness)
+flake8: passed for new modules/tests/harness and complete wazuh_monitoring_ui.py
+Changed-line flake8: 0 newly introduced issues; pre-existing legacy findings excluded
+git diff --check: passed

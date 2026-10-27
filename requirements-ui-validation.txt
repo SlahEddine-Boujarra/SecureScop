@@ -1,0 +1,3 @@
+# Optional browser acceptance tools; not required by the application runtime.
+-r requirements-dev.txt
+playwright>=1.51,<2

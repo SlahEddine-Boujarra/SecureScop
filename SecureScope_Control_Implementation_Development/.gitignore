@@ -1,0 +1,46 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+build/
+dist/
+node_modules/
+
+# IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Runtime and scanner output
+logs/*
+!logs/.gitkeep
+reports/*
+!reports/.gitkeep
+exports/*
+!exports/.gitkeep
+scans/
+data/
+tools/
+evidence_store/
+
+# Generated delivery archives
+*.zip

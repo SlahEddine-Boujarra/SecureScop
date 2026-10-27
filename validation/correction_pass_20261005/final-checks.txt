@@ -1,0 +1,15 @@
+../venv/bin/python -m flake8 scripts/verify_evidence_scope_postgres.py src/securescope/app.py src/securescope/evidence/automated_checks.py src/securescope/evidence/evidence_service.py src/securescope/grc/assurance_requirements.py src/securescope/grc/control_implementation.py src/securescope/grc/requirement_templates.py src/securescope/persistence/assurance_workspace_repository.py src/securescope/persistence/evidence_repository.py src/securescope/persistence/grc_repository.py src/securescope/persistence/nuclei_persistence.py src/securescope/ui/assurance_dashboard.py src/securescope/ui/components_v2/assurance_pages.py src/securescope/ui/components_v2/assurance_plan.py src/securescope/ui/components_v2/assurance_workbench.py src/securescope/ui/components_v2/policy_editor.py src/securescope/ui/control_assessment_ui.py src/securescope/ui/control_workspace.py src/securescope/ui/dual_engine_ui.py src/securescope/ui/evidence_hub_ui.py src/securescope/ui/exposure_management_ui.py src/securescope/ui/gap_dashboard_ui.py src/securescope/ui/wazuh_settings_ui.py tests/test_assurance_merge_full_functionality_v5_3_8_12.py tests/test_assurance_redesign.py tests/test_assurance_requirements.py tests/test_assurance_runtime.py tests/test_assurance_workspace.py tests/test_compact_ui_v5_3_8_1.py tests/test_correction_assessment_ui.py tests/test_nuclei_evidence_pipeline.py tests/test_stitch_ui_v5_3_8_13.py tests/test_ui_fix_v5_3_3.py tests/test_ui_fix_v5_3_4.py tests/test_workflow_actions.py scripts/verify_automated_evidence_postgres.py src/securescope/cli/backfill_nuclei_evidence.py src/securescope/evidence/freshness.py src/securescope/evidence/wazuh_bridge.py src/securescope/ui/evidence_collection_context.py tests/test_correction_pass_20261005.py tests/test_soa_draft_migration_postgres.py
+
+Exit: 0
+../venv/bin/python -m compileall -q src scripts/verify_automated_evidence_postgres.py
+
+Exit: 0
+git diff --check
+warning: in the working copy of 'start_securescope.ps1', LF will be replaced by CRLF the next time Git touches it
+
+Exit: 0
+../venv/bin/python -m pytest -q tests/test_correction_pass_20261005.py
+...................................                                      [100%]
+35 passed in 0.60s
+
+Exit: 0

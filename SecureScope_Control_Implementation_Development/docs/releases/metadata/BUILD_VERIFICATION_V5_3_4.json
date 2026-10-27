@@ -1,0 +1,27 @@
+{
+  "release": "SecureScope v5.3.4 global bar, menu and icon toolbar fix",
+  "source_baseline": "SecureScope v5.3.3 menu, Asset Management and tab UI fix",
+  "verified_at": "2026-08-03",
+  "checks": {
+    "python_compileall": "79 files passed",
+    "dependency_free_tests": "33 passed",
+    "workflow_bar_calls": 0,
+    "workflow_bar_renderer_present": false,
+    "sidebar_fixed_icon_column": "1.15rem",
+    "iso_a8_icon_controls": 7,
+    "gap_assessment_icon_controls": 6,
+    "asset_management_clock_ui_present": false,
+    "ntp_backend_present": true,
+    "database_migration_required": false,
+    "environment_change_required": false
+  },
+  "dependency_blocked_test_modules": 9,
+  "external_runtime_checks_not_executed": [
+    "Streamlit browser rendering and screenshots",
+    "Windows PowerShell execution",
+    "live PostgreSQL integration",
+    "live OpenVAS and Nuclei scans",
+    "live Wazuh manager and indexer",
+    "live CISO Assistant synchronization"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "release": "SecureScope v5.3.1 OpenVAS/Nuclei dual-engine reports",
+  "source_baseline": "SecureScope v5.3.0 OpenVAS/Nuclei",
+  "verified_at": "2026-07-28",
+  "checks": {
+    "python_compileall": "passed",
+    "pytest": "59 passed",
+    "nuclei_runner_pid_arrow_fix": "nullable Int64 columns",
+    "report_icon": "Streamlit ButtonColumn with official Material picture_as_pdf symbol",
+    "openvas_report_action": "present in Scan Center live table only",
+    "nuclei_report_action": "present in Scan Center live table only",
+    "provider_pdf_copy": "implemented",
+    "combined_openvas_nuclei_pdf": "implemented for same client and exact asset IP",
+    "sample_pdf_render": "3 pages rendered successfully",
+    "sample_pdf_preflight": "openable, unencrypted, text PDF",
+    "completed_env_included": false,
+    "known_exposed_credentials_included": false
+  },
+  "external_runtime_checks_not_executed": [
+    "live Windows Streamlit ButtonColumn click",
+    "live PostgreSQL report lookup",
+    "live OpenVAS report download",
+    "live Nuclei report download",
+    "live browser PDF iframe preview"
+  ]
+}

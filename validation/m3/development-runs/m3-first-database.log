@@ -1,0 +1,1055 @@
+PostgreSQL 18.3 (PGlite 0.5.8) on wasm32-unknown-emscripten, compiled by emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.74 (1092ec30a3fb1d46b1782ff1b4db5094d3d06ae5), 32-bit
+EEEEEE                                                                   [100%]
+==================================== ERRORS ====================================
+_ ERROR at setup of test_nuclei_ingestion_profile_visibility_and_artifact_isolation _
+
+    @contextmanager
+    def connection():
+        """Yield a real transaction; explicitly select the schema for every connection.
+    
+        Yields:
+            psycopg2 connection, committed on success and rolled back on failure.
+        Raises:
+            DatabaseError: On a PostgreSQL error, matching repository behavior.
+        """
+        with closing(psycopg2.connect(URL)) as conn:
+            try:
+                with conn:
+                    with conn.cursor() as cursor:
+                        cursor.execute(
+                            sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                        )
+>                   yield conn
+
+tests/test_m1_evidence_postgres.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f36d55d7080>
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-3/test_nuclei_ingestion_profile_0')
+
+    @pytest.fixture
+    def database(monkeypatch, tmp_path):
+        """Apply actual application DDL in an isolated schema and bind real transactions.
+    
+        Args:
+            monkeypatch: Pytest isolation manager for connection/configuration boundaries.
+            tmp_path: Disposable encrypted artifact location.
+        Yields:
+            A callable opening real database transactions in the test schema.
+        Raises:
+            psycopg2.Error: If DDL, setup or cleanup fails on the explicit test target.
+        """
+        schema = "m1_verify_" + uuid4().hex
+        with closing(psycopg2.connect(URL)) as admin:
+            admin.autocommit = True
+            with admin.cursor() as cursor:
+                cursor.execute(sql.SQL("CREATE SCHEMA {}").format(sql.Identifier(schema)))
+    
+        @contextmanager
+        def connection():
+            """Yield a real transaction; explicitly select the schema for every connection.
+    
+            Yields:
+                psycopg2 connection, committed on success and rolled back on failure.
+            Raises:
+                DatabaseError: On a PostgreSQL error, matching repository behavior.
+            """
+            with closing(psycopg2.connect(URL)) as conn:
+                try:
+                    with conn:
+                        with conn.cursor() as cursor:
+                            cursor.execute(
+                                sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                            )
+                        yield conn
+                except psycopg2.Error as exc:
+                    raise db_service.DatabaseError(str(exc)) from exc
+    
+        try:
+            for module in (
+                db_service,
+                monitoring,
+                evidence,
+                foundation,
+                nuclei_persistence,
+                wazuh_bridge,
+            ):
+                monkeypatch.setattr(module, "connect", connection)
+            monkeypatch.setattr(db_service, "_INITIALIZED", False)
+            monkeypatch.setattr(nuclei_persistence, "_NUCLEI_INITIALIZED", False)
+            db_service.init_database()
+            with connection() as conn, conn.cursor() as cursor:
+                for migration in migration_service.discover_migrations():
+>                   cursor.execute(migration.path.read_text(encoding="utf-8"))
+E                   psycopg2.errors.InvalidForeignKey: there is no unique constraint matching given keys for referenced table "securescope_assets"
+
+tests/test_m1_evidence_postgres.py:94: InvalidForeignKey
+
+The above exception was the direct cause of the following exception:
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f36d55d7080>
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-3/test_nuclei_ingestion_profile_0')
+
+    @pytest.fixture
+    def database(monkeypatch, tmp_path):
+        """Apply actual application DDL in an isolated schema and bind real transactions.
+    
+        Args:
+            monkeypatch: Pytest isolation manager for connection/configuration boundaries.
+            tmp_path: Disposable encrypted artifact location.
+        Yields:
+            A callable opening real database transactions in the test schema.
+        Raises:
+            psycopg2.Error: If DDL, setup or cleanup fails on the explicit test target.
+        """
+        schema = "m1_verify_" + uuid4().hex
+        with closing(psycopg2.connect(URL)) as admin:
+            admin.autocommit = True
+            with admin.cursor() as cursor:
+                cursor.execute(sql.SQL("CREATE SCHEMA {}").format(sql.Identifier(schema)))
+    
+        @contextmanager
+        def connection():
+            """Yield a real transaction; explicitly select the schema for every connection.
+    
+            Yields:
+                psycopg2 connection, committed on success and rolled back on failure.
+            Raises:
+                DatabaseError: On a PostgreSQL error, matching repository behavior.
+            """
+            with closing(psycopg2.connect(URL)) as conn:
+                try:
+                    with conn:
+                        with conn.cursor() as cursor:
+                            cursor.execute(
+                                sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                            )
+                        yield conn
+                except psycopg2.Error as exc:
+                    raise db_service.DatabaseError(str(exc)) from exc
+    
+        try:
+            for module in (
+                db_service,
+                monitoring,
+                evidence,
+                foundation,
+                nuclei_persistence,
+                wazuh_bridge,
+            ):
+                monkeypatch.setattr(module, "connect", connection)
+            monkeypatch.setattr(db_service, "_INITIALIZED", False)
+            monkeypatch.setattr(nuclei_persistence, "_NUCLEI_INITIALIZED", False)
+            db_service.init_database()
+>           with connection() as conn, conn.cursor() as cursor:
+                 ^^^^^^^^^^^^
+
+tests/test_m1_evidence_postgres.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py:158: in __exit__
+    self.gen.throw(value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @contextmanager
+    def connection():
+        """Yield a real transaction; explicitly select the schema for every connection.
+    
+        Yields:
+            psycopg2 connection, committed on success and rolled back on failure.
+        Raises:
+            DatabaseError: On a PostgreSQL error, matching repository behavior.
+        """
+        with closing(psycopg2.connect(URL)) as conn:
+            try:
+                with conn:
+                    with conn.cursor() as cursor:
+                        cursor.execute(
+                            sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                        )
+                    yield conn
+            except psycopg2.Error as exc:
+>               raise db_service.DatabaseError(str(exc)) from exc
+E               securescope.persistence.db_service.DatabaseError: there is no unique constraint matching given keys for referenced table "securescope_assets"
+
+tests/test_m1_evidence_postgres.py:77: DatabaseError
+------------------------------ Captured log setup ------------------------------
+WARNING  securescope.persistence.migration_service:migration_service.py:138 Detected known published aliases for migration 3; using 003_legacy_iso_evidence_bridge.sql.
+WARNING  securescope.persistence.migration_service:migration_service.py:138 Detected known published aliases for migration 6; using 006_organization_knowledge_compat.sql.
+_ ERROR at setup of test_nuclei_scope_version_and_empty_origin_do_not_assign_scope _
+
+    @contextmanager
+    def connection():
+        """Yield a real transaction; explicitly select the schema for every connection.
+    
+        Yields:
+            psycopg2 connection, committed on success and rolled back on failure.
+        Raises:
+            DatabaseError: On a PostgreSQL error, matching repository behavior.
+        """
+        with closing(psycopg2.connect(URL)) as conn:
+            try:
+                with conn:
+                    with conn.cursor() as cursor:
+                        cursor.execute(
+                            sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                        )
+>                   yield conn
+
+tests/test_m1_evidence_postgres.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f36d9e9f560>
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-3/test_nuclei_scope_version_and_0')
+
+    @pytest.fixture
+    def database(monkeypatch, tmp_path):
+        """Apply actual application DDL in an isolated schema and bind real transactions.
+    
+        Args:
+            monkeypatch: Pytest isolation manager for connection/configuration boundaries.
+            tmp_path: Disposable encrypted artifact location.
+        Yields:
+            A callable opening real database transactions in the test schema.
+        Raises:
+            psycopg2.Error: If DDL, setup or cleanup fails on the explicit test target.
+        """
+        schema = "m1_verify_" + uuid4().hex
+        with closing(psycopg2.connect(URL)) as admin:
+            admin.autocommit = True
+            with admin.cursor() as cursor:
+                cursor.execute(sql.SQL("CREATE SCHEMA {}").format(sql.Identifier(schema)))
+    
+        @contextmanager
+        def connection():
+            """Yield a real transaction; explicitly select the schema for every connection.
+    
+            Yields:
+                psycopg2 connection, committed on success and rolled back on failure.
+            Raises:
+                DatabaseError: On a PostgreSQL error, matching repository behavior.
+            """
+            with closing(psycopg2.connect(URL)) as conn:
+                try:
+                    with conn:
+                        with conn.cursor() as cursor:
+                            cursor.execute(
+                                sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                            )
+                        yield conn
+                except psycopg2.Error as exc:
+                    raise db_service.DatabaseError(str(exc)) from exc
+    
+        try:
+            for module in (
+                db_service,
+                monitoring,
+                evidence,
+                foundation,
+                nuclei_persistence,
+                wazuh_bridge,
+            ):
+                monkeypatch.setattr(module, "connect", connection)
+            monkeypatch.setattr(db_service, "_INITIALIZED", False)
+            monkeypatch.setattr(nuclei_persistence, "_NUCLEI_INITIALIZED", False)
+            db_service.init_database()
+            with connection() as conn, conn.cursor() as cursor:
+                for migration in migration_service.discover_migrations():
+>                   cursor.execute(migration.path.read_text(encoding="utf-8"))
+E                   psycopg2.errors.InvalidForeignKey: there is no unique constraint matching given keys for referenced table "securescope_assets"
+
+tests/test_m1_evidence_postgres.py:94: InvalidForeignKey
+
+The above exception was the direct cause of the following exception:
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f36d9e9f560>
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-3/test_nuclei_scope_version_and_0')
+
+    @pytest.fixture
+    def database(monkeypatch, tmp_path):
+        """Apply actual application DDL in an isolated schema and bind real transactions.
+    
+        Args:
+            monkeypatch: Pytest isolation manager for connection/configuration boundaries.
+            tmp_path: Disposable encrypted artifact location.
+        Yields:
+            A callable opening real database transactions in the test schema.
+        Raises:
+            psycopg2.Error: If DDL, setup or cleanup fails on the explicit test target.
+        """
+        schema = "m1_verify_" + uuid4().hex
+        with closing(psycopg2.connect(URL)) as admin:
+            admin.autocommit = True
+            with admin.cursor() as cursor:
+                cursor.execute(sql.SQL("CREATE SCHEMA {}").format(sql.Identifier(schema)))
+    
+        @contextmanager
+        def connection():
+            """Yield a real transaction; explicitly select the schema for every connection.
+    
+            Yields:
+                psycopg2 connection, committed on success and rolled back on failure.
+            Raises:
+                DatabaseError: On a PostgreSQL error, matching repository behavior.
+            """
+            with closing(psycopg2.connect(URL)) as conn:
+                try:
+                    with conn:
+                        with conn.cursor() as cursor:
+                            cursor.execute(
+                                sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                            )
+                        yield conn
+                except psycopg2.Error as exc:
+                    raise db_service.DatabaseError(str(exc)) from exc
+    
+        try:
+            for module in (
+                db_service,
+                monitoring,
+                evidence,
+                foundation,
+                nuclei_persistence,
+                wazuh_bridge,
+            ):
+                monkeypatch.setattr(module, "connect", connection)
+            monkeypatch.setattr(db_service, "_INITIALIZED", False)
+            monkeypatch.setattr(nuclei_persistence, "_NUCLEI_INITIALIZED", False)
+            db_service.init_database()
+>           with connection() as conn, conn.cursor() as cursor:
+                 ^^^^^^^^^^^^
+
+tests/test_m1_evidence_postgres.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py:158: in __exit__
+    self.gen.throw(value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @contextmanager
+    def connection():
+        """Yield a real transaction; explicitly select the schema for every connection.
+    
+        Yields:
+            psycopg2 connection, committed on success and rolled back on failure.
+        Raises:
+            DatabaseError: On a PostgreSQL error, matching repository behavior.
+        """
+        with closing(psycopg2.connect(URL)) as conn:
+            try:
+                with conn:
+                    with conn.cursor() as cursor:
+                        cursor.execute(
+                            sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                        )
+                    yield conn
+            except psycopg2.Error as exc:
+>               raise db_service.DatabaseError(str(exc)) from exc
+E               securescope.persistence.db_service.DatabaseError: there is no unique constraint matching given keys for referenced table "securescope_assets"
+
+tests/test_m1_evidence_postgres.py:77: DatabaseError
+------------------------------ Captured log setup ------------------------------
+WARNING  securescope.persistence.migration_service:migration_service.py:138 Detected known published aliases for migration 3; using 003_legacy_iso_evidence_bridge.sql.
+WARNING  securescope.persistence.migration_service:migration_service.py:138 Detected known published aliases for migration 6; using 006_organization_knowledge_compat.sql.
+_ ERROR at setup of test_latest_invalid_profile_cannot_resurrect_historical_membership[False] _
+
+    @contextmanager
+    def connection():
+        """Yield a real transaction; explicitly select the schema for every connection.
+    
+        Yields:
+            psycopg2 connection, committed on success and rolled back on failure.
+        Raises:
+            DatabaseError: On a PostgreSQL error, matching repository behavior.
+        """
+        with closing(psycopg2.connect(URL)) as conn:
+            try:
+                with conn:
+                    with conn.cursor() as cursor:
+                        cursor.execute(
+                            sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                        )
+>                   yield conn
+
+tests/test_m1_evidence_postgres.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f36d564df40>
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-3/test_latest_invalid_profile_ca0')
+
+    @pytest.fixture
+    def database(monkeypatch, tmp_path):
+        """Apply actual application DDL in an isolated schema and bind real transactions.
+    
+        Args:
+            monkeypatch: Pytest isolation manager for connection/configuration boundaries.
+            tmp_path: Disposable encrypted artifact location.
+        Yields:
+            A callable opening real database transactions in the test schema.
+        Raises:
+            psycopg2.Error: If DDL, setup or cleanup fails on the explicit test target.
+        """
+        schema = "m1_verify_" + uuid4().hex
+        with closing(psycopg2.connect(URL)) as admin:
+            admin.autocommit = True
+            with admin.cursor() as cursor:
+                cursor.execute(sql.SQL("CREATE SCHEMA {}").format(sql.Identifier(schema)))
+    
+        @contextmanager
+        def connection():
+            """Yield a real transaction; explicitly select the schema for every connection.
+    
+            Yields:
+                psycopg2 connection, committed on success and rolled back on failure.
+            Raises:
+                DatabaseError: On a PostgreSQL error, matching repository behavior.
+            """
+            with closing(psycopg2.connect(URL)) as conn:
+                try:
+                    with conn:
+                        with conn.cursor() as cursor:
+                            cursor.execute(
+                                sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                            )
+                        yield conn
+                except psycopg2.Error as exc:
+                    raise db_service.DatabaseError(str(exc)) from exc
+    
+        try:
+            for module in (
+                db_service,
+                monitoring,
+                evidence,
+                foundation,
+                nuclei_persistence,
+                wazuh_bridge,
+            ):
+                monkeypatch.setattr(module, "connect", connection)
+            monkeypatch.setattr(db_service, "_INITIALIZED", False)
+            monkeypatch.setattr(nuclei_persistence, "_NUCLEI_INITIALIZED", False)
+            db_service.init_database()
+            with connection() as conn, conn.cursor() as cursor:
+                for migration in migration_service.discover_migrations():
+>                   cursor.execute(migration.path.read_text(encoding="utf-8"))
+E                   psycopg2.errors.InvalidForeignKey: there is no unique constraint matching given keys for referenced table "securescope_assets"
+
+tests/test_m1_evidence_postgres.py:94: InvalidForeignKey
+
+The above exception was the direct cause of the following exception:
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f36d564df40>
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-3/test_latest_invalid_profile_ca0')
+
+    @pytest.fixture
+    def database(monkeypatch, tmp_path):
+        """Apply actual application DDL in an isolated schema and bind real transactions.
+    
+        Args:
+            monkeypatch: Pytest isolation manager for connection/configuration boundaries.
+            tmp_path: Disposable encrypted artifact location.
+        Yields:
+            A callable opening real database transactions in the test schema.
+        Raises:
+            psycopg2.Error: If DDL, setup or cleanup fails on the explicit test target.
+        """
+        schema = "m1_verify_" + uuid4().hex
+        with closing(psycopg2.connect(URL)) as admin:
+            admin.autocommit = True
+            with admin.cursor() as cursor:
+                cursor.execute(sql.SQL("CREATE SCHEMA {}").format(sql.Identifier(schema)))
+    
+        @contextmanager
+        def connection():
+            """Yield a real transaction; explicitly select the schema for every connection.
+    
+            Yields:
+                psycopg2 connection, committed on success and rolled back on failure.
+            Raises:
+                DatabaseError: On a PostgreSQL error, matching repository behavior.
+            """
+            with closing(psycopg2.connect(URL)) as conn:
+                try:
+                    with conn:
+                        with conn.cursor() as cursor:
+                            cursor.execute(
+                                sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                            )
+                        yield conn
+                except psycopg2.Error as exc:
+                    raise db_service.DatabaseError(str(exc)) from exc
+    
+        try:
+            for module in (
+                db_service,
+                monitoring,
+                evidence,
+                foundation,
+                nuclei_persistence,
+                wazuh_bridge,
+            ):
+                monkeypatch.setattr(module, "connect", connection)
+            monkeypatch.setattr(db_service, "_INITIALIZED", False)
+            monkeypatch.setattr(nuclei_persistence, "_NUCLEI_INITIALIZED", False)
+            db_service.init_database()
+>           with connection() as conn, conn.cursor() as cursor:
+                 ^^^^^^^^^^^^
+
+tests/test_m1_evidence_postgres.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py:158: in __exit__
+    self.gen.throw(value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @contextmanager
+    def connection():
+        """Yield a real transaction; explicitly select the schema for every connection.
+    
+        Yields:
+            psycopg2 connection, committed on success and rolled back on failure.
+        Raises:
+            DatabaseError: On a PostgreSQL error, matching repository behavior.
+        """
+        with closing(psycopg2.connect(URL)) as conn:
+            try:
+                with conn:
+                    with conn.cursor() as cursor:
+                        cursor.execute(
+                            sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                        )
+                    yield conn
+            except psycopg2.Error as exc:
+>               raise db_service.DatabaseError(str(exc)) from exc
+E               securescope.persistence.db_service.DatabaseError: there is no unique constraint matching given keys for referenced table "securescope_assets"
+
+tests/test_m1_evidence_postgres.py:77: DatabaseError
+------------------------------ Captured log setup ------------------------------
+WARNING  securescope.persistence.migration_service:migration_service.py:138 Detected known published aliases for migration 3; using 003_legacy_iso_evidence_bridge.sql.
+WARNING  securescope.persistence.migration_service:migration_service.py:138 Detected known published aliases for migration 6; using 006_organization_knowledge_compat.sql.
+_ ERROR at setup of test_latest_invalid_profile_cannot_resurrect_historical_membership[True] _
+
+    @contextmanager
+    def connection():
+        """Yield a real transaction; explicitly select the schema for every connection.
+    
+        Yields:
+            psycopg2 connection, committed on success and rolled back on failure.
+        Raises:
+            DatabaseError: On a PostgreSQL error, matching repository behavior.
+        """
+        with closing(psycopg2.connect(URL)) as conn:
+            try:
+                with conn:
+                    with conn.cursor() as cursor:
+                        cursor.execute(
+                            sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                        )
+>                   yield conn
+
+tests/test_m1_evidence_postgres.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f36d6914aa0>
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-3/test_latest_invalid_profile_ca1')
+
+    @pytest.fixture
+    def database(monkeypatch, tmp_path):
+        """Apply actual application DDL in an isolated schema and bind real transactions.
+    
+        Args:
+            monkeypatch: Pytest isolation manager for connection/configuration boundaries.
+            tmp_path: Disposable encrypted artifact location.
+        Yields:
+            A callable opening real database transactions in the test schema.
+        Raises:
+            psycopg2.Error: If DDL, setup or cleanup fails on the explicit test target.
+        """
+        schema = "m1_verify_" + uuid4().hex
+        with closing(psycopg2.connect(URL)) as admin:
+            admin.autocommit = True
+            with admin.cursor() as cursor:
+                cursor.execute(sql.SQL("CREATE SCHEMA {}").format(sql.Identifier(schema)))
+    
+        @contextmanager
+        def connection():
+            """Yield a real transaction; explicitly select the schema for every connection.
+    
+            Yields:
+                psycopg2 connection, committed on success and rolled back on failure.
+            Raises:
+                DatabaseError: On a PostgreSQL error, matching repository behavior.
+            """
+            with closing(psycopg2.connect(URL)) as conn:
+                try:
+                    with conn:
+                        with conn.cursor() as cursor:
+                            cursor.execute(
+                                sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                            )
+                        yield conn
+                except psycopg2.Error as exc:
+                    raise db_service.DatabaseError(str(exc)) from exc
+    
+        try:
+            for module in (
+                db_service,
+                monitoring,
+                evidence,
+                foundation,
+                nuclei_persistence,
+                wazuh_bridge,
+            ):
+                monkeypatch.setattr(module, "connect", connection)
+            monkeypatch.setattr(db_service, "_INITIALIZED", False)
+            monkeypatch.setattr(nuclei_persistence, "_NUCLEI_INITIALIZED", False)
+            db_service.init_database()
+            with connection() as conn, conn.cursor() as cursor:
+                for migration in migration_service.discover_migrations():
+>                   cursor.execute(migration.path.read_text(encoding="utf-8"))
+E                   psycopg2.errors.InvalidForeignKey: there is no unique constraint matching given keys for referenced table "securescope_assets"
+
+tests/test_m1_evidence_postgres.py:94: InvalidForeignKey
+
+The above exception was the direct cause of the following exception:
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f36d6914aa0>
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-3/test_latest_invalid_profile_ca1')
+
+    @pytest.fixture
+    def database(monkeypatch, tmp_path):
+        """Apply actual application DDL in an isolated schema and bind real transactions.
+    
+        Args:
+            monkeypatch: Pytest isolation manager for connection/configuration boundaries.
+            tmp_path: Disposable encrypted artifact location.
+        Yields:
+            A callable opening real database transactions in the test schema.
+        Raises:
+            psycopg2.Error: If DDL, setup or cleanup fails on the explicit test target.
+        """
+        schema = "m1_verify_" + uuid4().hex
+        with closing(psycopg2.connect(URL)) as admin:
+            admin.autocommit = True
+            with admin.cursor() as cursor:
+                cursor.execute(sql.SQL("CREATE SCHEMA {}").format(sql.Identifier(schema)))
+    
+        @contextmanager
+        def connection():
+            """Yield a real transaction; explicitly select the schema for every connection.
+    
+            Yields:
+                psycopg2 connection, committed on success and rolled back on failure.
+            Raises:
+                DatabaseError: On a PostgreSQL error, matching repository behavior.
+            """
+            with closing(psycopg2.connect(URL)) as conn:
+                try:
+                    with conn:
+                        with conn.cursor() as cursor:
+                            cursor.execute(
+                                sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                            )
+                        yield conn
+                except psycopg2.Error as exc:
+                    raise db_service.DatabaseError(str(exc)) from exc
+    
+        try:
+            for module in (
+                db_service,
+                monitoring,
+                evidence,
+                foundation,
+                nuclei_persistence,
+                wazuh_bridge,
+            ):
+                monkeypatch.setattr(module, "connect", connection)
+            monkeypatch.setattr(db_service, "_INITIALIZED", False)
+            monkeypatch.setattr(nuclei_persistence, "_NUCLEI_INITIALIZED", False)
+            db_service.init_database()
+>           with connection() as conn, conn.cursor() as cursor:
+                 ^^^^^^^^^^^^
+
+tests/test_m1_evidence_postgres.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py:158: in __exit__
+    self.gen.throw(value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @contextmanager
+    def connection():
+        """Yield a real transaction; explicitly select the schema for every connection.
+    
+        Yields:
+            psycopg2 connection, committed on success and rolled back on failure.
+        Raises:
+            DatabaseError: On a PostgreSQL error, matching repository behavior.
+        """
+        with closing(psycopg2.connect(URL)) as conn:
+            try:
+                with conn:
+                    with conn.cursor() as cursor:
+                        cursor.execute(
+                            sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                        )
+                    yield conn
+            except psycopg2.Error as exc:
+>               raise db_service.DatabaseError(str(exc)) from exc
+E               securescope.persistence.db_service.DatabaseError: there is no unique constraint matching given keys for referenced table "securescope_assets"
+
+tests/test_m1_evidence_postgres.py:77: DatabaseError
+------------------------------ Captured log setup ------------------------------
+WARNING  securescope.persistence.migration_service:migration_service.py:138 Detected known published aliases for migration 3; using 003_legacy_iso_evidence_bridge.sql.
+WARNING  securescope.persistence.migration_service:migration_service.py:138 Detected known published aliases for migration 6; using 006_organization_knowledge_compat.sql.
+_ ERROR at setup of test_repeated_monitoring_preserves_sources_evidence_assessments_and_audit _
+
+    @contextmanager
+    def connection():
+        """Yield a real transaction; explicitly select the schema for every connection.
+    
+        Yields:
+            psycopg2 connection, committed on success and rolled back on failure.
+        Raises:
+            DatabaseError: On a PostgreSQL error, matching repository behavior.
+        """
+        with closing(psycopg2.connect(URL)) as conn:
+            try:
+                with conn:
+                    with conn.cursor() as cursor:
+                        cursor.execute(
+                            sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                        )
+>                   yield conn
+
+tests/test_m1_evidence_postgres.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f36d564d610>
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-3/test_repeated_monitoring_prese0')
+
+    @pytest.fixture
+    def database(monkeypatch, tmp_path):
+        """Apply actual application DDL in an isolated schema and bind real transactions.
+    
+        Args:
+            monkeypatch: Pytest isolation manager for connection/configuration boundaries.
+            tmp_path: Disposable encrypted artifact location.
+        Yields:
+            A callable opening real database transactions in the test schema.
+        Raises:
+            psycopg2.Error: If DDL, setup or cleanup fails on the explicit test target.
+        """
+        schema = "m1_verify_" + uuid4().hex
+        with closing(psycopg2.connect(URL)) as admin:
+            admin.autocommit = True
+            with admin.cursor() as cursor:
+                cursor.execute(sql.SQL("CREATE SCHEMA {}").format(sql.Identifier(schema)))
+    
+        @contextmanager
+        def connection():
+            """Yield a real transaction; explicitly select the schema for every connection.
+    
+            Yields:
+                psycopg2 connection, committed on success and rolled back on failure.
+            Raises:
+                DatabaseError: On a PostgreSQL error, matching repository behavior.
+            """
+            with closing(psycopg2.connect(URL)) as conn:
+                try:
+                    with conn:
+                        with conn.cursor() as cursor:
+                            cursor.execute(
+                                sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                            )
+                        yield conn
+                except psycopg2.Error as exc:
+                    raise db_service.DatabaseError(str(exc)) from exc
+    
+        try:
+            for module in (
+                db_service,
+                monitoring,
+                evidence,
+                foundation,
+                nuclei_persistence,
+                wazuh_bridge,
+            ):
+                monkeypatch.setattr(module, "connect", connection)
+            monkeypatch.setattr(db_service, "_INITIALIZED", False)
+            monkeypatch.setattr(nuclei_persistence, "_NUCLEI_INITIALIZED", False)
+            db_service.init_database()
+            with connection() as conn, conn.cursor() as cursor:
+                for migration in migration_service.discover_migrations():
+>                   cursor.execute(migration.path.read_text(encoding="utf-8"))
+E                   psycopg2.errors.InvalidForeignKey: there is no unique constraint matching given keys for referenced table "securescope_assets"
+
+tests/test_m1_evidence_postgres.py:94: InvalidForeignKey
+
+The above exception was the direct cause of the following exception:
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f36d564d610>
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-3/test_repeated_monitoring_prese0')
+
+    @pytest.fixture
+    def database(monkeypatch, tmp_path):
+        """Apply actual application DDL in an isolated schema and bind real transactions.
+    
+        Args:
+            monkeypatch: Pytest isolation manager for connection/configuration boundaries.
+            tmp_path: Disposable encrypted artifact location.
+        Yields:
+            A callable opening real database transactions in the test schema.
+        Raises:
+            psycopg2.Error: If DDL, setup or cleanup fails on the explicit test target.
+        """
+        schema = "m1_verify_" + uuid4().hex
+        with closing(psycopg2.connect(URL)) as admin:
+            admin.autocommit = True
+            with admin.cursor() as cursor:
+                cursor.execute(sql.SQL("CREATE SCHEMA {}").format(sql.Identifier(schema)))
+    
+        @contextmanager
+        def connection():
+            """Yield a real transaction; explicitly select the schema for every connection.
+    
+            Yields:
+                psycopg2 connection, committed on success and rolled back on failure.
+            Raises:
+                DatabaseError: On a PostgreSQL error, matching repository behavior.
+            """
+            with closing(psycopg2.connect(URL)) as conn:
+                try:
+                    with conn:
+                        with conn.cursor() as cursor:
+                            cursor.execute(
+                                sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                            )
+                        yield conn
+                except psycopg2.Error as exc:
+                    raise db_service.DatabaseError(str(exc)) from exc
+    
+        try:
+            for module in (
+                db_service,
+                monitoring,
+                evidence,
+                foundation,
+                nuclei_persistence,
+                wazuh_bridge,
+            ):
+                monkeypatch.setattr(module, "connect", connection)
+            monkeypatch.setattr(db_service, "_INITIALIZED", False)
+            monkeypatch.setattr(nuclei_persistence, "_NUCLEI_INITIALIZED", False)
+            db_service.init_database()
+>           with connection() as conn, conn.cursor() as cursor:
+                 ^^^^^^^^^^^^
+
+tests/test_m1_evidence_postgres.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py:158: in __exit__
+    self.gen.throw(value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @contextmanager
+    def connection():
+        """Yield a real transaction; explicitly select the schema for every connection.
+    
+        Yields:
+            psycopg2 connection, committed on success and rolled back on failure.
+        Raises:
+            DatabaseError: On a PostgreSQL error, matching repository behavior.
+        """
+        with closing(psycopg2.connect(URL)) as conn:
+            try:
+                with conn:
+                    with conn.cursor() as cursor:
+                        cursor.execute(
+                            sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                        )
+                    yield conn
+            except psycopg2.Error as exc:
+>               raise db_service.DatabaseError(str(exc)) from exc
+E               securescope.persistence.db_service.DatabaseError: there is no unique constraint matching given keys for referenced table "securescope_assets"
+
+tests/test_m1_evidence_postgres.py:77: DatabaseError
+------------------------------ Captured log setup ------------------------------
+WARNING  securescope.persistence.migration_service:migration_service.py:138 Detected known published aliases for migration 3; using 003_legacy_iso_evidence_bridge.sql.
+WARNING  securescope.persistence.migration_service:migration_service.py:138 Detected known published aliases for migration 6; using 006_organization_knowledge_compat.sql.
+_ ERROR at setup of test_historical_active_only_evidence_is_retained_but_cannot_satisfy_monitoring _
+
+    @contextmanager
+    def connection():
+        """Yield a real transaction; explicitly select the schema for every connection.
+    
+        Yields:
+            psycopg2 connection, committed on success and rolled back on failure.
+        Raises:
+            DatabaseError: On a PostgreSQL error, matching repository behavior.
+        """
+        with closing(psycopg2.connect(URL)) as conn:
+            try:
+                with conn:
+                    with conn.cursor() as cursor:
+                        cursor.execute(
+                            sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                        )
+>                   yield conn
+
+tests/test_m1_evidence_postgres.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f36d5318050>
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-3/test_historical_active_only_ev0')
+
+    @pytest.fixture
+    def database(monkeypatch, tmp_path):
+        """Apply actual application DDL in an isolated schema and bind real transactions.
+    
+        Args:
+            monkeypatch: Pytest isolation manager for connection/configuration boundaries.
+            tmp_path: Disposable encrypted artifact location.
+        Yields:
+            A callable opening real database transactions in the test schema.
+        Raises:
+            psycopg2.Error: If DDL, setup or cleanup fails on the explicit test target.
+        """
+        schema = "m1_verify_" + uuid4().hex
+        with closing(psycopg2.connect(URL)) as admin:
+            admin.autocommit = True
+            with admin.cursor() as cursor:
+                cursor.execute(sql.SQL("CREATE SCHEMA {}").format(sql.Identifier(schema)))
+    
+        @contextmanager
+        def connection():
+            """Yield a real transaction; explicitly select the schema for every connection.
+    
+            Yields:
+                psycopg2 connection, committed on success and rolled back on failure.
+            Raises:
+                DatabaseError: On a PostgreSQL error, matching repository behavior.
+            """
+            with closing(psycopg2.connect(URL)) as conn:
+                try:
+                    with conn:
+                        with conn.cursor() as cursor:
+                            cursor.execute(
+                                sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                            )
+                        yield conn
+                except psycopg2.Error as exc:
+                    raise db_service.DatabaseError(str(exc)) from exc
+    
+        try:
+            for module in (
+                db_service,
+                monitoring,
+                evidence,
+                foundation,
+                nuclei_persistence,
+                wazuh_bridge,
+            ):
+                monkeypatch.setattr(module, "connect", connection)
+            monkeypatch.setattr(db_service, "_INITIALIZED", False)
+            monkeypatch.setattr(nuclei_persistence, "_NUCLEI_INITIALIZED", False)
+            db_service.init_database()
+            with connection() as conn, conn.cursor() as cursor:
+                for migration in migration_service.discover_migrations():
+>                   cursor.execute(migration.path.read_text(encoding="utf-8"))
+E                   psycopg2.errors.InvalidForeignKey: there is no unique constraint matching given keys for referenced table "securescope_assets"
+
+tests/test_m1_evidence_postgres.py:94: InvalidForeignKey
+
+The above exception was the direct cause of the following exception:
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f36d5318050>
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-3/test_historical_active_only_ev0')
+
+    @pytest.fixture
+    def database(monkeypatch, tmp_path):
+        """Apply actual application DDL in an isolated schema and bind real transactions.
+    
+        Args:
+            monkeypatch: Pytest isolation manager for connection/configuration boundaries.
+            tmp_path: Disposable encrypted artifact location.
+        Yields:
+            A callable opening real database transactions in the test schema.
+        Raises:
+            psycopg2.Error: If DDL, setup or cleanup fails on the explicit test target.
+        """
+        schema = "m1_verify_" + uuid4().hex
+        with closing(psycopg2.connect(URL)) as admin:
+            admin.autocommit = True
+            with admin.cursor() as cursor:
+                cursor.execute(sql.SQL("CREATE SCHEMA {}").format(sql.Identifier(schema)))
+    
+        @contextmanager
+        def connection():
+            """Yield a real transaction; explicitly select the schema for every connection.
+    
+            Yields:
+                psycopg2 connection, committed on success and rolled back on failure.
+            Raises:
+                DatabaseError: On a PostgreSQL error, matching repository behavior.
+            """
+            with closing(psycopg2.connect(URL)) as conn:
+                try:
+                    with conn:
+                        with conn.cursor() as cursor:
+                            cursor.execute(
+                                sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                            )
+                        yield conn
+                except psycopg2.Error as exc:
+                    raise db_service.DatabaseError(str(exc)) from exc
+    
+        try:
+            for module in (
+                db_service,
+                monitoring,
+                evidence,
+                foundation,
+                nuclei_persistence,
+                wazuh_bridge,
+            ):
+                monkeypatch.setattr(module, "connect", connection)
+            monkeypatch.setattr(db_service, "_INITIALIZED", False)
+            monkeypatch.setattr(nuclei_persistence, "_NUCLEI_INITIALIZED", False)
+            db_service.init_database()
+>           with connection() as conn, conn.cursor() as cursor:
+                 ^^^^^^^^^^^^
+
+tests/test_m1_evidence_postgres.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py:158: in __exit__
+    self.gen.throw(value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @contextmanager
+    def connection():
+        """Yield a real transaction; explicitly select the schema for every connection.
+    
+        Yields:
+            psycopg2 connection, committed on success and rolled back on failure.
+        Raises:
+            DatabaseError: On a PostgreSQL error, matching repository behavior.
+        """
+        with closing(psycopg2.connect(URL)) as conn:
+            try:
+                with conn:
+                    with conn.cursor() as cursor:
+                        cursor.execute(
+                            sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                        )
+                    yield conn
+            except psycopg2.Error as exc:
+>               raise db_service.DatabaseError(str(exc)) from exc
+E               securescope.persistence.db_service.DatabaseError: there is no unique constraint matching given keys for referenced table "securescope_assets"
+
+tests/test_m1_evidence_postgres.py:77: DatabaseError
+------------------------------ Captured log setup ------------------------------
+WARNING  securescope.persistence.migration_service:migration_service.py:138 Detected known published aliases for migration 3; using 003_legacy_iso_evidence_bridge.sql.
+WARNING  securescope.persistence.migration_service:migration_service.py:138 Detected known published aliases for migration 6; using 006_organization_knowledge_compat.sql.
+=========================== short test summary info ============================
+ERROR tests/test_m1_evidence_postgres.py::test_nuclei_ingestion_profile_visibility_and_artifact_isolation
+ERROR tests/test_m1_evidence_postgres.py::test_nuclei_scope_version_and_empty_origin_do_not_assign_scope
+ERROR tests/test_m1_evidence_postgres.py::test_latest_invalid_profile_cannot_resurrect_historical_membership[False]
+ERROR tests/test_m1_evidence_postgres.py::test_latest_invalid_profile_cannot_resurrect_historical_membership[True]
+ERROR tests/test_m1_evidence_postgres.py::test_repeated_monitoring_preserves_sources_evidence_assessments_and_audit
+ERROR tests/test_m1_evidence_postgres.py::test_historical_active_only_evidence_is_retained_but_cannot_satisfy_monitoring
+6 errors in 2.81s

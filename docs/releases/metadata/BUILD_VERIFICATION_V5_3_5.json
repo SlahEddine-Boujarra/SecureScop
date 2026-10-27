@@ -1,0 +1,28 @@
+{
+  "release": "SecureScope v5.3.5 integrated animated sidebar",
+  "source_baseline": "SecureScope v5.3.4 global bar, menu and icon toolbar fix",
+  "verified_at": "2026-08-04",
+  "checks": {
+    "python_compileall": "all Python sources passed",
+    "dependency_free_tests": "37 passed",
+    "sidebar_integration_contracts": "4 passed",
+    "menu_page_routes": 10,
+    "workspace_dialog_callback_connected": true,
+    "connection_dialog_callback_connected": true,
+    "workspace_state_cleanup_preserved": true,
+    "compact_sidebar_width_px": 68,
+    "compact_button_size_px": 44,
+    "compact_icon_box_size_px": 20,
+    "database_migration_required": false,
+    "environment_change_required": false
+  },
+  "dependency_blocked_test_modules": 9,
+  "external_runtime_checks_not_executed": [
+    "Streamlit browser rendering and screenshots",
+    "Windows PowerShell execution",
+    "live PostgreSQL integration",
+    "live OpenVAS and Nuclei scans",
+    "live Wazuh manager and indexer",
+    "live CISO Assistant synchronization"
+  ]
+}

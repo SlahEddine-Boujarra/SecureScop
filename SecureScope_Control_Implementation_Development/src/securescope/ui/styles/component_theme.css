@@ -1,0 +1,206 @@
+/* Current presentation inside existing shadow components; actions stay in their controllers. */
+:host {
+  font-family: var(--ss-font-sans);
+  color: var(--ss-text);
+  --wb-purple: var(--ss-accent);
+  --wb-purple-soft: var(--ss-accent-soft);
+  --wb-ink: var(--ss-text);
+  --wb-muted: var(--ss-muted);
+  --wb-line: var(--ss-border);
+  --wb-soft: var(--ss-surface-subtle);
+  --wb-green: var(--ss-success);
+  --wb-red: var(--ss-danger);
+  --wb-amber: var(--ss-warning);
+}
+:is(#assurance-workbench, #assurance-plan, #assurance-page, #policy-editor, .ss-table-shell) {
+  font-family: var(--ss-font-sans);
+  color: var(--ss-text);
+  font-size: 14px;
+  line-height: 1.5;
+  --purple: var(--ss-accent);
+  --soft: var(--ss-surface-subtle);
+  --muted: var(--ss-muted);
+  --wb-purple: var(--ss-accent);
+  --wb-purple-soft: var(--ss-accent-soft);
+  --wb-ink: var(--ss-text);
+  --wb-muted: var(--ss-muted);
+  --wb-line: var(--ss-border);
+  --wb-soft: var(--ss-surface-subtle);
+}
+#assurance-workbench {
+  background: transparent;
+  min-height: 0;
+  padding: 8px 0 24px;
+}
+#assurance-workbench.control-detail {
+  background: transparent;
+  padding: 8px 0 24px;
+}
+:is(#assurance-workbench, #assurance-plan, #assurance-page) h1 {
+  color: var(--ss-text);
+  font-size: clamp(24px, 2vw, 28px);
+  line-height: 1.25;
+  font-weight: 650;
+  letter-spacing: -.02em;
+}
+:is(#assurance-workbench, #assurance-plan, #assurance-page) h2 {
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 650;
+}
+:is(#assurance-workbench, #assurance-plan, #assurance-page) :is(.muted, small) {
+  color: var(--ss-muted);
+}
+:is(#assurance-workbench, #assurance-plan, #assurance-page, #policy-editor) button:not(.matrix-cell):not(.date-tile) {
+  min-height: 44px;
+  border-radius: var(--ss-radius-sm);
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--ss-text);
+  border-color: var(--ss-border-strong);
+  background: var(--ss-surface);
+  white-space: normal;
+}
+:is(#assurance-workbench, #assurance-plan, #assurance-page, #policy-editor) button:not(.matrix-cell):not(.date-tile):hover {
+  background: var(--ss-surface-subtle);
+  border-color: var(--ss-accent);
+}
+:is(#assurance-workbench, #assurance-plan, #assurance-page, #policy-editor) button:is(.primary, .policy-save) {
+  color: var(--ss-surface);
+  background: var(--ss-accent);
+  border-color: var(--ss-accent);
+}
+:is(#assurance-workbench, #assurance-plan, #assurance-page, #policy-editor) button:is(.primary, .policy-save):hover {
+  background: var(--ss-accent-hover);
+}
+:is(#assurance-workbench, #assurance-plan, #assurance-page, #policy-editor) button:not(.matrix-cell):not(.date-tile):disabled {
+  color: var(--ss-muted);
+  background: var(--ss-surface-subtle);
+  border-color: var(--ss-border);
+  opacity: 1;
+  cursor: not-allowed;
+}
+:is(#assurance-workbench, #assurance-plan, #assurance-page) button:is(.link, .back-link, .edit, .clickable) {
+  color: var(--ss-accent);
+  background: transparent;
+  border-color: transparent;
+}
+:is(#assurance-workbench, #assurance-plan, #assurance-page) :is(input:not([type="checkbox"]):not([type="radio"]), select, textarea) {
+  color: var(--ss-text);
+  background: var(--ss-surface);
+  border: 1px solid var(--ss-field-border);
+  border-radius: var(--ss-radius-sm);
+  min-height: 44px;
+  padding: 9px 12px;
+  max-width: 100%;
+}
+:is(#assurance-workbench, #assurance-plan, #assurance-page, #policy-editor) :is(button:not(.matrix-cell), input, select, textarea, [contenteditable]):focus-visible {
+  outline: 2px solid var(--ss-accent);
+  outline-offset: 2px;
+}
+:is(#assurance-workbench, #assurance-plan, #assurance-page) :is(.card, .register, .panel, .metric, .control-metrics > div) {
+  border: 1px solid var(--ss-border);
+  border-radius: var(--ss-radius);
+  background: var(--ss-surface);
+  box-shadow: var(--ss-shadow);
+}
+:is(#assurance-plan, #assurance-page) .metric {
+  min-height: 126px;
+  padding: 20px;
+}
+:is(#assurance-plan, #assurance-page) .metric strong { font-size: 26px; }
+:is(#assurance-plan, #assurance-page) .metric-label { font-size: 12px; letter-spacing: .025em; }
+:is(#assurance-plan, #assurance-page) .metric-icon {
+  background: var(--ss-accent-soft);
+  color: var(--ss-accent);
+}
+#assurance-workbench .table-wrap, #assurance-plan .table-scroll, #assurance-page .table-scroll {
+  border: 1px solid var(--ss-border);
+  border-radius: var(--ss-radius);
+  background: var(--ss-surface);
+  overflow: auto;
+  max-width: 100%;
+}
+:is(#assurance-workbench, #assurance-plan, #assurance-page) table:not(.risk-matrix) th {
+  background: var(--ss-surface-subtle);
+  color: var(--ss-muted);
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: .015em;
+  font-weight: 600;
+  padding: 12px;
+}
+:is(#assurance-workbench, #assurance-plan, #assurance-page) table:not(.risk-matrix) td {
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 12px;
+  border-bottom-color: var(--ss-border);
+  color: var(--ss-text);
+}
+:is(#assurance-workbench, #assurance-plan, #assurance-page) table:not(.risk-matrix) tbody tr:hover {
+  background: var(--ss-accent-soft);
+}
+#assurance-workbench .pill, #assurance-plan .chip, #assurance-page .chip {
+  font-size: 12px;
+  font-weight: 550;
+  padding: 4px 8px;
+  line-height: 1.4;
+  border-radius: var(--ss-radius-pill);
+  color: var(--ss-muted);
+  background: var(--ss-neutral-soft);
+}
+#assurance-workbench .pill.green, #assurance-plan .chip.completed {
+  color: var(--ss-success); background: var(--ss-success-soft);
+}
+#assurance-workbench .pill.red, #assurance-page .chip.danger {
+  color: var(--ss-danger); background: var(--ss-danger-soft);
+}
+#assurance-workbench .pill:is(.amber, .orange), #assurance-page .chip.warning {
+  color: var(--ss-warning); background: var(--ss-warning-soft);
+}
+#assurance-workbench .pill.blue, #assurance-plan .chip.in-progress {
+  color: var(--ss-info); background: var(--ss-info-soft);
+}
+#assurance-workbench .notice {
+  background: var(--ss-accent-soft); color: var(--ss-accent);
+  border: 1px solid var(--ss-border); padding: 12px 16px;
+}
+#assurance-workbench .notice.error {
+  background: var(--ss-danger-soft); color: var(--ss-danger);
+}
+#assurance-workbench .record-drawer {
+  color: var(--ss-text); background: var(--ss-surface);
+}
+#assurance-workbench .section-navigation {
+  background: var(--ss-surface); border-color: var(--ss-border);
+}
+#assurance-workbench .section-navigationigation :is(.tabs, .control-tabs) {
+  background: var(--ss-surface); gap: 6px;
+}
+#assurance-workbench .section-navigation button:not(.matrix-cell):not(.date-tile) {
+  background: transparent; color: var(--ss-muted); border-radius: 0;
+}
+#assurance-workbench .section-navigation button.active {
+  color: var(--ss-accent); border-bottom-color: var(--ss-accent);
+}
+#assurance-plan .toolbar, #assurance-page .toolbar {
+  border: 1px solid var(--ss-border); box-shadow: none;
+  background: var(--ss-surface);
+}
+#assurance-workbench .split-fields { gap: 16px; }
+#assurance-workbench .modal {
+  border-radius: 12px; max-width: 100%;
+}
+@media (max-width: 767px) {
+  :is(#assurance-plan, #assurance-page) .metrics { grid-template-columns: 1fr; }
+  #assurance-workbench :is(.split-fields, .assessment-layout, .control-metrics, .control-support) { grid-template-columns: 1fr; }
+  #assurance-workbench .row.between { flex-wrap: wrap; }
+  #assurance-workbench .modal-backdrop { padding: 12px; }
+  #assurance-workbench .modal { width: 100%; padding: 20px; }
+  :is(#assurance-workbench, #assurance-plan, #assurance-page) .toolbar { flex-wrap: wrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  :host *, :host *::before, :host *::after {
+    animation: none; transition: none; scroll-behavior: auto;
+  }
+}

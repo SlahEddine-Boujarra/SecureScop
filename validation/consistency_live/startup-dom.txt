@@ -1,0 +1,1 @@
+Real app connected to isolated fresh PostgreSQL. Normal administrator sign-in used. See page-verification.json for every captured page.

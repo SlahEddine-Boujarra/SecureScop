@@ -1,0 +1,97 @@
+name: SecureScope CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: securescope_test
+          POSTGRES_PASSWORD: local_ci_only
+          POSTGRES_DB: securescope_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U securescope_test"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    strategy:
+      fail-fast: false
+      matrix:
+        # 3.11 is the minimum supported runtime and the one the launcher uses.
+        # 3.12 is included so contributors on newer interpreters are covered too.
+        python-version: ["3.11", "3.12"]
+
+    env:
+      SECURESCOPE_TEST_DATABASE_URL: postgresql://securescope_test:local_ci_only@localhost:5432/securescope_test
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-dev.txt
+          python -m pip install -e .
+
+      - name: Audit Python dependencies
+        run: python -m pip_audit -r requirements.txt
+
+      - name: Check formatting
+        run: python -m black --check src tests
+
+      - name: Check import order
+        run: python -m isort --check-only src tests
+
+      - name: Lint source and tests
+        run: python -m flake8 src tests
+
+      - name: Scan for committed secrets
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE }}
+
+      - name: Compile source
+        run: python -m compileall -q src tests scripts
+
+      # User deferred the 60% floor; keep measuring coverage while completing remediation.
+      - name: Run regression tests
+        run: python -m pytest -q --cov=securescope --cov-report=term-missing --cov-report=xml --cov-fail-under=0
+
+      - name: Verify installed dependencies
+        run: python -m pip check
+
+      - name: Set up frontend test runtime
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: tests/frontend/package-lock.json
+
+      - name: Test control table interactions
+        run: |
+          npm ci --prefix tests/frontend
+          npm test --prefix tests/frontend

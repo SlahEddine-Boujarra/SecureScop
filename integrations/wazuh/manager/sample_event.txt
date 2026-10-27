@@ -1,0 +1,1 @@
+SECURESCOPE_NTP: {"hostname":"asset01","ip":"192.0.2.10","os":"Linux","service":"chrony","synchronized":false,"source":"192.0.2.1","stratum":3,"offset_ms":1250.5,"epoch_ms":1785178200000,"collected_at":"2026-07-27T18:50:00Z"}

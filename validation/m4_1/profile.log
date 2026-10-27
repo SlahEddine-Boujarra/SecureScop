@@ -1,0 +1,20 @@
+         1400007 function calls in 0.277 seconds
+
+   Ordered by: cumulative time
+   List reduced from 13 to 12 due to restriction <12>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.102    0.102    0.277    0.277 /workspace/scratch/25c192b77c6e/m4-work/SecureScope/src/securescope/ui/siem_presentation.py:58(monitoring_view)
+   320000    0.068    0.000    0.125    0.000 /workspace/scratch/25c192b77c6e/m4-work/SecureScope/src/securescope/ui/siem_presentation.py:41(_display_value)
+   660001    0.058    0.000    0.058    0.000 {built-in method builtins.isinstance}
+   370000    0.035    0.000    0.035    0.000 {method 'get' of 'dict' objects}
+    10001    0.008    0.000    0.012    0.000 /workspace/scratch/25c192b77c6e/m4-work/SecureScope/src/securescope/integrations/wazuh_monitoring.py:20(observation_time)
+    10000    0.002    0.000    0.002    0.000 {built-in method fromisoformat}
+    10000    0.001    0.000    0.001    0.000 {method 'add' of 'set' objects}
+    10000    0.001    0.000    0.001    0.000 {method 'replace' of 'str' objects}
+    10000    0.001    0.000    0.001    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 {method 'isoformat' of 'datetime.datetime' objects}
+        1    0.000    0.000    0.000    0.000 {method 'utcoffset' of 'datetime.datetime' objects}
+
+

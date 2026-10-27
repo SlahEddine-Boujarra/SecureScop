@@ -1,0 +1,31 @@
+.ss-assurance-summary-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin:12px 0 20px}
+.ss-assurance-summary-card {background:var(--ss-surface,#fff);border:1px solid var(--ss-border,var(--ss-border));border-radius:10px;padding:20px;min-width:0}
+.ss-assurance-summary-card span {display:block;font-size:11px;letter-spacing:.045em;text-transform:uppercase;font-weight:600;color:var(--ss-muted,#667085)}
+.ss-assurance-summary-card strong {display:block;font-size:26px;line-height:1.3;margin:16px 0 8px;color:var(--ss-text,var(--ss-text));overflow-wrap:anywhere}
+.ss-assurance-summary-card small {display:block;color:var(--ss-muted,#667085);font-size:13px;line-height:1.5}
+@media(max-width:700px){.ss-assurance-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.ss-assurance-summary-card{padding:14px}.ss-assurance-summary-card strong{font-size:22px}:is(.st-key-assurance_attention,.st-key-project_register,.st-key-soa_register_summary){padding:14px}}
+/* fix ui/ux desgin: canonical tabs use the supplied rounded active-button bar. */
+[data-testid="stDialog"] [role="dialog"]{border-radius:14px!important;padding:24px!important}
+[data-testid="stDialog"] [data-testid="stWidgetLabel"] p{font-size:13px!important;color:var(--ss-muted)!important}
+
+
+[data-testid="stDialog"] [role="dialog"]{max-width:860px!important;width:calc(100vw - 40px)!important}
+[data-testid="stDialog"] button[kind="primary"], [data-testid="stDialog"] button[kind="primaryFormSubmit"], [data-testid="stDialog"] [data-testid="stBaseButton-primaryFormSubmit"]{color:#fff!important}
+[data-testid="stDialog"] button[kind="primary"] p, [data-testid="stDialog"] button[kind="primaryFormSubmit"] p, [data-testid="stDialog"] [data-testid="stBaseButton-primaryFormSubmit"] p{color:#fff!important}
+
+/* Primary buttons, including dialog form submits, retain readable painted text. */
+:is(.stApp, [data-testid="stDialog"]) button[kind^="primary"]:not([data-testid="stSidebar"] *) {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+    background: var(--ss-accent) !important;
+    opacity: 1 !important;
+}
+:is(.stApp, [data-testid="stDialog"]) button[kind^="primary"]:not([data-testid="stSidebar"] *) * {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+}
+:is(.stApp, [data-testid="stDialog"]) button[kind^="primary"]:disabled:not([data-testid="stSidebar"] *) {
+    background: #52626c !important;
+    opacity: 1 !important;
+    cursor: not-allowed;
+}

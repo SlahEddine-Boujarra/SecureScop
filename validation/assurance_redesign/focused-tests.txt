@@ -1,0 +1,14 @@
+...............................................                          [100%]
+=============================== warnings summary ===============================
+tests/test_iso_gap_dashboard.py::test_dashboard_is_default_and_does_not_load_the_project_plan
+tests/test_iso_gap_dashboard.py::test_filter_then_assess_opens_the_real_editor
+tests/test_iso_gap_dashboard.py::test_project_save_recalculates_and_survives_rerun
+tests/test_iso_gap_dashboard.py::test_project_drafts_and_dashboard_filters_do_not_cross_workspaces
+tests/test_iso_gap_dashboard.py::test_stale_task_form_cannot_overwrite_newer_saved_data
+tests/test_assurance_redesign.py::test_plan_filter_does_not_change_canonical_plan
+tests/test_assurance_redesign.py::test_soa_editor_preserves_all_rows_and_scope_key
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/importlib/metadata/__init__.py:457: DeprecationWarning: Implicit None on return values is deprecated and will raise KeyErrors.
+    return self.metadata['Name']
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+47 passed, 7 warnings in 2.47s

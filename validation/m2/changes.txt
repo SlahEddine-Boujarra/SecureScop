@@ -1,0 +1,113 @@
+SecureScope M2 exact change inventory
+Baseline: 88bee60a89b7117de3dafd9b94b49d9465f386aa
+
+A	START_M2_REVIEW.md
+A	database/migrations/018_evidence_collection_scheduling.sql
+A	database/migrations/019_wazuh_health_evidence_provenance.sql
+A	docs/milestones/M2_DEVELOPMENT_ACCEPTANCE.md
+A	docs/milestones/M2_IMPLEMENTATION_PLAN_APPROVED.md
+A	docs/milestones/M2_OPERATIONS_AND_DEMO.md
+M	src/securescope/api/app.py
+M	src/securescope/app.py
+A	src/securescope/cli/verify_evidence_artifacts.py
+M	src/securescope/evidence/automated_checks.py
+A	src/securescope/evidence/collection_scheduler.py
+M	src/securescope/evidence/continuous_assurance.py
+M	src/securescope/evidence/evidence_worker.py
+M	src/securescope/evidence/storage.py
+M	src/securescope/evidence/wazuh_bridge.py
+A	src/securescope/evidence/wazuh_scheduled.py
+M	src/securescope/grc/assurance_requirements.py
+M	src/securescope/integrations/wazuh_collection.py
+A	src/securescope/integrations/wazuh_collection_health.py
+M	src/securescope/integrations/wazuh_monitoring.py
+M	src/securescope/integrations/wazuh_service.py
+M	src/securescope/persistence/db_wazuh_service.py
+M	src/securescope/persistence/evidence_repository.py
+A	src/securescope/persistence/evidence_schedule_repository.py
+A	src/securescope/persistence/wazuh_evidence_repository.py
+M	src/securescope/reporting/auditor_package_service.py
+M	src/securescope/ui/control_workspace.py
+M	src/securescope/ui/evidence_hub_ui.py
+M	src/securescope/ui/wazuh_monitoring_ui.py
+A	tests/test_m2_controls.py
+A	tests/test_m2_evidence_postgres.py
+A	tests/test_m2_health.py
+A	tests/test_m2_native_postgres.py
+A	tests/test_m2_scheduling_postgres.py
+A	tests/test_m2_upgrade_postgres.py
+M	tests/test_nuclei_evidence_pipeline.py
+A	validation/m2/baseline-lint.log
+A	validation/m2/boundary_integrity.json
+A	validation/m2/controls.log
+A	validation/m2/engine.json
+A	validation/m2/final-checks.log
+A	validation/m2/frontend.log
+A	validation/m2/full-regression.log
+A	validation/m2/health-unit.log
+A	validation/m2/lint.log
+A	validation/m2/new-module-lint.log
+A	validation/m2/other-database-regression.log
+A	validation/m2/pglite-server.log
+A	validation/m2/pglite/package-lock.json
+A	validation/m2/pglite/package.json
+A	validation/m2/postgres-regression.log
+A	validation/m2/reproducible-demo.log
+A	validation/m2/run_pglite.py
+A	validation/m2/changes.txt
+
+Diff statistics below exclude this self-describing inventory.
+ START_M2_REVIEW.md                                 |  14 +
+ .../018_evidence_collection_scheduling.sql         | 157 ++++
+ .../019_wazuh_health_evidence_provenance.sql       | 119 +++
+ docs/milestones/M2_DEVELOPMENT_ACCEPTANCE.md       |  83 ++
+ docs/milestones/M2_IMPLEMENTATION_PLAN_APPROVED.md | 221 +++++
+ docs/milestones/M2_OPERATIONS_AND_DEMO.md          | 159 ++++
+ src/securescope/api/app.py                         | 130 ++-
+ src/securescope/app.py                             |   3 +
+ src/securescope/cli/verify_evidence_artifacts.py   |  71 ++
+ src/securescope/evidence/automated_checks.py       |   5 +
+ src/securescope/evidence/collection_scheduler.py   |  83 ++
+ src/securescope/evidence/continuous_assurance.py   |  20 +-
+ src/securescope/evidence/evidence_worker.py        |  21 +-
+ src/securescope/evidence/storage.py                |  25 +-
+ src/securescope/evidence/wazuh_bridge.py           |  12 +-
+ src/securescope/evidence/wazuh_scheduled.py        | 343 ++++++++
+ src/securescope/grc/assurance_requirements.py      |  14 +
+ src/securescope/integrations/wazuh_collection.py   |   7 +
+ .../integrations/wazuh_collection_health.py        | 231 +++++
+ src/securescope/integrations/wazuh_monitoring.py   |  17 +
+ src/securescope/integrations/wazuh_service.py      |  34 +-
+ src/securescope/persistence/db_wazuh_service.py    |  15 +
+ src/securescope/persistence/evidence_repository.py |  46 +-
+ .../persistence/evidence_schedule_repository.py    | 961 +++++++++++++++++++++
+ .../persistence/wazuh_evidence_repository.py       | 428 +++++++++
+ .../reporting/auditor_package_service.py           |   4 +-
+ src/securescope/ui/control_workspace.py            |  12 +
+ src/securescope/ui/evidence_hub_ui.py              |   1 +
+ src/securescope/ui/wazuh_monitoring_ui.py          | 127 +++
+ tests/test_m2_controls.py                          |  75 ++
+ tests/test_m2_evidence_postgres.py                 | 472 ++++++++++
+ tests/test_m2_health.py                            | 272 ++++++
+ tests/test_m2_native_postgres.py                   | 127 +++
+ tests/test_m2_scheduling_postgres.py               | 210 +++++
+ tests/test_m2_upgrade_postgres.py                  |  70 ++
+ tests/test_nuclei_evidence_pipeline.py             |   8 +-
+ validation/m2/baseline-lint.log                    |  10 +
+ validation/m2/boundary_integrity.json              |  62 ++
+ validation/m2/controls.log                         |   8 +
+ validation/m2/engine.json                          |   9 +
+ validation/m2/final-checks.log                     |  18 +
+ validation/m2/frontend.log                         |  61 ++
+ validation/m2/full-regression.log                  |  53 ++
+ validation/m2/health-unit.log                      |   2 +
+ validation/m2/lint.log                             |  10 +
+ validation/m2/new-module-lint.log                  |   3 +
+ validation/m2/other-database-regression.log        |   1 +
+ validation/m2/pglite-server.log                    |  50 ++
+ validation/m2/pglite/package-lock.json             | 108 +++
+ validation/m2/pglite/package.json                  |   6 +
+ validation/m2/postgres-regression.log              |   9 +
+ validation/m2/reproducible-demo.log                |   4 +
+ validation/m2/run_pglite.py                        |  72 ++
+ 53 files changed, 5060 insertions(+), 23 deletions(-)

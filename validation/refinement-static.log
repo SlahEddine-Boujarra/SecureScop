@@ -1,0 +1,4 @@
+Python 3.11 grammar compatibility: 184 source files passed.
+Changed Python files flake8: exit 0.
+Runtime tests executed under Python 3.12; live PostgreSQL and browser visual checks not performed.
+JavaScript syntax check passed.

@@ -1,0 +1,115 @@
+/* Sidebar geometry follows one stable mode marker; no animated rerun frame. */
+[data-testid="stSidebar"] { width: var(--ss-sidebar-width) !important; min-width: var(--ss-sidebar-width) !important; max-width: var(--ss-sidebar-width) !important; background: var(--ss-surface) !important; border-right: 1px solid var(--ss-border); }
+[data-testid="stSidebar"] [data-testid="stSidebarContent"] { padding: var(--ss-space-3) !important; overflow-x: hidden; }
+[data-testid="stSidebar"]:has(.ss-sidebar-mode-compact) { width: var(--ss-sidebar-compact-width) !important; min-width: var(--ss-sidebar-compact-width) !important; max-width: var(--ss-sidebar-compact-width) !important; }
+[data-testid="stSidebarCollapseButton"], [data-testid="stSidebarCollapsedControl"] { display: none; }
+[data-testid="stSidebar"] .ss-brand { display: flex; align-items: center; gap: var(--ss-space-2); min-height: 3rem; color: var(--ss-accent); }
+.ss-brand-mark { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; flex: 0 0 32px; background: var(--ss-accent); color: var(--ss-surface); border-radius: var(--ss-radius-sm); font-size: var(--ss-font-xs); font-weight: 700; }
+.ss-brand-copy strong, .ss-brand-copy span { display: block; }
+.ss-brand-copy span { font-size: var(--ss-font-xs); color: var(--ss-muted); }
+[data-testid="stSidebar"] .ss-nav-label { color: var(--ss-muted); font-size: var(--ss-font-xs); font-weight: 650; margin: var(--ss-space-4) var(--ss-space-2) var(--ss-space-1); }
+[data-testid="stSidebar"] .ss-workspace-meta { font-size: var(--ss-font-xs); color: var(--ss-muted); }
+[data-testid="stSidebar"] [data-testid="stButton"] button { display: flex !important; flex-direction: row !important; align-items: center !important; justify-content: flex-start !important; gap: var(--ss-space-2) !important; padding: var(--ss-space-2) var(--ss-space-3) !important; width: 100%; min-height: 42px; border: 1px solid transparent !important; border-radius: var(--ss-radius-sm); background: transparent !important; color: var(--ss-text) !important; box-shadow: none !important; }
+[data-testid="stSidebar"] [data-testid="stButton"] button p { white-space: normal !important; word-break: normal !important; overflow-wrap: anywhere; text-align: left; margin: 0; font-size: var(--ss-font-sm); line-height: 1.4; }
+[data-testid="stSidebar"] [data-testid="stButton"] button [data-testid="stIconMaterial"] { width: 20px; min-width: 20px; flex: 0 0 20px; font-size: 20px; line-height: 20px; }
+[data-testid="stSidebar"] [data-testid="stButton"] button[kind="primary"] { background: var(--ss-accent-soft) !important; color: var(--ss-accent) !important; box-shadow: inset 3px 0 0 var(--ss-accent) !important; }
+[data-testid="stSidebar"] [data-testid="stButton"] button:hover { background: var(--ss-neutral-soft) !important; }
+[data-testid="stSidebar"] [data-testid="stButton"] button:focus-visible { outline: 2px solid var(--ss-accent); outline-offset: 2px; }
+[data-testid="stSidebar"]:has(.ss-sidebar-mode-compact) [data-testid="stButton"] button { justify-content: center !important; padding: var(--ss-space-2) !important; }
+[data-testid="stSidebar"]:has(.ss-sidebar-mode-compact) [data-testid="stButton"] button p { display: none; }
+[data-testid="stSidebar"]:has(.ss-sidebar-mode-compact) .ss-nav-label,
+[data-testid="stSidebar"]:has(.ss-sidebar-mode-compact) .ss-brand-copy,
+[data-testid="stSidebar"]:has(.ss-sidebar-mode-compact) .ss-workspace-meta { display: none; }
+
+/* Native page links navigate without callback rerun suppression. */
+[data-testid="stSidebar"] [data-testid="stPageLink"] a {
+    width: 100%; box-sizing: border-box;
+    display: flex; align-items: center; gap: var(--ss-space-2);
+    min-height: 42px; padding: var(--ss-space-2) var(--ss-space-3);
+    border-radius: var(--ss-radius-sm); text-decoration: none;
+    color: var(--ss-text) !important;
+}
+[data-testid="stSidebar"] [data-testid="stPageLink"] a:hover {
+    background: var(--ss-neutral-soft) !important;
+}
+[data-testid="stSidebar"] .st-key-sidebar_current_route [data-testid="stPageLink"] a {
+    background: var(--ss-accent-soft) !important;
+    color: var(--ss-accent) !important;
+    box-shadow: inset 3px 0 0 var(--ss-accent);
+}
+[data-testid="stSidebar"] [data-testid="stPageLink"] a p {
+    margin: 0; white-space: normal; overflow-wrap: anywhere;
+    font-size: var(--ss-font-sm); line-height: 1.4;
+}
+[data-testid="stSidebar"] [data-testid="stPageLink"] [data-testid="stIconMaterial"] {
+    flex: 0 0 20px; width: 20px; min-width: 20px;
+}
+[data-testid="stSidebar"] [data-testid="stPageLink"] a:focus-visible {
+    outline: 2px solid var(--ss-accent); outline-offset: 2px;
+}
+[data-testid="stSidebar"] [data-testid="stPageLink"] a *,
+[data-testid="stSidebar"] [data-testid="stButton"] button * {
+    color: inherit !important;
+}
+[data-testid="stSidebar"] .ss-brand-copy strong {
+    color: var(--ss-text) !important;
+}
+[data-testid="stSidebar"] [data-testid="stButton"] button:hover,
+[data-testid="stSidebar"] [data-testid="stButton"] button:focus {
+    color: var(--ss-text) !important;
+}
+[data-testid="stSidebar"] [data-testid="stButton"] button[kind="primary"] {
+    color: var(--ss-accent) !important;
+}
+[data-testid="stSidebar"]:has(.ss-sidebar-mode-compact) [data-testid="stPageLink"] a {
+    justify-content: center; padding: var(--ss-space-2);
+}
+[data-testid="stSidebar"]:has(.ss-sidebar-mode-compact) [data-testid="stPageLink"] a p {
+    display: none;
+}
+
+/* Workspace switcher: use the active Streamlit theme rather than page button fills. */
+[data-testid="stSidebar"] .st-key-open_client_dialog_expanded button,
+[data-testid="stSidebar"] .st-key-open_client_dialog_compact button {
+    background: var(--secondary-background-color, var(--ss-surface)) !important;
+    color: var(--text-color, var(--ss-text)) !important;
+    border: 1px solid var(--ss-border) !important;
+}
+[data-testid="stSidebar"] .st-key-open_client_dialog_expanded button:hover,
+[data-testid="stSidebar"] .st-key-open_client_dialog_compact button:hover {
+    outline: 2px solid var(--ss-accent); outline-offset: 1px;
+}
+
+/* Explicit foreground also covers nested Markdown/icon elements in Streamlit buttons. */
+[data-testid="stSidebar"] :is(.st-key-open_client_dialog_expanded,.st-key-open_client_dialog_compact) button{background:var(--ss-surface-subtle)!important;color:var(--ss-text)!important;border-color:#cbd5e1!important;min-height:44px!important;height:auto!important;padding:10px 12px!important}
+[data-testid="stSidebar"] :is(.st-key-open_client_dialog_expanded,.st-key-open_client_dialog_compact) button :is(p,span,svg){color:var(--ss-text)!important;fill:currentColor;opacity:1!important;visibility:visible!important}
+[data-testid="stSidebar"] .st-key-open_client_dialog_expanded button p{white-space:normal!important;text-align:left!important;overflow-wrap:anywhere}
+
+[data-testid="stSidebar"] .st-key-open_client_dialog_expanded button [data-testid="stMarkdownContainer"], [data-testid="stSidebar"] .st-key-open_client_dialog_expanded button p{display:block!important;color:var(--ss-text)!important}
+
+/* Light sidebar is the authority for every native label, including text fill. */
+[data-testid="stSidebar"] :is([data-testid="stButton"] button,[data-testid="stDownloadButton"] button,[data-testid="stCheckbox"] label,[data-testid="stRadio"] label,[data-testid="stExpander"] summary,code){color:var(--ss-text)!important;-webkit-text-fill-color:currentColor!important;background:transparent!important}
+[data-testid="stSidebar"] :is(button,label,summary,code) :is(p,span){color:inherit!important;-webkit-text-fill-color:currentColor!important}
+[data-testid="stSidebar"] code{background:var(--ss-surface-subtle)!important}
+
+[data-testid="stSidebar"]:has(.ss-sidebar-mode-compact) .ss-brand {justify-content:center;padding-inline:0;}
+[data-testid="stSidebar"]:has(.ss-sidebar-mode-compact) [data-testid="stSidebarContent"] {padding-inline:var(--ss-space-2)!important;}
+[data-testid="stSidebar"]:has(.ss-sidebar-mode-compact) [data-testid="stPageLink"] {width:100%;}
+[data-testid="stSidebar"]:has(.ss-sidebar-mode-compact) .st-key-open_client_dialog_compact button {padding-inline:0!important;justify-content:center!important;}
+
+/* Collapse-control geometry shares the authoritative sidebar stylesheet. */
+[data-testid="stSidebar"] .st-key-sidebar_compact_toggle,
+[data-testid="stSidebar"] .st-key-sidebar_compact_toggle > div {
+    display: flex; width: 100%; justify-content: center; align-items: center;
+}
+[data-testid="stSidebar"] .st-key-sidebar_compact_toggle button {
+    width: 32px !important; min-width: 32px !important;
+    min-height: 32px !important; height: 32px !important; max-height: 32px !important;
+    padding: 6px !important; flex: 0 0 32px; box-sizing: border-box;
+    place-items: center; justify-content: center !important;
+}
+[data-testid="stSidebar"] .st-key-sidebar_compact_toggle button [data-testid="stIconMaterial"] {
+    width: 20px !important; min-width: 20px !important; height: 20px !important;
+    flex: 0 0 20px !important; font-size: 20px !important; line-height: 20px !important;
+    place-items: center;
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "recipes": [
+    {
+      "recipe_id": "ubuntu-security-updates",
+      "title": "Install approved Ubuntu/Debian security updates",
+      "execution_level": "Approved execution",
+      "operating_system_patterns": ["ubuntu", "debian"],
+      "product_patterns": ["ubuntu", "debian", "linux kernel", "apt package"],
+      "finding_patterns": ["ubuntu security notice", "debian security advisory", "linux kernel"],
+      "precheck_id": "ubuntu-apt-security-precheck",
+      "command_id": "securescope-ubuntu-security-updates0",
+      "artifact_path": "integrations/wazuh/remediation/linux/securescope_security_updates.sh",
+      "artifact_sha256": "668dc3d99d49829ae855e0bfb9558385fae31d680b79005602b515c699c8d1fd",
+      "expected_change": "Install updates from the endpoint's approved security repositories.",
+      "restart_requirement": "A restart may be required when /var/run/reboot-required exists; SecureScope must leave the execution in Pending restart.",
+      "rollback_action": "Use the approved package rollback or recovery procedure for the affected package; rollback is never automatic.",
+      "required_privilege": "root through the Wazuh agent service",
+      "expected_duration": "5 to 45 minutes depending on repository and package state",
+      "validation_method": "Run package post-checks and a targeted Nuclei or OpenVAS verification scan.",
+      "compatible_wazuh_states": ["active", "connected", "online"],
+      "version": "1.0.0"
+    },
+    {
+      "recipe_id": "windows-security-updates",
+      "title": "Install approved Windows security and critical updates",
+      "execution_level": "Approved execution",
+      "operating_system_patterns": ["windows"],
+      "product_patterns": ["microsoft windows", "windows operating system"],
+      "finding_patterns": ["microsoft windows", "windows security update"],
+      "precheck_id": "windows-update-security-precheck",
+      "command_id": "securescope-windows-security-updates0",
+      "artifact_path": "integrations/wazuh/remediation/windows/securescope_security_updates.cmd",
+      "artifact_sha256": "cc40776e734cb2f64b6c1a592a2ff3fe9869e46d857eae6fbd8f1c667f022653",
+      "expected_change": "Install applicable Windows updates categorized as Security Updates or Critical Updates.",
+      "restart_requirement": "The Windows Update result may require a reboot; SecureScope must leave the execution in Pending restart.",
+      "rollback_action": "Use the organization's approved Windows update uninstall or recovery procedure; rollback is never automatic.",
+      "required_privilege": "LocalSystem or administrator through the Wazuh agent service",
+      "expected_duration": "10 to 90 minutes depending on endpoint and update state",
+      "validation_method": "Collect the Active Response result marker, check update state, and run a targeted verification scan.",
+      "compatible_wazuh_states": ["active", "connected", "online"],
+      "version": "1.0.0"
+    }
+  ]
+}

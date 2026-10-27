@@ -1,0 +1,48 @@
+Workbench DOM interactions passed: selection, escaping, suggestions, manual editing, navigation, failed saves, live scores, readonly controls.
+New interactions passed: editor undo/redo, impacted assets, calendar day panel, Foundation drawer.
+✔ tests/frontend/assurance_workbench.test.mjs (832.383828ms)
+✔ profile row opens an editable, grouped drawer over its retained table (79.350941ms)
+✔ unsaved Escape preserves data until explicit discard, then restores row focus (32.695727ms)
+✔ save carries the opened version and failed writes retain edited values (38.805038ms)
+✔ readonly profile disables all editing and keyboard selection still works (14.454449ms)
+✔ assessment navigation uses the selected control identity (15.882218ms)
+✔ risk reading hides internal columns while showing full long values in its drawer (19.332398ms)
+✔ drawer keyboard focus cycles within the dialog (10.816999ms)
+✔ risk treatment is compact and opens the selected record (7.010561ms)
+✔ assessment approval never masquerades as formal risk acceptance (7.975325ms)
+✔ implementation evaluation uses only the selected control identity (13.055845ms)
+✔ creation actions are limited to registers and assessment (21.923516ms)
+✔ register header creates a register using the existing dialog and event (12.398023ms)
+✔ scope presents basic boundaries and distinct editor/history actions (24.4272ms)
+✔ treatment acceptance and monitoring do not offer an irrelevant matrix (28.471699ms)
+✔ empty context has a useful action without empty filters or table (6.256743ms)
+✔ single-page foundation retains records without pagination (11.004482ms)
+✔ historical objective requires a visible explicit confirmation (15.054789ms)
+✔ seven visible workflow steps and live pre/post comparison share one draft (159.533542ms)
+✔ matrix has 25 cells and distinct markers even for the same cell (22.53996ms)
+✔ register matrix groups risks and opens the selected existing reference (13.684763ms)
+✔ completion is separate from save and read-only users cannot invoke either (54.60376ms)
+✔ timescale warning is non-blocking and blank progress remains null on save (68.580387ms)
+✔ related treatments are read-only with linked references and individual control chips (17.948182ms)
+✔ control workspace exposes basic state and keeps requirement details in a drawer (41.89656ms)
+✔ control navigation and remediation retain canonical identifiers (23.954197ms)
+✔ read-only control viewers cannot create policies or remediation (15.097013ms)
+✔ missing evidence is neutral and explicit failures are red (11.841694ms)
+✔ control profile row opens a full workspace rather than lifecycle modal (13.723892ms)
+✔ an overdue objective can explicitly remain current (17.531598ms)
+✔ requirement table uses readable states and explicit failure color (14.90286ms)
+✔ pagination selects the correct stable identity (81.162192ms)
+✔ search survives a component rerender and has a usable empty state (29.210272ms)
+✔ natural control IDs and numeric counts sort correctly (35.227935ms)
+✔ space selects a row without its default scrolling action (8.588705ms)
+✔ untrusted cell text never becomes markup and missing coverage has no bar (10.00519ms)
+✔ filtered export escapes spreadsheet formulas, quotes and line breaks (11.28128ms)
+✔ shrinking data clamps the current page instead of showing a blank table (9.223256ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 900.000513

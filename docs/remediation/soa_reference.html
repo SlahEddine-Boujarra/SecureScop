@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary": "#595c5e", "primary-container": "#008378", "surface-container-high": "#dce9ff", "tertiary-fixed-dim": "#c4c7c9", "primary-fixed-dim": "#6bd8cb", "inverse-surface": "#213145", "on-secondary-fixed-variant": "#3f465c", "surface-container-lowest": "#ffffff", "outline-variant": "#bcc9c6", "inverse-on-surface": "#eaf1ff", "on-primary-container": "#f4fffc", "secondary-fixed": "#dae2fd", "surface-bright": "#f8f9ff", "background": "#f8f9ff", "surface-container-low": "#eff4ff", "on-secondary": "#ffffff", "on-secondary-container": "#5c647a", "on-error-container": "#93000a", "primary-fixed": "#89f5e7", "on-surface": "#0b1c30", "surface": "#f8f9ff", "secondary-fixed-dim": "#bec6e0", "surface-variant": "#d3e4fe", "outline": "#6d7a77", "on-tertiary-container": "#fbfdff", "tertiary-fixed": "#e0e3e5", "tertiary-container": "#727577", "on-tertiary-fixed-variant": "#444749", "surface-container": "#e5eeff", "on-surface-variant": "#3d4947", "secondary": "#565e74", "inverse-primary": "#6bd8cb", "on-primary-fixed": "#00201d", "on-primary-fixed-variant": "#005049", "surface-container-highest": "#d3e4fe", "on-error": "#ffffff", "on-background": "#0b1c30", "on-tertiary-fixed": "#191c1e", "error-container": "#ffdad6", "error": "#ba1a1a", "secondary-container": "#dae2fd", "surface-dim": "#cbdbf5", "primary": "#00685f", "surface-tint": "#006a61", "on-tertiary": "#ffffff", "on-secondary-fixed": "#131b2e", "on-primary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "stack-sm": "8px", "container-max": "1440px", "stack-lg": "24px", "stack-md": "16px", "gutter": "24px", "margin-desktop": "32px", "margin-mobile": "16px" }, "fontFamily": { "body-md": ["Inter"], "display-lg": ["Inter"], "display-md": ["Inter"], "body-lg": ["Inter"], "title-md": ["Inter"], "title-lg": ["Inter"], "label-caps": ["Inter"], "table-cell": ["Inter"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "display-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "title-md": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "title-lg": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" }], "table-cell": ["13px", { "lineHeight": "18px", "fontWeight": "400" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-64 bg-inverse-surface text-inverse-on-surface z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-6 flex flex-col justify-center bg-inverse-surface/90"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-fixed-dim text-xl">shield_lock</span><span class="font-title-md text-title-md font-bold tracking-tight text-on-primary">SECURESCOPE</span></div><span class="font-label-caps text-label-caps text-primary-fixed-dim tracking-wider uppercase">ISO 27001 Assurance</span></div><nav class="flex-1 overflow-y-auto px-3 py-4 space-y-5 text-table-cell" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded"><div class="space-y-1"><div class="px-3 font-label-caps text-label-caps text-tertiary-fixed-dim uppercase tracking-wider mb-1">Overview</div><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="command-center" href="#"><span class="material-symbols-outlined text-base">dashboard</span><span>Command Center</span></a><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="exposure-overview" href="#"><span class="material-symbols-outlined text-base">radar</span><span>Exposure Overview</span></a></div><div class="space-y-1"><div class="px-3 font-label-caps text-label-caps text-tertiary-fixed-dim uppercase tracking-wider mb-1">Foundation</div><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="engagement" href="#"><span class="material-symbols-outlined text-base">handshake</span><span>Engagement</span></a><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="context" href="#"><span class="material-symbols-outlined text-base">corporate_fare</span><span>Context</span></a><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="interested-parties" href="#"><span class="material-symbols-outlined text-base">groups</span><span>Interested Parties</span></a><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="scope" href="#"><span class="material-symbols-outlined text-base">crop_free</span><span>Scope</span></a><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="roles-raci" href="#"><span class="material-symbols-outlined text-base">badge</span><span>Roles &amp; RACI</span></a></div><div class="space-y-1"><div class="px-3 font-label-caps text-label-caps text-tertiary-fixed-dim uppercase tracking-wider mb-1">Risk Management</div><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="risk-methodology" href="#"><span class="material-symbols-outlined text-base">schema</span><span>Risk Methodology</span></a><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="risk-register" href="#"><span class="material-symbols-outlined text-base">table_chart</span><span>Risk Register</span></a><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="risk-treatment-plan" href="#"><span class="material-symbols-outlined text-base">playlist_add_check</span><span>Risk Treatment Plan</span></a></div><div class="space-y-1"><div class="px-3 font-label-caps text-label-caps text-tertiary-fixed-dim uppercase tracking-wider mb-1">Controls &amp; Assurance</div><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="iso-requirements" href="#"><span class="material-symbols-outlined text-base">menu_book</span><span>ISO Requirements</span></a><a aria-current="page" class="flex items-center gap-3 px-3 py-1.5 transition-colors bg-primary-container text-on-primary-container font-semibold rounded" data-path="statement-of-applicability" href="#"><span class="material-symbols-outlined text-base">rule</span><span>Statement of Applicability</span></a><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="control-assurance" href="#"><span class="material-symbols-outlined text-base">verified_user</span><span>Control Assurance</span></a><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="evidence-hub" href="#"><span class="material-symbols-outlined text-base">folder_shared</span><span>Evidence Hub</span></a></div><div class="space-y-1"><div class="px-3 font-label-caps text-label-caps text-tertiary-fixed-dim uppercase tracking-wider mb-1">Findings &amp; Improvement</div><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="gap-assessment" href="#"><span class="material-symbols-outlined text-base">troubleshoot</span><span>Gap Assessment</span></a><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="nonconformities" href="#"><span class="material-symbols-outlined text-base">warning</span><span>Nonconformities</span></a><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="corrective-actions" href="#"><span class="material-symbols-outlined text-base">build</span><span>Corrective Actions</span></a><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="verification-queue" href="#"><span class="material-symbols-outlined text-base">fact_check</span><span>Verification Queue</span></a></div><div class="space-y-1"><div class="px-3 font-label-caps text-label-caps text-tertiary-fixed-dim uppercase tracking-wider mb-1">Performance</div><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="objectives" href="#"><span class="material-symbols-outlined text-base">flag</span><span>Objectives</span></a><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="monitoring-measurement" href="#"><span class="material-symbols-outlined text-base">analytics</span><span>Monitoring &amp; Measurement</span></a></div><div class="space-y-1"><div class="px-3 font-label-caps text-label-caps text-tertiary-fixed-dim uppercase tracking-wider mb-1">Audit &amp; Review</div><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="internal-audit" href="#"><span class="material-symbols-outlined text-base">assignment</span><span>Internal Audit</span></a><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="management-review" href="#"><span class="material-symbols-outlined text-base">rate_review</span><span>Management Review</span></a></div><div class="space-y-1"><div class="px-3 font-label-caps text-label-caps text-tertiary-fixed-dim uppercase tracking-wider mb-1">Technical Security</div><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="asset-management" href="#"><span class="material-symbols-outlined text-base">devices</span><span>Asset Management</span></a><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="scan-center" href="#"><span class="material-symbols-outlined text-base">security_update_good</span><span>Scan Center</span></a><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="vulnerabilities" href="#"><span class="material-symbols-outlined text-base">bug_report</span><span>Vulnerabilities</span></a><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="siem" href="#"><span class="material-symbols-outlined text-base">monitor_heart</span><span>SIEM</span></a></div><div class="space-y-1"><div class="px-3 font-label-caps text-label-caps text-tertiary-fixed-dim uppercase tracking-wider mb-1">Certification</div><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="certification-readiness" href="#"><span class="material-symbols-outlined text-base">verified</span><span>Certification Readiness</span></a></div><div class="space-y-1"><div class="px-3 font-label-caps text-label-caps text-tertiary-fixed-dim uppercase tracking-wider mb-1">Reports</div><a class="flex items-center gap-3 px-3 py-1.5 rounded text-inverse-on-surface/80 hover:bg-surface-container-highest/10 hover:text-on-primary transition-colors" data-path="reports-audit" href="#"><span class="material-symbols-outlined text-base">summarize</span><span>Reports &amp; Audit</span></a></div></nav></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/90 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full h-16 px-gutter flex items-center justify-between gap-4"><div class="flex items-center gap-4 flex-1 max-w-lg"><div class="relative w-full max-w-sm"><span class="material-symbols-outlined absolute left-3 top-2.5 text-secondary text-base">search</span><input class="w-full pl-9 pr-4 py-1.5 bg-surface-container-low text-on-surface font-body-md text-body-md rounded placeholder:text-secondary focus:outline-none focus:bg-surface-container-lowest" placeholder="Search controls, risks, evidence... (Ctrl+K)" type="text"/></div><div class="hidden xl:flex items-center gap-2 bg-surface-container-low px-2.5 py-1 rounded"><span class="material-symbols-outlined text-primary text-base">business</span><span class="font-table-cell text-table-cell font-medium text-on-surface">Acme Corp Global</span><span class="text-outline text-xs">|</span><span class="font-table-cell text-table-cell text-secondary">EU-1 (European Operations)</span></div></div><div class="flex items-center gap-3"><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container text-on-secondary-fixed"><span class="w-2 h-2 rounded-full bg-primary-container"></span><span class="font-label-caps text-label-caps uppercase tracking-wider text-primary">ACTIVE ASSESSMENT</span></div><div class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container"><span class="material-symbols-outlined text-secondary text-base">event_repeat</span><span class="font-table-cell text-table-cell text-on-surface-variant font-medium">Assurance Cycle FY2026</span></div><div class="flex items-center gap-1"><button aria-label="Notifications" class="p-1.5 rounded hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span></button><button aria-label="Settings" class="p-1.5 rounded hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">settings</span></button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="max-w-container-max mx-auto p-margin-desktop"><div class="flex flex-col w-full">
+<!-- Breadcrumb & Header Zone -->
+<div class="flex flex-col gap-stack-sm mb-6">
+<div class="flex items-center gap-2 text-table-cell font-table-cell text-secondary">
+<span class="hover:text-on-surface cursor-pointer">Controls &amp; Assurance</span>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="font-semibold text-primary">Statement of Applicability</span>
+</div>
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-4">
+<div class="space-y-1">
+<div class="flex flex-wrap items-center gap-3">
+<h1 class="font-display-md text-display-md text-on-surface tracking-tight">Statement of Applicability (SoA) Workbench</h1>
+<div class="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-label-caps text-label-caps font-bold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            SoA v2.4 (Active Baseline)
+          </div>
+</div>
+<p class="font-body-md text-body-md text-secondary max-w-4xl">
+          Comprehensive ledger of ISO/IEC 27001:2022 Annex A controls, customer contractual mandates, legal statutory obligations, and custom organizational security requirements.
+        </p>
+</div>
+<div class="flex items-center gap-2.5 shrink-0">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-table-cell text-table-cell font-medium transition-colors" type="button">
+<span class="material-symbols-outlined text-base">history</span>
+<span>Version History (v2.4)</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-table-cell text-table-cell font-medium transition-colors" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+<span>Export SoA (PDF/XLSX)</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-1.5 rounded bg-primary hover:bg-primary-container text-on-primary font-table-cell text-table-cell font-semibold shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-base">add</span>
+<span>Add Custom Control</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Top Metrics Bar (Compact KPI Bento Grid) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mb-6">
+<!-- Card 1 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary mb-2">
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Total Controls Mapped</span>
+<span class="material-symbols-outlined text-base text-primary">hub</span>
+</div>
+<div>
+<div class="font-display-md text-display-md font-bold text-on-surface">104</div>
+<div class="text-table-cell font-table-cell text-secondary mt-1 flex items-center gap-1">
+<span class="font-semibold text-on-surface">93</span> Annex A <span class="text-outline-variant">·</span> <span class="font-semibold text-on-surface">11</span> Custom/Legal
+        </div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary mb-2">
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Applicable Scope</span>
+<span class="material-symbols-outlined text-base text-primary">verified</span>
+</div>
+<div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-display-md text-display-md font-bold text-on-surface">97</span>
+<span class="font-table-cell text-table-cell text-primary font-medium">(93.3%)</span>
+</div>
+<div class="text-table-cell font-table-cell text-secondary mt-1">
+<span class="text-error font-medium">7 Excluded</span> with formal justification
+        </div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary mb-2">
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Implementation Status</span>
+<span class="material-symbols-outlined text-base text-secondary">task_alt</span>
+</div>
+<div>
+<div class="font-display-md text-display-md font-bold text-on-surface">89 / 97</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-2 overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 91.7%"></div>
+<div class="bg-secondary h-full" style="width: 8.3%"></div>
+</div>
+<div class="text-table-cell font-table-cell text-secondary mt-1">
+          89 Implemented <span class="text-outline-variant">·</span> 8 In Progress
+        </div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary mb-2">
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Custom &amp; Legal Mandates</span>
+<span class="material-symbols-outlined text-base text-secondary">gavel</span>
+</div>
+<div>
+<div class="font-display-md text-display-md font-bold text-on-surface">11 Controls</div>
+<div class="text-table-cell font-table-cell text-secondary mt-1 truncate">
+          4 Contract <span class="text-outline-variant">·</span> 4 Legal <span class="text-outline-variant">·</span> 3 Org
+        </div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="p-4 rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary mb-2">
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Approval State</span>
+<span class="material-symbols-outlined text-base text-primary">fact_check</span>
+</div>
+<div>
+<div class="font-body-lg text-body-lg font-bold text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+          Formal Sign-off
+        </div>
+<div class="text-table-cell font-table-cell text-on-surface-variant mt-1">
+          Lead Auditor &amp; CISO (FY2026)
+        </div>
+</div>
+</div>
+</div>
+<!-- Tabs Navigation -->
+<div class="flex items-center gap-1 mb-4 overflow-x-auto pb-1 text-table-cell font-table-cell">
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-highest text-on-surface font-semibold flex items-center gap-2 shrink-0" type="button">
+<span>All Controls</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-lowest text-primary font-bold text-xs">104</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg hover:bg-surface-container text-secondary hover:text-on-surface flex items-center gap-2 shrink-0 transition-colors" type="button">
+<span>Annex A Controls</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-secondary text-xs">93</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg hover:bg-surface-container text-secondary hover:text-on-surface flex items-center gap-2 shrink-0 transition-colors" type="button">
+<span>Custom &amp; Contractual</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-secondary text-xs">11</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg hover:bg-surface-container text-secondary hover:text-on-surface flex items-center gap-2 shrink-0 transition-colors" type="button">
+<span>Excluded Controls</span>
+<span class="px-1.5 py-0.2 rounded bg-error-container text-on-error-container font-semibold text-xs">7</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg hover:bg-surface-container text-secondary hover:text-on-surface flex items-center gap-2 shrink-0 transition-colors" type="button">
+<span>Pending Approval</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary-container text-on-secondary-fixed text-xs">2</span>
+</button>
+</div>
+<!-- Workbench Filter & Control Panel -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm mb-4">
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-3 items-center">
+<!-- Search -->
+<div class="xl:col-span-4 relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-secondary text-base">search</span>
+<input class="w-full pl-9 pr-4 py-1.5 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg placeholder:text-secondary focus:outline-none focus:bg-surface-container" placeholder="Filter controls by ID, title, justification..." type="text"/>
+</div>
+<!-- Facet: Domain -->
+<div class="xl:col-span-2">
+<select class="w-full bg-surface-container-low text-on-surface font-table-cell text-table-cell px-3 py-2 rounded-lg focus:outline-none cursor-pointer">
+<option value="">Domain: All Domains</option>
+<option value="org">Organizational (A.5)</option>
+<option value="people">People (A.6)</option>
+<option value="physical">Physical (A.7)</option>
+<option value="tech">Technological (A.8)</option>
+<option value="custom">Custom Extensions</option>
+</select>
+</div>
+<!-- Facet: Source -->
+<div class="xl:col-span-2">
+<select class="w-full bg-surface-container-low text-on-surface font-table-cell text-table-cell px-3 py-2 rounded-lg focus:outline-none cursor-pointer">
+<option value="">Source: All Types</option>
+<option value="annex">Annex A</option>
+<option value="customer">Customer Contract</option>
+<option value="legal">Legal Requirement</option>
+<option value="arch">Custom Architecture</option>
+</select>
+</div>
+<!-- Facet: Status -->
+<div class="xl:col-span-2">
+<select class="w-full bg-surface-container-low text-on-surface font-table-cell text-table-cell px-3 py-2 rounded-lg focus:outline-none cursor-pointer">
+<option value="">Status: All Statuses</option>
+<option value="implemented">Implemented</option>
+<option value="inprogress">In Progress</option>
+<option value="excluded">Excluded</option>
+<option value="notstarted">Not Started</option>
+</select>
+</div>
+<!-- Sorting -->
+<div class="xl:col-span-2 flex items-center justify-end gap-2">
+<span class="text-secondary font-label-caps text-label-caps uppercase">Sort:</span>
+<select class="bg-surface-container-low text-on-surface font-table-cell text-table-cell px-2.5 py-2 rounded-lg focus:outline-none cursor-pointer">
+<option>Control Identifier (Asc)</option>
+<option>Control Identifier (Desc)</option>
+<option>Implementation Status</option>
+<option>Mapped Risk Count</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Workbench Table Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-6">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label-caps text-label-caps uppercase tracking-wider">
+<th class="py-3 px-4 w-72">Control ID &amp; Name</th>
+<th class="py-3 px-3 w-40">Source / Type</th>
+<th class="py-3 px-2 text-center w-24">Necessary</th>
+<th class="py-3 px-3 w-32">Applicability</th>
+<th class="py-3 px-4 min-w-[280px]">Justification &amp; Rationale</th>
+<th class="py-3 px-3 w-36">Mapped Risks</th>
+<th class="py-3 px-3 w-44">Related Controls</th>
+<th class="py-3 px-3 w-40">Implementation</th>
+<th class="py-3 px-3 w-36">Owner</th>
+<th class="py-3 px-4 text-right w-28">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-table-cell font-table-cell">
+<!-- ROW 1: CUSTOM-004 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-4 align-top">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-base mt-0.5">verified_user</span>
+<div>
+<div class="font-medium text-on-surface flex items-center gap-1.5">
+<span class="font-mono text-xs font-bold text-primary bg-primary/10 px-1.5 py-0.5 rounded">CUSTOM-004</span>
+</div>
+<div class="font-semibold text-on-surface text-body-md mt-0.5 leading-snug">
+                    Customer Production Data EU Residency
+                  </div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed text-xs font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Customer Contract
+              </span>
+<div class="text-outline text-[11px] mt-1 font-mono">Enterprise SLA / GDPR Art. 28</div>
+</td>
+<td class="py-3.5 px-2 align-top text-center">
+<span class="inline-flex items-center justify-center px-2 py-0.5 rounded bg-primary/10 text-primary font-bold text-xs">
+                YES
+              </span>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-primary/15 text-primary font-semibold text-xs">
+<span class="material-symbols-outlined text-xs">check</span>
+                Applicable
+              </div>
+<div class="text-secondary text-[11px] mt-1">Enterprise MSA Terms</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<p class="text-on-surface-variant line-clamp-2 leading-relaxed">
+                Customer production data and telemetry logs must strictly reside inside EU-hosted cloud infrastructure (Frankfurt <code class="bg-surface-container px-1 py-0.5 rounded text-xs font-mono">eu-central-1</code>).
+              </p>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="flex flex-wrap gap-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-mono text-[11px] font-medium text-on-surface">RISK-044</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-mono text-[11px] font-medium text-on-surface">RISK-012</span>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="flex flex-col gap-1">
+<span class="text-[11px] font-mono text-secondary">A.5.31 Legal/Contract</span>
+<span class="text-[11px] font-mono text-secondary">A.8.10 Info Deletion</span>
+<span class="text-[11px] font-mono text-secondary">A.8.12 Data Leakage Prev</span>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="space-y-1">
+<div class="inline-flex items-center gap-1 text-primary font-semibold text-xs">
+<span class="material-symbols-outlined text-xs">check_circle</span>
+                  Implemented
+                </div>
+<div class="text-secondary text-[11px]">Effective (CloudFormation Guard)</div>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="text-on-surface font-medium text-xs">Cloud Infra Lead</div>
+<div class="text-secondary text-[11px]">Platform Team</div>
+</td>
+<td class="py-3.5 px-4 align-top text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-secondary hover:text-on-surface flex items-center gap-0.5 text-xs" title="View 4 Evidence Files" type="button">
+<span class="material-symbols-outlined text-sm">attachment</span>
+<span>4</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-secondary hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 2: CUSTOM-007 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-low/20">
+<td class="py-3.5 px-4 align-top">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-base mt-0.5">key</span>
+<div>
+<div class="font-medium text-on-surface flex items-center gap-1.5">
+<span class="font-mono text-xs font-bold text-primary bg-primary/10 px-1.5 py-0.5 rounded">CUSTOM-007</span>
+</div>
+<div class="font-semibold text-on-surface text-body-md mt-0.5 leading-snug">
+                    Mandatory Hardware Security Keys (FIDO2)
+                  </div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-xs font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Custom Org Policy
+              </span>
+<div class="text-outline text-[11px] mt-1 font-mono">POL-SEC-009</div>
+</td>
+<td class="py-3.5 px-2 align-top text-center">
+<span class="inline-flex items-center justify-center px-2 py-0.5 rounded bg-primary/10 text-primary font-bold text-xs">
+                YES
+              </span>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-primary/15 text-primary font-semibold text-xs">
+<span class="material-symbols-outlined text-xs">check</span>
+                Applicable
+              </div>
+<div class="text-secondary text-[11px] mt-1">Zero-Trust Mandate</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<p class="text-on-surface-variant line-clamp-2 leading-relaxed">
+                Zero-trust mandate for all production infrastructure, CI/CD pipelines, and enterprise code repositories.
+              </p>
+</td>
+<td class="py-3.5 px-3 align-top">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-mono text-[11px] font-medium text-on-surface">RISK-005</span>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="flex flex-col gap-1">
+<span class="text-[11px] font-mono text-secondary">A.5.15 Access Control</span>
+<span class="text-[11px] font-mono text-secondary">A.8.5 Secure Auth</span>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="space-y-1">
+<div class="inline-flex items-center gap-1 text-primary font-semibold text-xs">
+<span class="material-symbols-outlined text-xs">check_circle</span>
+                  Implemented
+                </div>
+<div class="text-secondary text-[11px]">Effective (Okta WebAuthn)</div>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="text-on-surface font-medium text-xs">SecOps Lead</div>
+<div class="text-secondary text-[11px]">IAM Operations</div>
+</td>
+<td class="py-3.5 px-4 align-top text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-secondary hover:text-on-surface flex items-center gap-0.5 text-xs" title="View 2 Evidence Files" type="button">
+<span class="material-symbols-outlined text-sm">attachment</span>
+<span>2</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-secondary hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 3: A.8.8 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-4 align-top">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">terminal</span>
+<div>
+<div class="font-medium text-on-surface flex items-center gap-1.5">
+<span class="font-mono text-xs font-bold text-secondary bg-surface-container px-1.5 py-0.5 rounded">A.8.8</span>
+</div>
+<div class="font-semibold text-on-surface text-body-md mt-0.5 leading-snug">
+                    Management of Technical Vulnerabilities
+                  </div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant text-xs font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Annex A (Technological)
+              </span>
+<div class="text-outline text-[11px] mt-1 font-mono">ISO 27001:2022</div>
+</td>
+<td class="py-3.5 px-2 align-top text-center">
+<span class="inline-flex items-center justify-center px-2 py-0.5 rounded bg-primary/10 text-primary font-bold text-xs">
+                YES
+              </span>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-primary/15 text-primary font-semibold text-xs">
+<span class="material-symbols-outlined text-xs">check</span>
+                Applicable
+              </div>
+<div class="text-secondary text-[11px] mt-1">Core Security Baseline</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<p class="text-on-surface-variant line-clamp-2 leading-relaxed">
+                Standard baseline control to detect, evaluate, and remediate technical security vulnerabilities across compute assets and network infrastructure.
+              </p>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="flex flex-wrap gap-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-mono text-[11px] font-medium text-on-surface">RISK-021</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-mono text-[11px] font-medium text-on-surface">RISK-033</span>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<span class="text-[11px] text-outline italic">Standard Annex A</span>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="space-y-1">
+<div class="inline-flex items-center gap-1 text-secondary font-semibold text-xs">
+<span class="material-symbols-outlined text-xs">timelapse</span>
+                  Partially Implemented
+                </div>
+<div class="text-secondary text-[11px]">Partially Effective (SLA gaps)</div>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="text-on-surface font-medium text-xs">Sarah Mitchell</div>
+<div class="text-secondary text-[11px]">Infra Manager</div>
+</td>
+<td class="py-3.5 px-4 align-top text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-secondary hover:text-on-surface flex items-center gap-0.5 text-xs" title="View 19 Evidence Files" type="button">
+<span class="material-symbols-outlined text-sm">attachment</span>
+<span>19</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-secondary hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 4: A.5.31 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-low/20">
+<td class="py-3.5 px-4 align-top">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">policy</span>
+<div>
+<div class="font-medium text-on-surface flex items-center gap-1.5">
+<span class="font-mono text-xs font-bold text-secondary bg-surface-container px-1.5 py-0.5 rounded">A.5.31</span>
+</div>
+<div class="font-semibold text-on-surface text-body-md mt-0.5 leading-snug">
+                    Legal, Statutory &amp; Regulatory Requirements
+                  </div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant text-xs font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Annex A (Organizational)
+              </span>
+<div class="text-outline text-[11px] mt-1 font-mono">ISO 27001:2022</div>
+</td>
+<td class="py-3.5 px-2 align-top text-center">
+<span class="inline-flex items-center justify-center px-2 py-0.5 rounded bg-primary/10 text-primary font-bold text-xs">
+                YES
+              </span>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-primary/15 text-primary font-semibold text-xs">
+<span class="material-symbols-outlined text-xs">check</span>
+                Applicable
+              </div>
+<div class="text-secondary text-[11px] mt-1">Statutory Mandate</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<p class="text-on-surface-variant line-clamp-2 leading-relaxed">
+                Identification and documentation of applicable legislation, including EU GDPR, NIS2 Directive, and upcoming EU AI Act compliance obligations.
+              </p>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="flex flex-wrap gap-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-mono text-[11px] font-medium text-on-surface">RISK-002</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-mono text-[11px] font-medium text-on-surface">RISK-018</span>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<span class="text-[11px] text-outline italic">Standard Annex A</span>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="space-y-1">
+<div class="inline-flex items-center gap-1 text-primary font-semibold text-xs">
+<span class="material-symbols-outlined text-xs">check_circle</span>
+                  Implemented
+                </div>
+<div class="text-secondary text-[11px]">Effective (Legal Register v2.1)</div>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="text-on-surface font-medium text-xs">General Counsel &amp; CISO</div>
+<div class="text-secondary text-[11px]">Legal / Compliance</div>
+</td>
+<td class="py-3.5 px-4 align-top text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-secondary hover:text-on-surface flex items-center gap-0.5 text-xs" title="View 3 Evidence Files" type="button">
+<span class="material-symbols-outlined text-sm">attachment</span>
+<span>3</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-secondary hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 5: A.8.30 (EXCLUDED) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-4 align-top">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">block</span>
+<div>
+<div class="font-medium text-on-surface flex items-center gap-1.5">
+<span class="font-mono text-xs font-bold text-secondary bg-surface-container px-1.5 py-0.5 rounded">A.8.30</span>
+</div>
+<div class="font-semibold text-on-surface text-body-md mt-0.5 leading-snug">
+                    Outsourced Development
+                  </div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant text-xs font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Annex A (Technological)
+              </span>
+<div class="text-outline text-[11px] mt-1 font-mono">ISO 27001:2022</div>
+</td>
+<td class="py-3.5 px-2 align-top text-center">
+<span class="inline-flex items-center justify-center px-2 py-0.5 rounded bg-surface-container text-secondary font-bold text-xs">
+                NO
+              </span>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-error-container text-on-error-container font-semibold text-xs">
+<span class="material-symbols-outlined text-xs">cancel</span>
+                Excluded
+              </div>
+<div class="text-secondary text-[11px] mt-1">Formally Excluded</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<p class="text-on-surface-variant line-clamp-2 leading-relaxed">
+                All core software development and engineering is performed by 100% in-house engineering staff. No third-party contract developers utilized.
+              </p>
+</td>
+<td class="py-3.5 px-3 align-top">
+<span class="text-outline text-xs">N/A</span>
+</td>
+<td class="py-3.5 px-3 align-top">
+<span class="text-[11px] text-outline italic">None (In-house Only)</span>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="space-y-1">
+<div class="inline-flex items-center gap-1 text-secondary font-semibold text-xs">
+<span class="material-symbols-outlined text-xs">remove_circle_outline</span>
+                  Excluded
+                </div>
+<div class="text-outline text-[11px]">Exemption Memo EX-2026-03</div>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="text-on-surface font-medium text-xs">VP Engineering</div>
+<div class="text-secondary text-[11px]">Engineering Org</div>
+</td>
+<td class="py-3.5 px-4 align-top text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-secondary hover:text-on-surface flex items-center gap-0.5 text-xs" title="View 1 Exemption Memo" type="button">
+<span class="material-symbols-outlined text-sm">attachment</span>
+<span>1</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-secondary hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Table Footer -->
+<div class="px-4 py-3 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-3 text-table-cell font-table-cell text-secondary">
+<div class="flex items-center gap-2">
+<span>Showing <strong class="text-on-surface">1–5</strong> of <strong class="text-on-surface">104</strong> controls</span>
+<span class="text-outline-variant">|</span>
+<label class="flex items-center gap-1 text-xs">
+          Rows per page:
+          <select class="bg-surface-container-lowest px-2 py-0.5 rounded text-on-surface font-medium focus:outline-none">
+<option>25</option>
+<option>50</option>
+<option>100</option>
+</select>
+</label>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container disabled:opacity-40 text-secondary" disabled="" type="button">
+<span class="material-symbols-outlined text-base">first_page</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container disabled:opacity-40 text-secondary" disabled="" type="button">
+<span class="material-symbols-outlined text-base">chevron_left</span>
+</button>
+<span class="px-2 py-0.5 text-xs font-semibold bg-primary text-on-primary rounded">1</span>
+<button class="px-2 py-0.5 text-xs rounded hover:bg-surface-container text-secondary hover:text-on-surface" type="button">2</button>
+<button class="px-2 py-0.5 text-xs rounded hover:bg-surface-container text-secondary hover:text-on-surface" type="button">3</button>
+<span class="px-1 text-secondary">...</span>
+<button class="px-2 py-0.5 text-xs rounded hover:bg-surface-container text-secondary hover:text-on-surface" type="button">5</button>
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-base">chevron_right</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-base">last_page</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom Quick Actions & Verification Strip -->
+<div class="rounded-xl bg-surface-container-low p-4 flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">verified</span>
+<div>
+<div class="font-body-md text-body-md font-semibold text-on-surface">Statement of Applicability Signed Baseline</div>
+<div class="font-table-cell text-table-cell text-secondary">
+          Last formal external audit export generated on Oct 14, 2025. Hash signature SHA-256 verified.
+        </div>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded bg-surface-container-lowest hover:bg-surface-container text-on-surface font-table-cell text-table-cell font-medium shadow-sm transition-colors" type="button">
+        Audit Package Builder
+      </button>
+<button class="px-3.5 py-1.5 rounded bg-primary hover:bg-primary-container text-on-primary font-table-cell text-table-cell font-semibold shadow-sm transition-colors" type="button">
+        Submit for Re-certification
+      </button>
+</div>
+</div>
+</div></div></main></div></body></html>

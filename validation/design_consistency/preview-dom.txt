@@ -1,0 +1,1 @@
+Eight cards, navigation, search and stylesheet parsing verified in JSDOM. No browser painting or live persistence checked.

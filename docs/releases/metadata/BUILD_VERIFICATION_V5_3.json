@@ -1,0 +1,22 @@
+{
+  "release": "SecureScope v5.3.0 OpenVAS/Nuclei",
+  "built_at_utc": "2026-07-28T15:18:02.403060+00:00",
+  "source_archive": "SecureScope_v5_2_1_Dual_Engine_UI_Fix_Full(1).zip",
+  "python_compileall": "passed",
+  "automated_tests": "........................................................                 [100%]\n56 passed in 0.17s",
+  "service_imports": "service imports passed",
+  "synthetic_nuclei_cli_contract": "passed",
+  "provider_neutral_pdf_contract": "passed",
+  "retired_provider_source_references": 0,
+  "real_env_excluded": true,
+  "known_exposed_credential_scan": "passed",
+  "zip_integrity": "passed",
+  "not_tested_in_build_environment": [
+    "Windows PowerShell execution",
+    "live PostgreSQL connection",
+    "live OpenVAS/GMP scan lifecycle",
+    "live Nuclei binary against authorized targets",
+    "live Wazuh manager and indexer",
+    "live CISO Assistant synchronization"
+  ]
+}

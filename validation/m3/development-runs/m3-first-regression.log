@@ -1,0 +1,222 @@
+.FFFF...................F..............FFFF.......F.............F....... [ 69%]
+...............................                                          [100%]
+=================================== FAILURES ===================================
+____________________ test_coverage_unions_assets[1-PARTIAL] ____________________
+
+count = 1, status = 'PARTIAL'
+
+    @pytest.mark.parametrize(
+        "count,status", [(0, "NO EVIDENCE"), (1, "PARTIAL"), (2, "PARTIAL"), (3, "PASS")]
+    )
+    def test_coverage_unions_assets(count, status):
+        """Independent scans collectively cover only their actual canonical assets."""
+        bundle = dict(
+            scope_id=3,
+            engagement_id=2,
+            requirement_evidence=[evidence(i, i) for i in range(1, count + 1)],
+        )
+        result = evaluate_requirement(criterion(), bundle, NOW)
+>       assert result["result"] == status
+E       AssertionError: assert 'NO EVIDENCE' == 'PARTIAL'
+E         
+E         - PARTIAL
+E         + NO EVIDENCE
+
+tests/test_nuclei_evidence_pipeline.py:69: AssertionError
+____________________ test_coverage_unions_assets[2-PARTIAL] ____________________
+
+count = 2, status = 'PARTIAL'
+
+    @pytest.mark.parametrize(
+        "count,status", [(0, "NO EVIDENCE"), (1, "PARTIAL"), (2, "PARTIAL"), (3, "PASS")]
+    )
+    def test_coverage_unions_assets(count, status):
+        """Independent scans collectively cover only their actual canonical assets."""
+        bundle = dict(
+            scope_id=3,
+            engagement_id=2,
+            requirement_evidence=[evidence(i, i) for i in range(1, count + 1)],
+        )
+        result = evaluate_requirement(criterion(), bundle, NOW)
+>       assert result["result"] == status
+E       AssertionError: assert 'NO EVIDENCE' == 'PARTIAL'
+E         
+E         - PARTIAL
+E         + NO EVIDENCE
+
+tests/test_nuclei_evidence_pipeline.py:69: AssertionError
+_____________________ test_coverage_unions_assets[3-PASS] ______________________
+
+count = 3, status = 'PASS'
+
+    @pytest.mark.parametrize(
+        "count,status", [(0, "NO EVIDENCE"), (1, "PARTIAL"), (2, "PARTIAL"), (3, "PASS")]
+    )
+    def test_coverage_unions_assets(count, status):
+        """Independent scans collectively cover only their actual canonical assets."""
+        bundle = dict(
+            scope_id=3,
+            engagement_id=2,
+            requirement_evidence=[evidence(i, i) for i in range(1, count + 1)],
+        )
+        result = evaluate_requirement(criterion(), bundle, NOW)
+>       assert result["result"] == status
+E       AssertionError: assert 'NO EVIDENCE' == 'PASS'
+E         
+E         - PASS
+E         + NO EVIDENCE
+
+tests/test_nuclei_evidence_pipeline.py:69: AssertionError
+_______ test_stale_foreign_and_duplicate_assets_do_not_inflate_coverage ________
+
+    def test_stale_foreign_and_duplicate_assets_do_not_inflate_coverage():
+        """Staleness reduces the union; tenant-context checks and sets prevent inflation."""
+        rows = [evidence(i, i) for i in range(1, 4)]
+        rows[1]["collected_at"] = NOW - timedelta(days=100)
+        rows += [evidence(1, 4), dict(evidence(2, 5), scope_id=99)]
+        result = evaluate_requirement(
+            criterion(), dict(scope_id=3, engagement_id=2, requirement_evidence=rows), NOW
+        )
+>       assert result["verified_assets"] == 2
+E       assert 0 == 2
+
+tests/test_nuclei_evidence_pipeline.py:83: AssertionError
+________ test_system_collection_does_not_make_final_assurance_decision _________
+
+    def test_system_collection_does_not_make_final_assurance_decision():
+        """Complete collection coverage requires a human final control assessment."""
+        from securescope.grc.assurance_requirements import evaluate_assurance
+    
+        requirement = dict(
+            criterion(), type="Technical", mandatory=True, expected_result="Current scan"
+        )
+        bundle = dict(
+            scope_id=3,
+            engagement_id=2,
+            profile={
+                "assessment_scope": {"implementation_requirements": {"requirements": [requirement]}}
+            },
+            requirement_evidence=[evidence(i, i) for i in range(1, 4)],
+            soa={"applicability": "Applicable"},
+        )
+        result = evaluate_assurance(bundle, now=NOW)
+>       assert result["requirements"][0]["result"] == "PASS"
+E       AssertionError: assert 'NO EVIDENCE' == 'PASS'
+E         
+E         - PASS
+E         + NO EVIDENCE
+
+tests/test_nuclei_evidence_pipeline.py:343: AssertionError
+_____ test_customized_criterion_supersedes_seed_without_losing_provenance ______
+
+    def test_customized_criterion_supersedes_seed_without_losing_provenance():
+        seed = baseline_requirements("A.8.8")[0]
+        custom = {**deepcopy(seed), "id": "custom", "asset_ids": [42]}
+        custom.pop("template_id")
+        rows, _ = merge_baseline(
+            "A.8.8", {"baseline_template_version": 2, "requirements": [seed, custom]}
+        )
+>       assert len(rows) == 1
+E       AssertionError: assert 3 == 1
+E        +  where 3 = len([{'asset_ids': [42], 'baseline_source': 'SecureScope-authored assurance criteria. Review for your organization and sco...rifies completed remediation and documents remaining exposure.', 'evidence_links': [], 'evidence_required': True, ...}])
+
+tests/test_correction_pass_20261005.py:74: AssertionError
+__________ test_gap_and_uncollected_asset_are_independently_reported ___________
+
+    def test_gap_and_uncollected_asset_are_independently_reported():
+        rule, bundle = technical_fixture()
+        result = evaluate_requirement(rule, bundle, NOW)
+>       assert result["result"] == "FAIL"
+E       AssertionError: assert 'UNKNOWN' == 'FAIL'
+E         
+E         - FAIL
+E         + UNKNOWN
+
+tests/test_correction_pass_20261005.py:94: AssertionError
+________________ test_clean_scan_does_not_prove_headers_passed _________________
+
+    def test_clean_scan_does_not_prove_headers_passed():
+        rule, bundle = technical_fixture()
+        bundle["requirement_evidence"] = [evidence(1)]
+        result = evaluate_requirement(rule, bundle, NOW)
+        assert result["result"] != "PASS"
+>       assert set(result["asset_results"].values()) == {"NOT COLLECTED"}
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'asset_results'
+
+tests/test_correction_pass_20261005.py:104: KeyError
+_______ test_unconfigured_assets_have_actionable_message_and_visible_gap _______
+
+    def test_unconfigured_assets_have_actionable_message_and_visible_gap():
+        rule, bundle = technical_fixture()
+        rule["asset_ids"] = []
+        result = evaluate_requirement(rule, bundle, NOW)
+>       assert result["result"] == "FAIL"
+E       AssertionError: assert 'UNKNOWN' == 'FAIL'
+E         
+E         - FAIL
+E         + UNKNOWN
+
+tests/test_correction_pass_20261005.py:111: AssertionError
+___________ test_origin_maps_controls_but_does_not_infer_asset_scope ___________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f8f8526fce0>
+
+    def test_origin_maps_controls_but_does_not_infer_asset_scope(monkeypatch):
+        cursor = MagicMock()
+        cursor.fetchall.return_value = []
+        cursor.fetchone.side_effect = [
+            {
+                "config": {
+                    "scope_id": 3,
+                    "engagement_id": 2,
+                    "requirements": [{"id": "origin", "asset_ids": []}],
+                }
+            },
+            {"id": 3},
+        ]
+        checks = [
+>           classify_nuclei(t)[0].to_dict()
+            ^^^^^^^^^^^^^^^^^^^^^
+            for t in ["missing-x-frame-options", "ssl-expired", "default-login-example"]
+        ]
+E       IndexError: tuple index out of range
+
+tests/test_correction_pass_20261005.py:230: IndexError
+___________ test_every_catalog_entry_has_valid_independent_baseline ____________
+
+    def test_every_catalog_entry_has_valid_independent_baseline():
+        assert len(LABELS) == 123
+        assert sum(item_type(ref) == "ISO Requirement" for ref in LABELS) == 30
+        identifiers = set()
+        for reference in LABELS:
+            baseline = baseline_requirements(reference)
+            assert len(baseline) >= 3
+            assert validate_requirements(baseline)
+            for criterion in baseline:
+                assert criterion["id"] not in identifiers
+                identifiers.add(criterion["id"])
+                assert criterion["source_kind"] == "SecureScope Baseline"
+>               assert criterion["template_version"] == TEMPLATE_VERSION
+E               assert 3 == 2
+
+tests/test_requirement_templates.py:31: AssertionError
+=============================== warnings summary ===============================
+../../m1-verify-venv/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /workspace/scratch/25c192b77c6e/m1-verify-venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_nuclei_evidence_pipeline.py::test_coverage_unions_assets[1-PARTIAL]
+FAILED tests/test_nuclei_evidence_pipeline.py::test_coverage_unions_assets[2-PARTIAL]
+FAILED tests/test_nuclei_evidence_pipeline.py::test_coverage_unions_assets[3-PASS]
+FAILED tests/test_nuclei_evidence_pipeline.py::test_stale_foreign_and_duplicate_assets_do_not_inflate_coverage
+FAILED tests/test_nuclei_evidence_pipeline.py::test_system_collection_does_not_make_final_assurance_decision
+FAILED tests/test_correction_pass_20261005.py::test_customized_criterion_supersedes_seed_without_losing_provenance
+FAILED tests/test_correction_pass_20261005.py::test_gap_and_uncollected_asset_are_independently_reported
+FAILED tests/test_correction_pass_20261005.py::test_clean_scan_does_not_prove_headers_passed
+FAILED tests/test_correction_pass_20261005.py::test_unconfigured_assets_have_actionable_message_and_visible_gap
+FAILED tests/test_correction_pass_20261005.py::test_origin_maps_controls_but_does_not_infer_asset_scope
+FAILED tests/test_requirement_templates.py::test_every_catalog_entry_has_valid_independent_baseline
+11 failed, 92 passed, 1 warning in 1.73s

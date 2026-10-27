@@ -1,0 +1,10 @@
+Executed 2026-10-15 in an isolated Python 3.12.14 development virtual environment.
+python -m compileall -q src tests: exit 0
+python -m pip check: exit 0; No broken requirements found.
+isort: exit 0 on changed Python files
+black: exit 0 on changed Python files
+flake8: exit 0 on changed Python files
+git diff --check: exit 0
+
+Live PostgreSQL/Wazuh and browser screenshot validation: not executed.
+No scans, production migrations or deployment performed.

@@ -1,0 +1,30 @@
+{
+  "version": "5.3.6-professional-github",
+  "generated_at_utc": "2026-08-04T00:57:31Z",
+  "source_layout": "src/securescope",
+  "checks": {
+    "python_compileall": "passed",
+    "local_import_graph": "passed",
+    "non_ui_module_imports": {
+      "status": "passed",
+      "modules": 52
+    },
+    "dependency_free_regression_tests": {
+      "status": "passed",
+      "tests": 92,
+      "pytest_fixture_tests_not_executed": 4,
+      "reason": "pytest is not installed in the build container"
+    },
+    "migration_discovery": {
+      "status": "passed",
+      "versions": [1, 2]
+    },
+    "remediation_recipe_integrity": {
+      "status": "passed",
+      "recipes": 2
+    },
+    "secret_pattern_scan": "passed",
+    "gitignore_contract": "passed",
+    "sidebar_preserved_sha256": "84c2f38ef6c07086584ed9c38758fa308fd5d6ba2ae1f2e27f0e407f972267d3"
+  }
+}

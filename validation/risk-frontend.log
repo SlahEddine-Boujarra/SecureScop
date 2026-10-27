@@ -1,0 +1,32 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> test
+> node --test *.test.mjs
+
+Workbench DOM interactions passed: selection, escaping, suggestions, manual editing, navigation, failed saves, live scores, readonly controls.
+New interactions passed: editor undo/redo, impacted assets, calendar day panel, Foundation drawer.
+✔ assurance_workbench.test.mjs (636.836719ms)
+✔ profile row opens an editable, grouped drawer over its retained table (63.949198ms)
+✔ unsaved Escape preserves data until explicit discard, then restores row focus (32.664001ms)
+✔ save carries the opened version and failed writes retain edited values (22.782457ms)
+✔ readonly profile disables all editing and keyboard selection still works (9.762754ms)
+✔ assessment navigation uses the selected control identity (17.336822ms)
+✔ risk reading hides internal columns while showing full long values in its drawer (8.305262ms)
+✔ drawer keyboard focus cycles within the dialog (10.432356ms)
+✔ risk treatment is compact and opens the selected record (7.576583ms)
+✔ assessment approval never masquerades as formal risk acceptance (10.110058ms)
+✔ pagination selects the correct stable identity (103.294719ms)
+✔ search survives a component rerender and has a usable empty state (27.676388ms)
+✔ natural control IDs and numeric counts sort correctly (28.694415ms)
+✔ space selects a row without its default scrolling action (19.09026ms)
+✔ untrusted cell text never becomes markup and missing coverage has no bar (25.08194ms)
+✔ filtered export escapes spreadsheet formulas, quotes and line breaks (10.310141ms)
+✔ shrinking data clamps the current page instead of showing a blank table (13.231131ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 644.614955

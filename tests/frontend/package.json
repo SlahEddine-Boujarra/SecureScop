@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "jsdom": "26.1.0"
+  },
+  "name": "securescope-table-tests",
+  "private": true,
+  "scripts": {
+    "test": "node --test *.test.mjs"
+  }
+}

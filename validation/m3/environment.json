@@ -1,0 +1,18 @@
+{
+  "baseline_commit": "fc011fc604ff7d7fa6017b662c9cb1644b50a0aa",
+  "native_postgresql": false,
+  "native_database_configured": false,
+  "executables": {
+    "postgres": null,
+    "psql": null,
+    "initdb": null,
+    "docker": null,
+    "podman": null
+  },
+  "live_wazuh_validated": false,
+  "live_nuclei_validated": false,
+  "real_streamlit_ui_validated": false,
+  "test_mode": "Synthetic scanner/API responses; actual application repositories and encrypted artifacts",
+  "python": "Python 3.12.14",
+  "node": "v24.19.0"
+}

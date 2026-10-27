@@ -1,0 +1,26 @@
+[
+  {
+    "screen": "Project Plan",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "project-plan-1440.png"
+  },
+  {
+    "screen": "Project Plan",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "project-plan-1280.png"
+  },
+  {
+    "screen": "Project Plan",
+    "width": 390,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "project-plan-390.png"
+  }
+]

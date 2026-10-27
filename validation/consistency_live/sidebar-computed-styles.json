@@ -1,0 +1,47 @@
+[
+  {
+    "text": "keyboard_double_arrow_left",
+    "color": "rgba(11, 28, 48, 0.6)",
+    "textFill": "rgba(11, 28, 48, 0.6)",
+    "labelColor": "rgba(11, 28, 48, 0.6)",
+    "labelTextFill": "rgba(11, 28, 48, 0.6)",
+    "background": "rgba(0, 0, 0, 0)",
+    "backgroundImage": "none"
+  },
+  {
+    "text": "menu_open",
+    "color": "rgb(11, 28, 48)",
+    "textFill": "rgb(11, 28, 48)",
+    "labelColor": "rgb(11, 28, 48)",
+    "labelTextFill": "rgb(11, 28, 48)",
+    "background": "rgba(0, 0, 0, 0)",
+    "backgroundImage": "none"
+  },
+  {
+    "text": "menu_open",
+    "color": "rgb(11, 28, 48)",
+    "textFill": "rgb(11, 28, 48)",
+    "labelColor": "rgb(11, 28, 48)",
+    "labelTextFill": "rgb(11, 28, 48)",
+    "background": "rgba(0, 0, 0, 0)",
+    "backgroundImage": "none"
+  },
+  {
+    "text": "business\n\nSwitch workspace: Default Client",
+    "color": "rgb(11, 28, 48)",
+    "textFill": "rgb(11, 28, 48)",
+    "labelColor": "rgb(11, 28, 48)",
+    "labelTextFill": "rgb(11, 28, 48)",
+    "background": "rgba(0, 0, 0, 0)",
+    "backgroundImage": "none"
+  },
+  {
+    "text": "lan\n\nConnection status",
+    "color": "rgb(11, 28, 48)",
+    "textFill": "rgb(11, 28, 48)",
+    "labelColor": "rgb(11, 28, 48)",
+    "labelTextFill": "rgb(11, 28, 48)",
+    "background": "rgba(0, 0, 0, 0)",
+    "backgroundImage": "none"
+  }
+]

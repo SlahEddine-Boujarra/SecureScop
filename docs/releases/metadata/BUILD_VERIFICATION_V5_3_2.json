@@ -1,0 +1,47 @@
+{
+  "release": "SecureScope v5.3.2 Remediation and Gap Assessment",
+  "source_baseline": "SecureScope_v5_3_1_OpenVAS_Nuclei_Reports_Full(3).zip",
+  "source_sha256": "9d24bb5dcde3a3809a33779c8a2d21804cc213af1480fd7287677883e6a35d08",
+  "verified_at": "2026-08-03",
+  "checks": {
+    "python_source_compilation": "77 files passed",
+    "targeted_unittest": "23 passed",
+    "migration_files": 2,
+    "additive_tables": 31,
+    "additive_indexes": 29,
+    "destructive_migration_statements": false,
+    "integrity_checked_recipes": 2,
+    "wazuh_execution_enabled_by_default": false,
+    "remediation_worker_autostart_by_default": false,
+    "arbitrary_command_execution_supported": false,
+    "automatic_finding_closure_supported": false,
+    "new_python_modules_missing_docstrings": 0,
+    "new_python_lines_over_99_characters": 0
+  },
+  "byte_identical_baseline_modules": {
+    "openvas_worker_service.py": "237e20a6d424e2b87d051e114146e64371e8fd2f7252b3a89bc54e1225ae7f59",
+    "openvas_persistence.py": "3849adb119fdb89c9149a8eae6e234d17d2938a1d0a7d9ba073011eb061a8d2c",
+    "openvas_embedded_worker.py": "0f7f01c86fda90cd7140e6d2286e9eb04b351d3492ab45b15b3b8951ab57dd78",
+    "nuclei_client.py": "f5b1673513597533e737306168f40e6dc74c942e3e73b8f8c4b16821645ecd63",
+    "nuclei_persistence.py": "9cd279e880ed3b0ac4f4e0790da4b90711bcb165855f04db0cc8a8c7c4054390",
+    "nuclei_job_runner.py": "c7907430e0296b91bac296011b242e224baf879b8cb34ed37d64c36b047ed706",
+    "nuclei_worker_service.py": "1b1e682122b6a2637c6a8699ae83aced962d6fe14a594ddda54aacacff7e7659",
+    "nuclei_worker_runner.py": "cd01ea67c3b44b53426e9f89f3ac5f2c3ff6c3b49daffe9ec1c6898637ae7f67",
+    "scanner_engine_service.py": "458cb7e269d97c80980359d2e30ac6e0a849a5fc523c6380406fd58847f6cb1b",
+    "openvas_pdf_report.py": "a13988ed34252546b79003a288bc25127d8a580b3ffe7e5a5ded3c46e71bf6b9",
+    "dual_engine_report.py": "f4e5cd0e759199c6e7e86c5472169fe8523e4449dc386172283118884e8bbc2f",
+    "dual_engine_ui.py": "8aa96c41004fbc5d29b5c745b7a732b89e9d419986d9bef7b687e42e6d8566b6",
+    "nmap_custom_ui.py": "0ee5c68803aa94f472d81725863b69d63ace7ef6b0b050122d1770a7aa924698",
+    "ntp_audit_service.py": "5a65ddbe55cf0047a7712c8486505182a8ff16407abbab759ab79dfaff561450",
+    "clock_evidence_persistence.py": "022f136c3c34c25b7aefa07dac5936dd666a385e8a594f090f6f6dd88b360acf",
+    "ciso_assistant_service.py": "91576822dd8111166edd6e8fcee6d304041146aab9558ed5f2dc93692a13d461"
+  },
+  "not_executed_in_build_environment": [
+    "pytest regression suite (pytest unavailable)",
+    "live PostgreSQL migration",
+    "Streamlit runtime smoke test",
+    "Windows PowerShell syntax and launch",
+    "live OpenVAS, Nuclei, Wazuh and CISO Assistant integrations",
+    "browser screenshots"
+  ]
+}

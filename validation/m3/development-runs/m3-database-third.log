@@ -1,0 +1,82 @@
+PostgreSQL 18.3 (PGlite 0.5.8) on wasm32-unknown-emscripten, compiled by emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.74 (1092ec30a3fb1d46b1782ff1b4db5094d3d06ae5), 32-bit
+.....F..........                                                         [100%]
+=================================== FAILURES ===================================
+___ test_scope_pointer_not_latest_draft_and_changed_requirement_are_checked ____
+
+database = <function database.<locals>.connection at 0x7faafae67920>
+
+    def test_scope_pointer_not_latest_draft_and_changed_requirement_are_checked(database):
+        """Drafts preserve current eligibility; an approved replacement or edited criterion revokes it."""
+        identity, requirement = profile(database)
+        ingest(queued_job(database)["job_uuid"])
+        with database() as conn, conn.cursor() as cur:
+            cur.execute("INSERT INTO securescope_scope_versions(id,client_id,engagement_id,scope_id,version_number,status,scope_statement,prepared_by) "
+                        "VALUES(2601,101,501,601,2,'Draft','New draft',%s)", (ACTOR,))
+        assert evaluate(database, requirement, profile_id=identity)["result"] == "PASS"
+        with database() as conn, conn.cursor() as cur:
+            cur.execute("UPDATE securescope_control_assessment_profiles SET assessment_scope="
+                        "jsonb_set(assessment_scope,'{implementation_requirements,requirements,0,title}','\"Changed criterion\"') WHERE id=%s", (identity,))
+        assert evaluate(database, requirement, profile_id=identity)["result"] == "NO EVIDENCE"
+        with database() as conn, conn.cursor() as cur:
+            cur.execute("UPDATE securescope_control_assessment_profiles SET assessment_scope="
+                        "jsonb_set(assessment_scope,'{implementation_requirements,requirements}',%s) WHERE id=%s", (Json([requirement]), identity))
+>           cur.execute("UPDATE securescope_scope_versions SET status='Approved' WHERE id=2601")
+E           psycopg2.errors.RaiseException: A recorded review is required before scope approval
+E           CONTEXT:  PL/pgSQL function securescope_enforce_scope_review() line 6 at RAISE
+
+tests/test_m3_postgres.py:140: RaiseException
+
+The above exception was the direct cause of the following exception:
+
+database = <function database.<locals>.connection at 0x7faafae67920>
+
+    def test_scope_pointer_not_latest_draft_and_changed_requirement_are_checked(database):
+        """Drafts preserve current eligibility; an approved replacement or edited criterion revokes it."""
+        identity, requirement = profile(database)
+        ingest(queued_job(database)["job_uuid"])
+        with database() as conn, conn.cursor() as cur:
+            cur.execute("INSERT INTO securescope_scope_versions(id,client_id,engagement_id,scope_id,version_number,status,scope_statement,prepared_by) "
+                        "VALUES(2601,101,501,601,2,'Draft','New draft',%s)", (ACTOR,))
+        assert evaluate(database, requirement, profile_id=identity)["result"] == "PASS"
+        with database() as conn, conn.cursor() as cur:
+            cur.execute("UPDATE securescope_control_assessment_profiles SET assessment_scope="
+                        "jsonb_set(assessment_scope,'{implementation_requirements,requirements,0,title}','\"Changed criterion\"') WHERE id=%s", (identity,))
+        assert evaluate(database, requirement, profile_id=identity)["result"] == "NO EVIDENCE"
+>       with database() as conn, conn.cursor() as cur:
+             ^^^^^^^^^^
+
+tests/test_m3_postgres.py:137: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py:158: in __exit__
+    self.gen.throw(value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @contextmanager
+    def connection():
+        """Yield a real transaction; explicitly select the schema for every connection.
+    
+        Yields:
+            psycopg2 connection, committed on success and rolled back on failure.
+        Raises:
+            DatabaseError: On a PostgreSQL error, matching repository behavior.
+        """
+        with closing(psycopg2.connect(URL)) as conn:
+            try:
+                with conn:
+                    with conn.cursor() as cursor:
+                        cursor.execute(
+                            sql.SQL("SET search_path TO {}").format(sql.Identifier(schema))
+                        )
+                    yield conn
+            except psycopg2.Error as exc:
+>               raise db_service.DatabaseError(str(exc)) from exc
+E               securescope.persistence.db_service.DatabaseError: A recorded review is required before scope approval
+E               CONTEXT:  PL/pgSQL function securescope_enforce_scope_review() line 6 at RAISE
+
+tests/test_m1_evidence_postgres.py:77: DatabaseError
+------------------------------ Captured log setup ------------------------------
+WARNING  securescope.persistence.migration_service:migration_service.py:138 Detected known published aliases for migration 3; using 003_legacy_iso_evidence_bridge.sql.
+WARNING  securescope.persistence.migration_service:migration_service.py:138 Detected known published aliases for migration 6; using 006_organization_knowledge_compat.sql.
+=========================== short test summary info ============================
+FAILED tests/test_m3_postgres.py::test_scope_pointer_not_latest_draft_and_changed_requirement_are_checked
+1 failed, 15 passed in 12.41s

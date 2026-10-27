@@ -1,0 +1,14 @@
+#policy-editor {counter-reset:policy-list;font-family:var(--ss-font-sans);color:var(--ss-text-strong);background:var(--ss-surface);border:1px solid var(--ss-border);border-radius:var(--ss-radius-md);padding:var(--ss-space-5)}
+.policy-toolbar {display:flex;justify-content:space-between;align-items:center;gap:var(--ss-space-3);padding-bottom:var(--ss-space-4);border-bottom:1px solid var(--ss-border)}
+#policy-editor button,#policy-editor select {border:1px solid var(--ss-border);border-radius:var(--ss-radius-sm);padding:var(--ss-space-2) var(--ss-space-3);background:var(--ss-surface);color:var(--ss-text-strong);cursor:pointer}
+#policy-editor button.policy-save {background:var(--ss-accent);color:white}
+#policy-editor button:disabled {opacity:.45;cursor:not-allowed}
+.policy-block-actions {display:flex;flex-wrap:wrap;gap:var(--ss-space-2);margin-top:var(--ss-space-4);font-size:var(--ss-text-xs)}
+.policy-text {white-space:pre-wrap;line-height:1.7;min-height:2rem;padding:var(--ss-space-3);outline:0;border-left:2px solid transparent}
+.policy-text:focus {border-left-color:var(--ss-accent);background:var(--ss-surface-soft)}
+.policy-text[data-kind=h1] {font-size:1.8rem;font-weight:700}
+.policy-text[data-kind=h2] {font-size:1.4rem;font-weight:650}
+.policy-text[data-kind=h3] {font-size:1.15rem;font-weight:650}
+.policy-text[data-kind=bullet]::before {content:'• ';color:var(--ss-accent)}
+.policy-text[data-kind=number]::before {counter-increment:policy-list;content:counter(policy-list) '. ';color:var(--ss-accent)}
+#policy-editor small {display:block;margin-top:var(--ss-space-4);color:var(--ss-text-muted)}

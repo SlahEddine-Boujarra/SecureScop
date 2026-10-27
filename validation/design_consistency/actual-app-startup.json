@@ -1,0 +1,7 @@
+{
+  "method": "Actual app entry point via Streamlit AppTest; not a rendered browser or live PostgreSQL acceptance",
+  "errors": [
+    "PostgreSQL is not ready: Missing SECURESCOPE_DATABASE_URL in .env. Example: postgresql://securescope:password@localhost:5432/securescope"
+  ],
+  "exceptions": []
+}

@@ -1,0 +1,9 @@
+PostgreSQL 18.3 (PGlite 0.5.8) on wasm32-unknown-emscripten, compiled by emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.74 (1092ec30a3fb1d46b1782ff1b4db5094d3d06ae5), 32-bit
+M2 E2E: quiet agent -> protected artifact -> exact A.8.16 requirement PASS; A.8.15 excluded.
+.................Actual migration runner: M1 ledger 001–017 -> 018/019 -> repeated run empty; decision history unchanged.
+.sss.......
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_m2_native_postgres.py:34: Native PostgreSQL required; embedded PostgreSQL cannot verify concurrency
+SKIPPED [1] tests/test_m2_native_postgres.py:64: Native PostgreSQL required; embedded PostgreSQL cannot verify concurrency
+SKIPPED [1] tests/test_m2_native_postgres.py:94: Native PostgreSQL required; embedded PostgreSQL cannot verify concurrency
+25 passed, 3 skipped in 27.49s

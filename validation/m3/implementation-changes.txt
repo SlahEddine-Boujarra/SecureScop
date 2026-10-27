@@ -1,0 +1,24 @@
+M2 baseline: fc011fc604ff7d7fa6017b662c9cb1644b50a0aa
+Implementation commits: 31e66f7, a47c16a
+
+A	database/migrations/020_requirement_check_attribution.sql
+M	src/securescope/evidence/automated_checks.py
+A	src/securescope/evidence/nuclei_assurance.py
+M	src/securescope/grc/assurance_requirements.py
+M	src/securescope/grc/requirement_templates.py
+M	src/securescope/persistence/assurance_workspace_repository.py
+M	src/securescope/persistence/evidence_repository.py
+M	src/securescope/persistence/nuclei_persistence.py
+A	src/securescope/persistence/requirement_evidence_repository.py
+M	src/securescope/ui/components_v2/assurance_workbench.js
+M	src/securescope/ui/control_workspace.py
+A	tests/frontend/m3_assurance.test.mjs
+M	tests/test_correction_pass_20261005.py
+M	tests/test_m1_evidence_postgres.py
+M	tests/test_m2_upgrade_postgres.py
+A	tests/test_m3_assurance.py
+A	tests/test_m3_native_postgres.py
+A	tests/test_m3_postgres.py
+A	tests/test_m3_upgrade_postgres.py
+M	tests/test_nuclei_evidence_pipeline.py
+M	tests/test_requirement_templates.py

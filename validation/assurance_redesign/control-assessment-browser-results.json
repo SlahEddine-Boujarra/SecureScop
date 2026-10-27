@@ -1,0 +1,143 @@
+[
+  {
+    "screen": "Control",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "control-1440.png"
+  },
+  {
+    "screen": "Assess Control",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [
+      {
+        "label": "Scope being assessed",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Control owner",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Operational Narrative",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Document / test reference",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Evaluator Rationale",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Assessment rationale / explanation of overrides",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      }
+    ],
+    "screenshot": "assess-control-1440.png"
+  },
+  {
+    "screen": "Control",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "control-1280.png"
+  },
+  {
+    "screen": "Assess Control",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [
+      {
+        "label": "Scope being assessed",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Control owner",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Operational Narrative",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Document / test reference",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Evaluator Rationale",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Assessment rationale / explanation of overrides",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      }
+    ],
+    "screenshot": "assess-control-1280.png"
+  },
+  {
+    "screen": "Control",
+    "width": 390,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "control-390.png"
+  },
+  {
+    "screen": "Assess Control",
+    "width": 390,
+    "exceptions": [],
+    "errors": [],
+    "fields": [
+      {
+        "label": "Scope being assessed",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Control owner",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Operational Narrative",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Document / test reference",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Evaluator Rationale",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Assessment rationale / explanation of overrides",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      }
+    ],
+    "screenshot": "assess-control-390.png"
+  }
+]

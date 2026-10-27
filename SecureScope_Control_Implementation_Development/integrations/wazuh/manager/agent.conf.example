@@ -1,0 +1,32 @@
+<!--
+  SecureScope ISO/IEC 27001:2022 A.8.17 clock evidence.
+
+  Deploy the endpoint scripts first:
+    Windows: C:\Program Files (x86)\ossec-agent\securescope_time_sync.ps1
+    Linux:   /var/ossec/bin/securescope_time_sync.sh
+
+  Place the relevant blocks inside the Wazuh group agent.conf.
+-->
+<agent_config os="^Microsoft Windows">
+  <wodle name="command">
+    <disabled>no</disabled>
+    <tag>securescope_ntp</tag>
+    <command>PowerShell.exe -NoProfile -ExecutionPolicy Bypass -File "C:\Program Files (x86)\ossec-agent\securescope_time_sync.ps1"</command>
+    <interval>5m</interval>
+    <ignore_output>no</ignore_output>
+    <run_on_start>yes</run_on_start>
+    <timeout>30</timeout>
+  </wodle>
+</agent_config>
+
+<agent_config os="^Linux">
+  <wodle name="command">
+    <disabled>no</disabled>
+    <tag>securescope_ntp</tag>
+    <command>/bin/sh /var/ossec/bin/securescope_time_sync.sh</command>
+    <interval>5m</interval>
+    <ignore_output>no</ignore_output>
+    <run_on_start>yes</run_on_start>
+    <timeout>30</timeout>
+  </wodle>
+</agent_config>

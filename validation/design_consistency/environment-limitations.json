@@ -1,0 +1,16 @@
+{
+  "postgresql": {
+    "result": "Blocked before initialization and migrations",
+    "uid_map": "0 0 1",
+    "gid_map": "0 0 1",
+    "operation": "Create an unprivileged owner for an isolated database directory",
+    "error": "OSError: [Errno 22] Invalid argument"
+  },
+  "browser": {
+    "local_chromium": "TargetClosedError during browser launch",
+    "cloud_browser": "ERR_CONNECTION_REFUSED accessing http://127.0.0.1:8536",
+    "screenshots_created": 0,
+    "computed_browser_paint_verified": false
+  },
+  "live_acceptance": "Pending"
+}

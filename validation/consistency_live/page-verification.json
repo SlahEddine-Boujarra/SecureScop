@@ -1,0 +1,2560 @@
+[
+  {
+    "page": "foundation-overview",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "dashboard\nOverview",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "explore\nDiscovery",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "business\nContext",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "groups\nInterested Parties",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "filter_center_focus\nISMS Scope",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nGovernance",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "work\nEngagement",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "foundation-discovery",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "dashboard\nOverview",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "explore\nDiscovery",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "business\nContext",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "groups\nInterested Parties",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "filter_center_focus\nISMS Scope",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nGovernance",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "work\nEngagement",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "foundation-context",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "dashboard\nOverview",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "explore\nDiscovery",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "business\nContext",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "groups\nInterested Parties",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "filter_center_focus\nISMS Scope",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nGovernance",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "work\nEngagement",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "foundation-interested-parties",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "dashboard\nOverview",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "explore\nDiscovery",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "business\nContext",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "groups\nInterested Parties",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "filter_center_focus\nISMS Scope",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nGovernance",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "work\nEngagement",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "foundation-isms-scope",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "dashboard\nOverview",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "explore\nDiscovery",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "business\nContext",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "groups\nInterested Parties",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "filter_center_focus\nISMS Scope",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "account_tree\nGovernance",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "work\nEngagement",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "foundation-governance",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "dashboard\nOverview",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "explore\nDiscovery",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "business\nContext",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "groups\nInterested Parties",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "filter_center_focus\nISMS Scope",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nGovernance",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "work\nEngagement",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "groups\nRoles & RACI \u2014 Clause 5.3",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "flag\nObjectives \u2014 Clause 6.2",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "foundation-governance-sub-0",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "dashboard\nOverview",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "explore\nDiscovery",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "business\nContext",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "groups\nInterested Parties",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "filter_center_focus\nISMS Scope",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nGovernance",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "work\nEngagement",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "groups\nRoles & RACI \u2014 Clause 5.3",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "flag\nObjectives \u2014 Clause 6.2",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "foundation-governance-sub-1",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "dashboard\nOverview",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "explore\nDiscovery",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "business\nContext",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "groups\nInterested Parties",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "filter_center_focus\nISMS Scope",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nGovernance",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "work\nEngagement",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "groups\nRoles & RACI \u2014 Clause 5.3",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "flag\nObjectives \u2014 Clause 6.2",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "foundation-engagement",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "dashboard\nOverview",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "explore\nDiscovery",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "business\nContext",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "groups\nInterested Parties",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "filter_center_focus\nISMS Scope",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nGovernance",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "work\nEngagement",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "risk-stage-0",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "list_alt\nRegisters & assessment",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "assignment\nTreatment Plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "analytics\nResidual Assessment",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "verified\nRisk acceptance",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "monitoring\nMonitoring & Review",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "tune\nMethodology",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "risk-stage-1",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "list_alt\nRegisters & assessment",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "assignment\nTreatment Plan",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "analytics\nResidual Assessment",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "verified\nRisk acceptance",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "monitoring\nMonitoring & Review",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "tune\nMethodology",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "risk-stage-2",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "list_alt\nRegisters & assessment",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "assignment\nTreatment Plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "analytics\nResidual Assessment",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "verified\nRisk acceptance",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "monitoring\nMonitoring & Review",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "tune\nMethodology",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "risk-stage-3",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "list_alt\nRegisters & assessment",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "assignment\nTreatment Plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "analytics\nResidual Assessment",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "verified\nRisk acceptance",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "monitoring\nMonitoring & Review",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "tune\nMethodology",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "risk-stage-4",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "list_alt\nRegisters & assessment",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "assignment\nTreatment Plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "analytics\nResidual Assessment",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "verified\nRisk acceptance",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "monitoring\nMonitoring & Review",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "tune\nMethodology",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "risk-stage-5",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "list_alt\nRegisters & assessment",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "assignment\nTreatment Plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "analytics\nResidual Assessment",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "verified\nRisk acceptance",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "monitoring\nMonitoring & Review",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "tune\nMethodology",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "assurance-tab-0",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "radar\nGap dashboard",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "event_note\nProject plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "table_view\nControl profiles",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "fact_check\nAssess control",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "folder_open\nEvidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "assignment_late\nGap actions",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "description\nStatement of Applicability",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nRelated risk treatments",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "assurance-tab-1",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "radar\nGap dashboard",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "event_note\nProject plan",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "table_view\nControl profiles",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "fact_check\nAssess control",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "folder_open\nEvidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "assignment_late\nGap actions",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "description\nStatement of Applicability",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nRelated risk treatments",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "assurance-tab-2",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "radar\nGap dashboard",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "event_note\nProject plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "table_view\nControl profiles",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "fact_check\nAssess control",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "folder_open\nEvidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "assignment_late\nGap actions",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "description\nStatement of Applicability",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nRelated risk treatments",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "assurance-tab-3",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "radar\nGap dashboard",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "event_note\nProject plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "table_view\nControl profiles",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "fact_check\nAssess control",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "folder_open\nEvidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "assignment_late\nGap actions",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "description\nStatement of Applicability",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nRelated risk treatments",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "assurance-tab-4",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "radar\nGap dashboard",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "event_note\nProject plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "table_view\nControl profiles",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "fact_check\nAssess control",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "folder_open\nEvidence",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "assignment_late\nGap actions",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "description\nStatement of Applicability",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nRelated risk treatments",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "dashboard\nOverview",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "list_alt\nEvidence Register",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nCollect Evidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nImport Reports",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nManual Evidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nConsultant Review",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nEvidence Requests",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nAuditor Package",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nEvidence Settings",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "evidence-tab-0",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "radar\nGap dashboard",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "event_note\nProject plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "table_view\nControl profiles",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "fact_check\nAssess control",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "folder_open\nEvidence",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "assignment_late\nGap actions",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "description\nStatement of Applicability",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nRelated risk treatments",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "dashboard\nOverview",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "list_alt\nEvidence Register",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nCollect Evidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nImport Reports",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nManual Evidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nConsultant Review",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nEvidence Requests",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nAuditor Package",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nEvidence Settings",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "evidence-tab-1",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "radar\nGap dashboard",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "event_note\nProject plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "table_view\nControl profiles",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "fact_check\nAssess control",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "folder_open\nEvidence",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "assignment_late\nGap actions",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "description\nStatement of Applicability",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nRelated risk treatments",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "dashboard\nOverview",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "list_alt\nEvidence Register",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "view_list\nCollect Evidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nImport Reports",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nManual Evidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nConsultant Review",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nEvidence Requests",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nAuditor Package",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nEvidence Settings",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "evidence-tab-2",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "radar\nGap dashboard",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "event_note\nProject plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "table_view\nControl profiles",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "fact_check\nAssess control",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "folder_open\nEvidence",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "assignment_late\nGap actions",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "description\nStatement of Applicability",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nRelated risk treatments",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "dashboard\nOverview",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "list_alt\nEvidence Register",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nCollect Evidence",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "view_list\nImport Reports",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nManual Evidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nConsultant Review",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nEvidence Requests",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nAuditor Package",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nEvidence Settings",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "evidence-tab-3",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "radar\nGap dashboard",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "event_note\nProject plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "table_view\nControl profiles",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "fact_check\nAssess control",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "folder_open\nEvidence",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "assignment_late\nGap actions",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "description\nStatement of Applicability",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nRelated risk treatments",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "dashboard\nOverview",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "list_alt\nEvidence Register",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nCollect Evidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nImport Reports",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "view_list\nManual Evidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nConsultant Review",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nEvidence Requests",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nAuditor Package",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nEvidence Settings",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "evidence-tab-4",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "radar\nGap dashboard",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "event_note\nProject plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "table_view\nControl profiles",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "fact_check\nAssess control",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "folder_open\nEvidence",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "assignment_late\nGap actions",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "description\nStatement of Applicability",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nRelated risk treatments",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "dashboard\nOverview",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "list_alt\nEvidence Register",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nCollect Evidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nImport Reports",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nManual Evidence",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "view_list\nConsultant Review",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nEvidence Requests",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nAuditor Package",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nEvidence Settings",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "evidence-tab-5",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "radar\nGap dashboard",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "event_note\nProject plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "table_view\nControl profiles",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "fact_check\nAssess control",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "folder_open\nEvidence",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "assignment_late\nGap actions",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "description\nStatement of Applicability",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nRelated risk treatments",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "dashboard\nOverview",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "list_alt\nEvidence Register",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nCollect Evidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nImport Reports",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nManual Evidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nConsultant Review",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "view_list\nEvidence Requests",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nAuditor Package",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nEvidence Settings",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "evidence-tab-6",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "radar\nGap dashboard",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "event_note\nProject plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "table_view\nControl profiles",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "fact_check\nAssess control",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "folder_open\nEvidence",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "assignment_late\nGap actions",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "description\nStatement of Applicability",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nRelated risk treatments",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "dashboard\nOverview",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "list_alt\nEvidence Register",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nCollect Evidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nImport Reports",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nManual Evidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nConsultant Review",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nEvidence Requests",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "view_list\nAuditor Package",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nEvidence Settings",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "evidence-tab-7",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "radar\nGap dashboard",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "event_note\nProject plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "table_view\nControl profiles",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "fact_check\nAssess control",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "folder_open\nEvidence",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "assignment_late\nGap actions",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "description\nStatement of Applicability",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nRelated risk treatments",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "dashboard\nOverview",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "list_alt\nEvidence Register",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nCollect Evidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nImport Reports",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nManual Evidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nConsultant Review",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nEvidence Requests",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nAuditor Package",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "view_list\nEvidence Settings",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "evidence-tab-8",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "radar\nGap dashboard",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "event_note\nProject plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "table_view\nControl profiles",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "fact_check\nAssess control",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "folder_open\nEvidence",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "assignment_late\nGap actions",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "description\nStatement of Applicability",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nRelated risk treatments",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "dashboard\nOverview",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "list_alt\nEvidence Register",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nCollect Evidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nImport Reports",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nManual Evidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nConsultant Review",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nEvidence Requests",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nAuditor Package",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "view_list\nEvidence Settings",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "assurance-tab-5",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "radar\nGap dashboard",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "event_note\nProject plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "table_view\nControl profiles",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "fact_check\nAssess control",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "folder_open\nEvidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "assignment_late\nGap actions",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "description\nStatement of Applicability",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nRelated risk treatments",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "assurance-tab-6",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "radar\nGap dashboard",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "event_note\nProject plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "table_view\nControl profiles",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "fact_check\nAssess control",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "folder_open\nEvidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "assignment_late\nGap actions",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "description\nStatement of Applicability",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "account_tree\nRelated risk treatments",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "description\nSoA register",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          },
+          {
+            "text": "event_available\nScope of audit",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": "assurance-tab-7",
+    "errors": [],
+    "bars": [
+      {
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "gap": "6px",
+        "borderRadius": "0px",
+        "tabs": [
+          {
+            "text": "radar\nGap dashboard",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "event_note\nProject plan",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "table_view\nControl profiles",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "fact_check\nAssess control",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "folder_open\nEvidence",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "assignment_late\nGap actions",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "description\nStatement of Applicability",
+            "padding": "10px 12px",
+            "selected": "false",
+            "color": "rgb(102, 112, 133)"
+          },
+          {
+            "text": "account_tree\nRelated risk treatments",
+            "padding": "10px 12px",
+            "selected": "true",
+            "color": "rgb(0, 104, 95)"
+          }
+        ]
+      }
+    ]
+  }
+]

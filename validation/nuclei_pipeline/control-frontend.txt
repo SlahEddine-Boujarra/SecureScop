@@ -1,0 +1,25 @@
+✔ seven visible workflow steps and live pre/post comparison share one draft (170.805313ms)
+✔ matrix has 25 cells and distinct markers even for the same cell (28.335417ms)
+✔ register matrix groups risks and opens the selected existing reference (24.257235ms)
+✔ completion is separate from save and read-only users cannot invoke either (63.300807ms)
+✔ timescale warning is non-blocking and blank progress remains null on save (26.852169ms)
+✔ related treatments are read-only with linked references and individual control chips (11.250757ms)
+✔ control workspace exposes basic state and keeps requirement details in a drawer (23.804097ms)
+✔ control navigation and remediation retain canonical identifiers (34.234839ms)
+✔ read-only control viewers cannot create policies or remediation (14.449991ms)
+✔ missing evidence is neutral and explicit failures are red (13.865104ms)
+✔ control profile row opens a full workspace rather than lifecycle modal (11.598066ms)
+✔ an overdue objective can explicitly remain current (16.327727ms)
+✔ requirement table uses readable states and explicit failure color (12.080648ms)
+✔ next gap prioritizes required policy before an earlier missing evidence row (20.72393ms)
+✔ canonical remediation ID survives cross-module navigation (23.140474ms)
+✔ control header actions use existing configuration and requirement dispatch (22.53486ms)
+✔ profile table removes Type and renders semantic status badges (10.664281ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 563.459654

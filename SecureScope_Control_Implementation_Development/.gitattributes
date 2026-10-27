@@ -1,0 +1,12 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.sql text eol=lf
+*.sh text eol=lf
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+*.json text eol=lf
+
+
+# Integrity-pinned recipe: preserve the reviewed bytes on every checkout.
+integrations/wazuh/remediation/windows/securescope_security_updates.cmd text eol=lf

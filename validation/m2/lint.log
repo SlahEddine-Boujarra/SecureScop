@@ -1,0 +1,10 @@
+************* Module securescope.app
+src/securescope/app.py:8499:40: E1120: No value for argument 'valid_batch_ids' in function call (no-value-for-parameter)
+************* Module securescope.evidence.wazuh_bridge
+src/securescope/evidence/wazuh_bridge.py:236:20: E0633: Attempting to unpack a non-sequence defined at line 233 (unpacking-non-sequence)
+************* Module securescope.persistence.evidence_repository
+src/securescope/persistence/evidence_repository.py:247:43: E1136: Value 'verified' is unsubscriptable (unsubscriptable-object)
+src/securescope/persistence/evidence_repository.py:247:69: E1136: Value 'verified' is unsubscriptable (unsubscriptable-object)
+
+-----------------------------------
+Your code has been rated at 9.97/10

@@ -1,0 +1,296 @@
+[
+  {
+    "screen": "Assurance",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "assurance-1440.png"
+  },
+  {
+    "screen": "Project Plan",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "project-plan-1440.png"
+  },
+  {
+    "screen": "Assess Control",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [
+      {
+        "label": "Expected result",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Business rationale",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Target approved by",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Unit",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Treatment of scope below the target",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Evidence needed",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Effectiveness test to perform",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Scope being assessed",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Control owner",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "What is in place today?",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Document / test reference",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "What the evidence demonstrates",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Assessment rationale / explanation of overrides",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      }
+    ],
+    "screenshot": "assess-control-1440.png"
+  },
+  {
+    "screen": "SoA",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "soa-1440.png"
+  },
+  {
+    "screen": "Assurance",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "assurance-1280.png"
+  },
+  {
+    "screen": "Project Plan",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "project-plan-1280.png"
+  },
+  {
+    "screen": "Assess Control",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [
+      {
+        "label": "Expected result",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Business rationale",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Target approved by",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Unit",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Treatment of scope below the target",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Evidence needed",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Effectiveness test to perform",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Scope being assessed",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Control owner",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "What is in place today?",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Document / test reference",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "What the evidence demonstrates",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Assessment rationale / explanation of overrides",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      }
+    ],
+    "screenshot": "assess-control-1280.png"
+  },
+  {
+    "screen": "SoA",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "soa-1280.png"
+  },
+  {
+    "screen": "Assurance",
+    "width": 390,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "assurance-390.png"
+  },
+  {
+    "screen": "Project Plan",
+    "width": 390,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "project-plan-390.png"
+  },
+  {
+    "screen": "Assess Control",
+    "width": 390,
+    "exceptions": [],
+    "errors": [],
+    "fields": [
+      {
+        "label": "Expected result",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Business rationale",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Target approved by",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Unit",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Treatment of scope below the target",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Evidence needed",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Effectiveness test to perform",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Scope being assessed",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Control owner",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "What is in place today?",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Document / test reference",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "What the evidence demonstrates",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Assessment rationale / explanation of overrides",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      }
+    ],
+    "screenshot": "assess-control-390.png"
+  },
+  {
+    "screen": "SoA",
+    "width": 390,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "soa-390.png"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "release": "SecureScope v5.3.3 Menu, Asset Management and Tab UI Fix",
+  "source_baseline": "SecureScope_v5_3_2_Remediation_Gap_Assessment_Windows.zip",
+  "source_sha256": "649eb55efcd6d2ad96457299d37c3b3235c470609e63406a946f5fbc77c7e8ac",
+  "verified_at": "2026-08-03",
+  "checks": {
+    "python_source_compilation": "78 files passed",
+    "dependency_free_unittest": "28 passed",
+    "sidebar_expanded_left_alignment": true,
+    "sidebar_fixed_icon_label_gap": true,
+    "tabs_render_as_separated_buttons": true,
+    "asset_workflow_bar_visible": false,
+    "asset_clock_fields_visible": false,
+    "asset_clock_panel_visible": false,
+    "ntp_backend_preserved": true,
+    "database_migration_required": false
+  },
+  "not_executed_in_build_environment": [
+    "nine legacy test modules requiring unavailable runtime dependencies",
+    "Streamlit runtime smoke test",
+    "browser screenshots",
+    "live PostgreSQL",
+    "Windows PowerShell launch",
+    "live OpenVAS, Nuclei, Wazuh and CISO Assistant integrations"
+  ]
+}

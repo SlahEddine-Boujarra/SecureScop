@@ -1,0 +1,18 @@
+PostgreSQL 18.3 (PGlite 0.5.8) on wasm32-unknown-emscripten, compiled by emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.74 (1092ec30a3fb1d46b1782ff1b4db5094d3d06ae5), 32-bit
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-8.4.2, pluggy-1.7.0 -- /workspace/scratch/25c192b77c6e/m1-verify-venv/bin/python
+cachedir: .pytest_cache
+rootdir: /workspace/scratch/25c192b77c6e/development/SecureScope_Control_Implementation_Development
+configfile: pyproject.toml
+plugins: platformdirs-4.13.1, cov-6.3.0, anyio-4.15.1
+collecting ... collected 7 items
+
+tests/test_m1_evidence_postgres.py::test_nuclei_ingestion_profile_visibility_and_artifact_isolation PASSED [ 14%]
+tests/test_m1_evidence_postgres.py::test_nuclei_scope_version_and_empty_origin_do_not_assign_scope PASSED [ 28%]
+tests/test_m1_evidence_postgres.py::test_latest_invalid_profile_cannot_resurrect_historical_membership[False] PASSED [ 42%]
+tests/test_m1_evidence_postgres.py::test_latest_invalid_profile_cannot_resurrect_historical_membership[True] PASSED [ 57%]
+tests/test_m1_evidence_postgres.py::test_repeated_monitoring_preserves_sources_evidence_assessments_and_audit PASSED [ 71%]
+tests/test_m1_evidence_postgres.py::test_historical_active_only_evidence_is_retained_but_cannot_satisfy_monitoring PASSED [ 85%]
+tests/test_wazuh_monitoring_postgres.py::test_monitoring_migration_preserves_history_and_rejects_cross_tenant_identity PASSED [100%]
+
+============================== 7 passed in 7.09s ===============================

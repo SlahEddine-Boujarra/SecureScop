@@ -1,0 +1,10 @@
+************* Module app
+/workspace/scratch/25c192b77c6e/m2-lint-baseline/app.py:8499:40: E1120: No value for argument 'valid_batch_ids' in function call (no-value-for-parameter)
+************* Module wazuh_bridge
+/workspace/scratch/25c192b77c6e/m2-lint-baseline/wazuh_bridge.py:226:20: E0633: Attempting to unpack a non-sequence defined at line 223 (unpacking-non-sequence)
+************* Module evidence_repository
+/workspace/scratch/25c192b77c6e/m2-lint-baseline/evidence_repository.py:235:43: E1136: Value 'verified' is unsubscriptable (unsubscriptable-object)
+/workspace/scratch/25c192b77c6e/m2-lint-baseline/evidence_repository.py:235:69: E1136: Value 'verified' is unsubscriptable (unsubscriptable-object)
+
+------------------------------------------------------------------
+Your code has been rated at 9.95/10 (previous run: 8.84/10, +1.11)

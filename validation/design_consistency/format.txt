@@ -1,0 +1,5 @@
+reformatted tests/test_design_system.py
+reformatted src/securescope/app.py
+
+All done! ✨ 🍰 ✨
+2 files reformatted, 8 files left unchanged.

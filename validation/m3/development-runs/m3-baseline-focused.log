@@ -1,0 +1,124 @@
+.....................F.................................................. [ 64%]
+........................................                                 [100%]
+=================================== FAILURES ===================================
+________ test_worker_environment_uses_canonical_path_without_overriding ________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-0/test_worker_environment_uses_c0')
+
+    def test_worker_environment_uses_canonical_path_without_overriding(tmp_path):
+        """Standalone imports load the canonical file without polluting the test process."""
+        import os
+        import subprocess
+        import sys
+    
+        env_file = tmp_path / "worker.env"
+        env_file.write_text("SECURESCOPE_DATABASE_URL=postgresql://example.invalid/test\n")
+        environment = dict(os.environ)
+        environment.pop("SECURESCOPE_DATABASE_URL", None)
+        code = """
+    import importlib
+    import os
+    import sys
+    from pathlib import Path
+    from securescope import paths
+    paths.ENV_FILE = Path(sys.argv[1])
+    from securescope.evidence import evidence_worker as worker
+    assert os.environ['SECURESCOPE_DATABASE_URL'] == 'postgresql://example.invalid/test'
+    os.environ['SECURESCOPE_DATABASE_URL'] = 'postgresql://override.invalid/test'
+    importlib.reload(worker)
+    assert os.environ['SECURESCOPE_DATABASE_URL'] == 'postgresql://override.invalid/test'
+    """
+>       subprocess.run([sys.executable, "-c", code, str(env_file)], env=environment, check=True)
+
+tests/test_nuclei_evidence_pipeline.py:289: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['/workspace/scratch/25c192b77c6e/m1-verify-venv/bin/python', '-c', "\nimport importlib\nimport os\nimport sys\nfrom ...= 'postgresql://override.invalid/test'\n", '/tmp/pytest-of-root/pytest-0/test_worker_environment_uses_c0/worker.env'],)
+kwargs = {'env': {'ALL_PROXY': 'socks5h://127.0.0.1:38763', 'BUNDLE_HTTPS_PROXY': 'http://127.0.0.1:45589', 'BUNDLE_HTTP_PROXY': 'http://127.0.0.1:45589', 'BUNDLE_NO_PROXY': 'localhost,127.0.0.1,::1,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16', ...}}
+process = <Popen: returncode: 1 args: ['/workspace/scratch/25c192b77c6e/m1-verify-venv...>
+stdout = None, stderr = None, retcode = 1
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout (seconds) is given and the process takes too long,
+         a TimeoutExpired exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['/workspace/scratch/25c192b77c6e/m1-verify-venv/bin/python', '-c', "\nimport importlib\nimport os\nimport sys\nfrom pathlib import Path\nfrom securescope import paths\npaths.ENV_FILE = Path(sys.argv[1])\nfrom securescope.evidence import evidence_worker as worker\nassert os.environ['SECURESCOPE_DATABASE_URL'] == 'postgresql://example.invalid/test'\nos.environ['SECURESCOPE_DATABASE_URL'] = 'postgresql://override.invalid/test'\nimportlib.reload(worker)\nassert os.environ['SECURESCOPE_DATABASE_URL'] == 'postgresql://override.invalid/test'\n", '/tmp/pytest-of-root/pytest-0/test_worker_environment_uses_c0/worker.env']' returned non-zero exit status 1.
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py:571: CalledProcessError
+----------------------------- Captured stderr call -----------------------------
+Traceback (most recent call last):
+  File "<string>", line 6, in <module>
+ModuleNotFoundError: No module named 'securescope'
+=============================== warnings summary ===============================
+../../m1-verify-venv/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /workspace/scratch/25c192b77c6e/m1-verify-venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_nuclei_evidence_pipeline.py::test_worker_environment_uses_canonical_path_without_overriding
+1 failed, 111 passed, 1 warning in 1.53s

@@ -1,0 +1,196 @@
+{
+  "baseline_commit": "4a03cf11bdd9e2a10cf5fd00f38be47716890865",
+  "baseline_zip_sha256": "b521594079b9dc06d26871c6fc72b4ce767c491e6f6ba0a91904792e97cd5479",
+  "files": [
+    {
+      "path": "database/migrations/001_v6_exposure_grc.sql",
+      "sha256": "9f48796bfb070d6de8ca7eda96b0d61e889d940ad503c9c8fc1c439e625f9d0f",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "database/migrations/002_v6_1_quick_remediation.sql",
+      "sha256": "77f6cb0179325e859b7f5cffc864b4f934f1675b8bf293afff0b816027210874",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "database/migrations/003_legacy_iso_evidence_bridge.sql",
+      "sha256": "26e564bc022ee3daf151b25cd007ccafa513da2ea07883dc7e93758cb5138a09",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "database/migrations/003_v5_3_7_iso_evidence_platform.sql",
+      "sha256": "1137a461d007f793632191e84d251da945b40f0a375372254481f12a96c3831e",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "database/migrations/004_v5_3_7_iso_evidence_platform.sql",
+      "sha256": "90592065cdd951c0138c33497103ab57ac3f2381574f38fda5f3a2e995ba1813",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "database/migrations/005_grc_engagement_context_scope.sql",
+      "sha256": "dd0026bf1aaa33b5622576ed37c0932f0043b66b05bef8fb9c3f4f418f3da9e2",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "database/migrations/006_organization_knowledge.sql",
+      "sha256": "33b692a189316647f40f8332477a2f98581aacf251cf06d1296e06c8b176fbe2",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "database/migrations/006_organization_knowledge_compat.sql",
+      "sha256": "5548fed5ed465e4f534f9534000ebbb5c6bdadb5429fa432f0d711b4faa09619",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "database/migrations/007_isms_project_plan.sql",
+      "sha256": "040303f4bf0d34269c9256768333751b343a7189f84f185cecd1791be0a8f0b9",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "database/migrations/008_audit_scope_and_risk_register.sql",
+      "sha256": "2e2c9e5a85795f15bacd108279a452f30c7de73167ce17fda79ac7de1f3d2a9a",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "database/migrations/009_isms_working_registers.sql",
+      "sha256": "9ba3ed9a7246974974c4818c201131840bd838a6a86c20d13383db34250de115",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "database/migrations/010_foundation_register_versions.sql",
+      "sha256": "4cbd2fc122ef6a8fb4dc0f832793e13842d6afb03f1494949098e743f1352009",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "database/migrations/011_workspace_planning.sql",
+      "sha256": "31d837648865f33ac3519805d5df9ad2a6ae51794294460490477174d05c0d82",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "database/migrations/012_workbench_review_history.sql",
+      "sha256": "c612f76da683b5111c3cae2ad968007dc99f95e332e7e2d3487d66e4d9fc5b64",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "database/migrations/013_risk_treatment_statuses.sql",
+      "sha256": "3e1f6a7d6aa073000a75747ebeca8c96654a27e2da5196c229af4a7a696404d7",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "database/migrations/014_scope_review_and_risk_scope.sql",
+      "sha256": "37fb334b8851fe9dd5b265dd5eb1fb25b8675276a4c87eb9995a0620e93dc372",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "database/migrations/015_trusted_nuclei_evidence.sql",
+      "sha256": "2b6b61a2715fa646bc45c0b47134b60b2d6464b252d4311e0397551615fd65ee",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "database/migrations/016_soa_draft_justified_exclusions.sql",
+      "sha256": "b88237ccd7c6c8899743158992b94414e5500c3eea7619436c89406b0a04ddae",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "database/migrations/017_verified_wazuh_monitoring.sql",
+      "sha256": "4666054036c9917528f5ab92e9654ddcca8324b9363ebc0789238d05c098eaec",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "integrations/wazuh/README_NTP.md",
+      "sha256": "88ceca4d90a614662889c035019bc6f637f0f462f8492c38691d164e49a699ff",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "integrations/wazuh/SHA256SUMS.txt",
+      "sha256": "1fbbd19f8c5eb15376f159a07df2bbcb079906d253d1b3238e9c38430356c7e8",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "integrations/wazuh/linux/install_agent_clock_probe.sh",
+      "sha256": "f6384883e2b753494f550d568e6268fb0d3cd0677d962342f1f87916beb7e401",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "integrations/wazuh/linux/securescope_time_sync.sh",
+      "sha256": "22a875e729891511e6fd05afe76afd9f3080574988c1f9d86baadcbb5f0daddb",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "integrations/wazuh/manager/agent.conf.example",
+      "sha256": "8d7983ca9d8a0ab453eb7dbe788345ff1c46e40c05dd9c68ed3ccece2df91f9b",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "integrations/wazuh/manager/install_manager_rules.sh",
+      "sha256": "9336eaca61d8727ce8a117d61b7c2cc4dea7de978aa74a81d319bef7f36783a4",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "integrations/wazuh/manager/local_decoder.xml",
+      "sha256": "c855c179e609ca3113bdc6f06e163174ca7e220c88460cc5436f534304216be3",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "integrations/wazuh/manager/local_rules.xml",
+      "sha256": "4bc2e4ad81ef1333b947d7994f5491c3d816cfc6e693fc1876049429f2bf275e",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "integrations/wazuh/manager/sample_event.txt",
+      "sha256": "34be0fbffb6a5f0955d7ae29743d89b34b793792f889fea2017882f1c52f31be",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "integrations/wazuh/manager/validate_manager_clock_rules.sh",
+      "sha256": "5d599c49c8de9a2365d6c1b9aa964c63706fadff2d257958b7bf0768db4ec3ee",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "integrations/wazuh/remediation/linux/securescope_security_updates.sh",
+      "sha256": "668dc3d99d49829ae855e0bfb9558385fae31d680b79005602b515c699c8d1fd",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "integrations/wazuh/remediation/windows/securescope_security_updates.cmd",
+      "sha256": "cc40776e734cb2f64b6c1a592a2ff3fe9869e46d857eae6fbd8f1c667f022653",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "integrations/wazuh/remediation/windows/securescope_security_updates.ps1",
+      "sha256": "0cab004bd169d888b5769ac03c42e3ea23e88ff5d54572be9055392b7d6491fc",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "integrations/wazuh/windows/install_agent_clock_probe.ps1",
+      "sha256": "909aed5646689b5e4a16eded6a464460f2b34f5f13e79df0426948618b7344d0",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "integrations/wazuh/windows/securescope_time_sync.ps1",
+      "sha256": "ea50fd0ae5256b482acb0b4575a3a6f8bea82a9757f743546ce62ded120bf5fa",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "src/securescope/evidence/wazuh_bridge.py",
+      "sha256": "662751ae5ab4585ff0e0e2f5c13993e8374ff6523045b5bb081b53c1db737c17",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "src/securescope/integrations/wazuh_collection.py",
+      "sha256": "095e1499cd2bdf1fea4e23dbbac9436d2d1ee255b03ce833266740bf49b8bb6d",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "src/securescope/integrations/wazuh_service.py",
+      "sha256": "4ddfac1d5d36df81ea7f18e945b0fe62677d9170cd569eda77586d847951ee8c",
+      "unchanged_from_delivered_m1_zip": true
+    },
+    {
+      "path": "src/securescope/persistence/clock_evidence_persistence.py",
+      "sha256": "3a2fd388cd40da9464310c70651976c790c48f3aff274bce4c0ee04313a91f10",
+      "unchanged_from_delivered_m1_zip": true
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+Workbench DOM interactions passed: selection, escaping, suggestions, manual editing, navigation, failed saves, live scores, readonly controls.
+New interactions passed: editor undo/redo, impacted assets, calendar day panel, Foundation drawer.
+Policy delivery: one Blob download per nonce, exact bytes, clean failure, URL cleanup.

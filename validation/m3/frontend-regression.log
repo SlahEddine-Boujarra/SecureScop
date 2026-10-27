@@ -1,0 +1,67 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> test
+> node --test *.test.mjs
+
+✔ SoA filters and paging never mutate the full source register (103.618664ms)
+✔ dashboard attention uses existing classification and navigates canonical IDs (32.087404ms)
+✔ record HTML is escaped and empty state has no table or pagination (25.889776ms)
+✔ pagination uses canonical task refs and summary task is not editable (137.126715ms)
+✔ search preserves all records and hides single-page pagination (49.012507ms)
+✔ untrusted task text remains text and empty state has no table shell (38.583681ms)
+Workbench DOM interactions passed: selection, escaping, suggestions, manual editing, navigation, failed saves, live scores, readonly controls.
+New interactions passed: editor undo/redo, impacted assets, calendar day panel, Foundation drawer.
+Policy delivery: one Blob download per nonce, exact bytes, clean failure, URL cleanup.
+✔ assurance_workbench.test.mjs (2239.565893ms)
+✔ reused component clears previous page styling without accumulating content (111.203088ms)
+✔ rerender disconnects old overflow observers and retains one section bar (53.624389ms)
+✔ profile row opens an editable, grouped drawer over its retained table (132.851186ms)
+✔ unsaved Escape preserves data until explicit discard, then restores row focus (42.773607ms)
+✔ save carries the opened version and failed writes retain edited values (48.505945ms)
+✔ readonly profile disables all editing and keyboard selection still works (40.74558ms)
+✔ assessment navigation uses the selected control identity (22.129993ms)
+✔ risk reading hides internal columns while showing full long values in its drawer (11.098744ms)
+✔ drawer keyboard focus cycles within the dialog (24.562318ms)
+✔ risk treatment is compact and opens the selected record (13.170111ms)
+✔ assessment approval never masquerades as formal risk acceptance (7.728542ms)
+✔ implementation evaluation uses only the selected control identity (19.383353ms)
+✔ creation actions are limited to registers and assessment (42.334677ms)
+✔ register header creates a register using the existing dialog and event (11.729694ms)
+✔ scope presents basic boundaries and distinct editor/history actions (31.156774ms)
+✔ treatment acceptance and monitoring do not offer an irrelevant matrix (21.810587ms)
+✔ empty context has a useful action without empty filters or table (7.159045ms)
+✔ single-page foundation retains records without pagination (12.669198ms)
+✔ historical objective requires a visible explicit confirmation (9.941583ms)
+✔ M3 separates advisory status and recorded decision and escapes source trace (136.161402ms)
+✔ seven visible workflow steps and live pre/post comparison share one draft (258.796391ms)
+✔ matrix has 25 cells and distinct markers even for the same cell (29.881079ms)
+✔ register matrix groups risks and opens the selected existing reference (27.788508ms)
+✔ completion is separate from save and read-only users cannot invoke either (79.933971ms)
+✔ timescale warning is non-blocking and blank progress remains null on save (43.506331ms)
+✔ related treatments are read-only with linked references and individual control chips (10.478151ms)
+✔ control workspace exposes basic state and keeps requirement details in a drawer (34.451988ms)
+✔ control navigation and remediation retain canonical identifiers (48.094005ms)
+✔ read-only control viewers cannot create policies or remediation (16.22489ms)
+✔ missing evidence is neutral and explicit failures are red (13.461411ms)
+✔ control profile row opens a full workspace rather than lifecycle modal (88.657435ms)
+✔ an overdue objective can explicitly remain current (10.855338ms)
+✔ requirement table uses readable states and explicit failure color (9.59485ms)
+✔ next gap prioritizes required policy before an earlier missing evidence row (23.364165ms)
+✔ canonical remediation ID survives cross-module navigation (18.275135ms)
+✔ control header actions use existing configuration and requirement dispatch (39.377466ms)
+✔ profile table removes Type and renders semantic status badges (8.522437ms)
+✔ pagination selects the correct stable identity (124.002893ms)
+✔ search survives a component rerender and has a usable empty state (40.610837ms)
+✔ natural control IDs and numeric counts sort correctly (32.291651ms)
+✔ space selects a row without its default scrolling action (12.364971ms)
+✔ untrusted cell text never becomes markup and missing coverage has no bar (14.107563ms)
+✔ filtered export escapes spreadsheet formulas, quotes and line breaks (24.191019ms)
+✔ shrinking data clamps the current page instead of showing a blank table (13.814712ms)
+ℹ tests 51
+ℹ suites 0
+ℹ pass 51
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2255.239674

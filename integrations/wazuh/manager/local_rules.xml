@@ -1,0 +1,14 @@
+<group name="securescope,ntp,iso27001_a_8_17,">
+  <rule id="100200" level="3">
+    <decoded_as>securescope-ntp</decoded_as>
+    <description>SecureScope clock synchronization evidence received.</description>
+    <group>iso_27001_2022_A.8.17,</group>
+  </rule>
+
+  <rule id="100201" level="8">
+    <if_sid>100200</if_sid>
+    <field name="synchronized">^false$</field>
+    <description>Endpoint clock is not synchronized.</description>
+    <group>iso_27001_2022_A.8.17,clock_sync_gap,</group>
+  </rule>
+</group>

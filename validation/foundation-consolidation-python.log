@@ -1,0 +1,14 @@
+........................................................................ [ 14%]
+........................................................................ [ 28%]
+........................................................................ [ 42%]
+.ssss................................................................... [ 56%]
+........................................................................ [ 71%]
+........................................................................ [ 85%]
+........................................................................ [ 99%]
+..                                                                       [100%]
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_isms_project_persistence.py:73: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_isms_project_persistence.py:88: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_isms_project_persistence.py:100: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_isms_project_persistence.py:113: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+502 passed, 4 skipped, 2 warnings in 25.29s

@@ -1,0 +1,122 @@
+[
+  {
+    "path": "src/securescope/evidence/evidence_worker.py",
+    "unchanged": true,
+    "sha256": "fb4658ef559cb05a9f9659bbb323baf0617b91e78b870d294b660ec2d9dd7b38"
+  },
+  {
+    "path": "src/securescope/evidence/wazuh_bridge.py",
+    "unchanged": true,
+    "sha256": "4788859fe30b7bf733ea74e73f348ad145a53e1e55aee0c64640dabbfb6321c7"
+  },
+  {
+    "path": "src/securescope/evidence/wazuh_scheduled.py",
+    "unchanged": true,
+    "sha256": "86deeb2a86fef2a72709382f07b51a97a3ae4d1ff8c39ca86dc9c5b0b1d02d50"
+  },
+  {
+    "path": "src/securescope/integrations/wazuh_collection.py",
+    "unchanged": true,
+    "sha256": "252a34bce6b9b95913fd1003647c041f4ed8fb504e2abebbdb725909c283408f"
+  },
+  {
+    "path": "src/securescope/integrations/wazuh_collection_health.py",
+    "unchanged": true,
+    "sha256": "89c0f8987d9d857b1b972bff080db9d8e389733aa2d4b3a00661dee002dcdf16"
+  },
+  {
+    "path": "src/securescope/integrations/wazuh_monitoring.py",
+    "unchanged": true,
+    "sha256": "f2a6a0648f01d7d22ba6d02e9531b2d8129f45635809e6b1480a54b51e20324e"
+  },
+  {
+    "path": "src/securescope/integrations/wazuh_remediation_adapter.py",
+    "unchanged": true,
+    "sha256": "c90d20340168eeb9f1fcf21dee4db96a3534a795b61b050413d4f449242c3e90"
+  },
+  {
+    "path": "src/securescope/integrations/wazuh_service.py",
+    "unchanged": true,
+    "sha256": "8a0b06982688baa41ae67adff937fe94146ef95d6a8f6e673e5d95e216a4e468"
+  },
+  {
+    "path": "src/securescope/persistence/clock_evidence_persistence.py",
+    "unchanged": true,
+    "sha256": "3a2fd388cd40da9464310c70651976c790c48f3aff274bce4c0ee04313a91f10"
+  },
+  {
+    "path": "src/securescope/persistence/db_wazuh_service.py",
+    "unchanged": true,
+    "sha256": "ace5ae82df2b760ad12edb818f3bce78543ae13b2c4cfb72de5bfc55147cf08d"
+  },
+  {
+    "path": "src/securescope/persistence/evidence_schedule_repository.py",
+    "unchanged": true,
+    "sha256": "ad45cad606c85665c954dd1d155b7148e50e910276f7afbfa8cf58f0d8b2bdd7"
+  },
+  {
+    "path": "src/securescope/persistence/wazuh_evidence_repository.py",
+    "unchanged": true,
+    "sha256": "00edd18a67c707cb1515c9e720b14c409d99bbf6254f792947ac3476567ea582"
+  },
+  {
+    "path": "src/securescope/policies/__init__.py",
+    "unchanged": true,
+    "sha256": "1effa50a315586e7e47f81173810a975beecc56074cd7628afad22c0b6558407"
+  },
+  {
+    "path": "src/securescope/policies/builder.py",
+    "unchanged": true,
+    "sha256": "d57db3bb87db248faac8187cd52a3ae7c51ec8494095abdb026df23735a60d72"
+  },
+  {
+    "path": "src/securescope/policies/catalog.py",
+    "unchanged": true,
+    "sha256": "651f037b3447c87d2880358e39ff2eacc92879815e9c8b6fcc4dfc993051c92a"
+  },
+  {
+    "path": "src/securescope/policies/documents.py",
+    "unchanged": true,
+    "sha256": "8c6ef7410a3427f499b873d134160ea8b49eaeb3220402fde17fa8cdd5aa341f"
+  },
+  {
+    "path": "src/securescope/policies/repository.py",
+    "unchanged": true,
+    "sha256": "8df33393d3383648ccc2a601ab0e429148172de2a8b6369f5618c76f29fe9b97"
+  },
+  {
+    "path": "src/securescope/policies/suggestions.py",
+    "unchanged": true,
+    "sha256": "3b56e1f00ee89ddcefdb9cf032a3b1d53933c29e01e4853ab8e73563a1ca2a54"
+  },
+  {
+    "path": "src/securescope/scanners/nmap/__init__.py",
+    "unchanged": true,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "src/securescope/scanners/nmap/nmap_profile_builder.py",
+    "unchanged": true,
+    "sha256": "d25b7029daccaaf3dfbf5c929093eefbd957c799bb82a8f9546684971c8842a7"
+  },
+  {
+    "path": "src/securescope/ui/nmap_custom_ui.py",
+    "unchanged": true,
+    "sha256": "e507961694cffe5b15c657bd7d8397521c812273159dfd724c4e89cddcea4bf5"
+  },
+  {
+    "path": "src/securescope/ui/risk_management.py",
+    "unchanged": true,
+    "sha256": "b78ebb3d828d56d225d2c31d6f6c19eb937c2ffec72eea693c4a80696fcac57d"
+  },
+  {
+    "path": "src/securescope/ui/wazuh_monitoring_ui.py",
+    "unchanged": true,
+    "sha256": "e50377c3d3778f23a393e5963b762f3a3d46a53018b0cef870cec9a8147cd36a"
+  },
+  {
+    "path": "src/securescope/ui/wazuh_settings_ui.py",
+    "unchanged": true,
+    "sha256": "49dda660bdf56216712564beee37b7b859f257cf8ab076cf2d5c8f80d58a5457"
+  }
+]

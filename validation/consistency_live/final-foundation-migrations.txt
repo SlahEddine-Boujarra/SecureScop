@@ -1,0 +1,17 @@
+2026-10-02 21:58:11,469 WARNING securescope.persistence.migration_service: Detected known published aliases for migration 3; using 003_legacy_iso_evidence_bridge.sql.
+2026-10-02 21:58:11,469 WARNING securescope.persistence.migration_service: Detected known published aliases for migration 6; using 006_organization_knowledge_compat.sql.
+2026-10-02 21:58:11,474 INFO securescope.persistence.migration_service: Applying SecureScope migration 1 (v6_exposure_grc).
+2026-10-02 21:58:11,525 INFO securescope.persistence.migration_service: Applying SecureScope migration 2 (v6_1_quick_remediation).
+2026-10-02 21:58:11,532 INFO securescope.persistence.migration_service: Applying SecureScope migration 3 (legacy_iso_evidence_bridge).
+2026-10-02 21:58:11,532 INFO securescope.persistence.migration_service: Applying SecureScope migration 4 (v5_3_7_iso_evidence_platform).
+2026-10-02 21:58:11,548 INFO securescope.persistence.migration_service: Applying SecureScope migration 5 (grc_engagement_context_scope).
+2026-10-02 21:58:11,590 INFO securescope.persistence.migration_service: Applying SecureScope migration 6 (organization_knowledge_compat).
+2026-10-02 21:58:11,594 INFO securescope.persistence.migration_service: Applying SecureScope migration 7 (isms_project_plan).
+2026-10-02 21:58:11,597 INFO securescope.persistence.migration_service: Applying SecureScope migration 8 (audit_scope_and_risk_register).
+2026-10-02 21:58:11,603 INFO securescope.persistence.migration_service: Applying SecureScope migration 9 (isms_working_registers).
+2026-10-02 21:58:11,605 INFO securescope.persistence.migration_service: Applying SecureScope migration 10 (foundation_register_versions).
+2026-10-02 21:58:11,608 INFO securescope.persistence.migration_service: Applying SecureScope migration 11 (workspace_planning).
+2026-10-02 21:58:11,610 INFO securescope.persistence.migration_service: Applying SecureScope migration 12 (workbench_review_history).
+2026-10-02 21:58:11,610 INFO securescope.persistence.migration_service: Applying SecureScope migration 13 (risk_treatment_statuses).
+2026-10-02 21:58:11,611 INFO securescope.persistence.migration_service: Applying SecureScope migration 14 (scope_review_and_risk_scope).
+Applied migrations: 001_v6_exposure_grc.sql, 002_v6_1_quick_remediation.sql, 003_legacy_iso_evidence_bridge.sql, 004_v5_3_7_iso_evidence_platform.sql, 005_grc_engagement_context_scope.sql, 006_organization_knowledge_compat.sql, 007_isms_project_plan.sql, 008_audit_scope_and_risk_register.sql, 009_isms_working_registers.sql, 010_foundation_register_versions.sql, 011_workspace_planning.sql, 012_workbench_review_history.sql, 013_risk_treatment_statuses.sql, 014_scope_review_and_risk_scope.sql

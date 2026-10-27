@@ -1,0 +1,7 @@
+{
+  "name": "securescope-m4-ui-validation",
+  "private": true,
+  "description": "Optional local browser validation only; not an application runtime dependency",
+  "devDependencies": {"playwright": "1.62.1"},
+  "scripts": {"test": "node browser_check.mjs"}
+}

@@ -1,0 +1,64 @@
+........................................................................ [  7%]
+........................................................................ [ 15%]
+........................................................................ [ 22%]
+........................................................................ [ 30%]
+........................................................................ [ 37%]
+..................ssss.................................................. [ 45%]
+..........ssssss...ssssssssss..............................sssssssssss.. [ 52%]
+..............................ssssssssssssss............................ [ 60%]
+........................................................................ [ 67%]
+........................................................................ [ 75%]
+.........................................s.............................. [ 82%]
+........................................................................ [ 90%]
+....................................................s................... [ 98%]
+...................                                                      [100%]
+=============================== warnings summary ===============================
+../../m4-venv/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /workspace/scratch/25c192b77c6e/m4-venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_isms_project_persistence.py:73: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_isms_project_persistence.py:88: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_isms_project_persistence.py:100: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_isms_project_persistence.py:113: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_m1_evidence_postgres.py:299: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_m1_evidence_postgres.py:343: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [2] tests/test_m1_evidence_postgres.py:363: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_m1_evidence_postgres.py:405: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_m1_evidence_postgres.py:524: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:139: Dedicated database not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:234: Dedicated database not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:249: Dedicated database not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:285: Dedicated database not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:304: Dedicated database not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:364: Dedicated database not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:383: Dedicated database not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:401: Dedicated database not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:431: Dedicated database not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:457: Dedicated database not configured
+SKIPPED [1] tests/test_m2_native_postgres.py:34: Native PostgreSQL not configured
+SKIPPED [1] tests/test_m2_native_postgres.py:64: Native PostgreSQL not configured
+SKIPPED [1] tests/test_m2_native_postgres.py:94: Native PostgreSQL not configured
+SKIPPED [1] tests/test_m2_scheduling_postgres.py:57: Dedicated database not configured
+SKIPPED [1] tests/test_m2_scheduling_postgres.py:91: Dedicated database not configured
+SKIPPED [1] tests/test_m2_scheduling_postgres.py:106: Dedicated database not configured
+SKIPPED [1] tests/test_m2_scheduling_postgres.py:116: Dedicated database not configured
+SKIPPED [1] tests/test_m2_scheduling_postgres.py:151: Dedicated database not configured
+SKIPPED [1] tests/test_m2_scheduling_postgres.py:178: Dedicated database not configured
+SKIPPED [1] tests/test_m2_scheduling_postgres.py:201: Dedicated database not configured
+SKIPPED [1] tests/test_m2_upgrade_postgres.py:42: Dedicated database not configured
+SKIPPED [1] tests/test_m3_native_postgres.py:16: Native PostgreSQL not configured
+SKIPPED [4] tests/test_m3_postgres.py:86: Dedicated database not configured
+SKIPPED [1] tests/test_m3_postgres.py:133: Dedicated database not configured
+SKIPPED [1] tests/test_m3_postgres.py:168: Dedicated database not configured
+SKIPPED [2] tests/test_m3_postgres.py:207: Dedicated database not configured
+SKIPPED [1] tests/test_m3_postgres.py:229: Dedicated database not configured
+SKIPPED [1] tests/test_m3_postgres.py:266: Dedicated database not configured
+SKIPPED [1] tests/test_m3_postgres.py:315: Dedicated database not configured
+SKIPPED [1] tests/test_m3_postgres.py:343: Dedicated database not configured
+SKIPPED [1] tests/test_m3_upgrade_postgres.py:40: Dedicated database not configured
+SKIPPED [1] tests/test_soa_draft_migration_postgres.py:16: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_wazuh_monitoring_postgres.py:16: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+908 passed, 47 skipped, 1 warning in 21.80s

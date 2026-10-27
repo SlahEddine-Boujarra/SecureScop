@@ -1,0 +1,56 @@
+✔ SoA filters and paging never mutate the full source register (124.676342ms)
+✔ dashboard attention uses existing classification and navigates canonical IDs (35.468569ms)
+✔ record HTML is escaped and empty state has no table or pagination (15.791745ms)
+✔ pagination uses canonical task refs and summary task is not editable (188.28927ms)
+✔ search preserves all records and hides single-page pagination (47.12433ms)
+✔ untrusted task text remains text and empty state has no table shell (25.142893ms)
+Workbench DOM interactions passed: selection, escaping, suggestions, manual editing, navigation, failed saves, live scores, readonly controls.
+New interactions passed: editor undo/redo, impacted assets, calendar day panel, Foundation drawer.
+✔ tests/frontend/assurance_workbench.test.mjs (1296.819314ms)
+✔ profile row opens an editable, grouped drawer over its retained table (176.992627ms)
+✔ unsaved Escape preserves data until explicit discard, then restores row focus (40.124331ms)
+✔ save carries the opened version and failed writes retain edited values (66.317741ms)
+✔ readonly profile disables all editing and keyboard selection still works (30.090926ms)
+✔ assessment navigation uses the selected control identity (33.325299ms)
+✔ risk reading hides internal columns while showing full long values in its drawer (31.23729ms)
+✔ drawer keyboard focus cycles within the dialog (23.901136ms)
+✔ risk treatment is compact and opens the selected record (19.413212ms)
+✔ assessment approval never masquerades as formal risk acceptance (16.74975ms)
+✔ implementation evaluation uses only the selected control identity (23.032522ms)
+✔ creation actions are limited to registers and assessment (60.802867ms)
+✔ register header creates a register using the existing dialog and event (19.117117ms)
+✔ scope presents basic boundaries and distinct editor/history actions (21.544029ms)
+✔ treatment acceptance and monitoring do not offer an irrelevant matrix (35.739472ms)
+✔ empty context has a useful action without empty filters or table (12.987505ms)
+✔ single-page foundation retains records without pagination (17.209158ms)
+✔ historical objective requires a visible explicit confirmation (17.322794ms)
+✔ seven visible workflow steps and live pre/post comparison share one draft (261.154278ms)
+✔ matrix has 25 cells and distinct markers even for the same cell (43.287223ms)
+✔ register matrix groups risks and opens the selected existing reference (27.889769ms)
+✔ completion is separate from save and read-only users cannot invoke either (85.908458ms)
+✔ timescale warning is non-blocking and blank progress remains null on save (48.122482ms)
+✔ related treatments are read-only with linked references and individual control chips (19.952126ms)
+✔ control workspace exposes basic state and keeps requirement details in a drawer (34.732022ms)
+✔ control navigation and remediation retain canonical identifiers (44.152868ms)
+✔ read-only control viewers cannot create policies or remediation (20.777964ms)
+✔ missing evidence is neutral and explicit failures are red (13.270799ms)
+✔ control profile row opens a full workspace rather than lifecycle modal (16.915182ms)
+✔ an overdue objective can explicitly remain current (24.306764ms)
+✔ requirement table uses readable states and explicit failure color (13.106179ms)
+✔ next gap prioritizes required policy before an earlier missing evidence row (21.652175ms)
+✔ canonical remediation ID survives cross-module navigation (17.939697ms)
+✔ pagination selects the correct stable identity (160.32251ms)
+✔ search survives a component rerender and has a usable empty state (34.012936ms)
+✔ natural control IDs and numeric counts sort correctly (35.655376ms)
+✔ space selects a row without its default scrolling action (21.011471ms)
+✔ untrusted cell text never becomes markup and missing coverage has no bar (17.301576ms)
+✔ filtered export escapes spreadsheet formulas, quotes and line breaks (21.036501ms)
+✔ shrinking data clamps the current page instead of showing a blank table (21.548897ms)
+ℹ tests 46
+ℹ suites 0
+ℹ pass 46
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1592.634896

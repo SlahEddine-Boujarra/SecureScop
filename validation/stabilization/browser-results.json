@@ -1,0 +1,490 @@
+[
+  {
+    "screen": "Control Profiles",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "control-profiles-1440.png"
+  },
+  {
+    "screen": "Assess Control",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [
+      {
+        "label": "Expected result",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Business rationale",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Target approved by",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Unit",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Treatment of scope below the target",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Evidence needed",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Effectiveness test to perform",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Scope being assessed",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Control owner",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Document / test reference",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "What the evidence demonstrates",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "What is in place today?",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Assessment rationale / explanation of overrides",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      }
+    ],
+    "screenshot": "assess-control-1440.png"
+  },
+  {
+    "screen": "Foundation",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "foundation-1440.png"
+  },
+  {
+    "screen": "Control",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "control-1440.png"
+  },
+  {
+    "screen": "Evidence",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [
+      {
+        "label": "Evidence title",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Evidence summary and conclusion supported",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Scope covered",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Document, process, site or system",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Evidence owner",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      }
+    ],
+    "screenshot": "evidence-1440.png"
+  },
+  {
+    "screen": "Control Profiles",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "control-profiles-1280.png"
+  },
+  {
+    "screen": "Assess Control",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [
+      {
+        "label": "Expected result",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Business rationale",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Target approved by",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Unit",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Treatment of scope below the target",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Evidence needed",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Effectiveness test to perform",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Scope being assessed",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Control owner",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Document / test reference",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "What the evidence demonstrates",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "What is in place today?",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      },
+      {
+        "label": "Assessment rationale / explanation of overrides",
+        "border": "1px solid rgb(198, 212, 223)",
+        "background": "rgb(251, 252, 254)"
+      }
+    ],
+    "screenshot": "assess-control-1280.png"
+  },
+  {
+    "screen": "Foundation",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "foundation-1280.png"
+  },
+  {
+    "screen": "Control",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "control-1280.png"
+  },
+  {
+    "screen": "Evidence",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [
+      {
+        "label": "Evidence title",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Evidence summary and conclusion supported",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Scope covered",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Document, process, site or system",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Evidence owner",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      }
+    ],
+    "screenshot": "evidence-1280.png"
+  },
+  {
+    "screen": "Assurance",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "assurance-1440.png"
+  },
+  {
+    "screen": "Risk",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "risk-1440.png"
+  },
+  {
+    "screen": "Remediation",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "remediation-1440.png"
+  },
+  {
+    "screen": "Policies",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "policies-1440.png"
+  },
+  {
+    "screen": "Policy Builder",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "policy-builder-1440.png"
+  },
+  {
+    "screen": "Wazuh",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [
+      {
+        "label": "Wazuh API URL",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "API Username",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "New API password",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Indexer URL",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Indexer Username",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "New Indexer password",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      }
+    ],
+    "screenshot": "wazuh-1440.png"
+  },
+  {
+    "screen": "Nmap",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [
+      {
+        "label": "Authorized target / CIDR / hostname",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Host timeout",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      }
+    ],
+    "screenshot": "nmap-1440.png"
+  },
+  {
+    "screen": "Client Workspace",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [
+      {
+        "label": "Search workspaces",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      }
+    ],
+    "screenshot": "client-workspace-1440.png"
+  },
+  {
+    "screen": "Assurance",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "assurance-1280.png"
+  },
+  {
+    "screen": "Risk",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "risk-1280.png"
+  },
+  {
+    "screen": "Remediation",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "remediation-1280.png"
+  },
+  {
+    "screen": "Policies",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "policies-1280.png"
+  },
+  {
+    "screen": "Policy Builder",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "policy-builder-1280.png"
+  },
+  {
+    "screen": "Wazuh",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [
+      {
+        "label": "Wazuh API URL",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "API Username",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "New API password",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Indexer URL",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Indexer Username",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "New Indexer password",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      }
+    ],
+    "screenshot": "wazuh-1280.png"
+  },
+  {
+    "screen": "Nmap",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [
+      {
+        "label": "Authorized target / CIDR / hostname",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Host timeout",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      }
+    ],
+    "screenshot": "nmap-1280.png"
+  },
+  {
+    "screen": "Client Workspace",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [
+      {
+        "label": "Search workspaces",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      }
+    ],
+    "screenshot": "client-workspace-1280.png"
+  }
+]

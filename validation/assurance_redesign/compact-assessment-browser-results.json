@@ -1,0 +1,167 @@
+[
+  {
+    "screen": "Assess Control",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [
+      {
+        "label": "Note / assessment rationale (optional unless overriding a positive result)",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Document / test reference",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Scope being assessed",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Control owner",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Operational Narrative",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Evaluator Rationale",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      }
+    ],
+    "screenshot": "assess-control-1440.png"
+  },
+  {
+    "screen": "Control Profiles",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "control-profiles-1440.png"
+  },
+  {
+    "screen": "Foundation",
+    "width": 1440,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "foundation-1440.png"
+  },
+  {
+    "screen": "Assess Control",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [
+      {
+        "label": "Note / assessment rationale (optional unless overriding a positive result)",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Document / test reference",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Scope being assessed",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Control owner",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Operational Narrative",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Evaluator Rationale",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      }
+    ],
+    "screenshot": "assess-control-1280.png"
+  },
+  {
+    "screen": "Control Profiles",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "control-profiles-1280.png"
+  },
+  {
+    "screen": "Foundation",
+    "width": 1280,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "foundation-1280.png"
+  },
+  {
+    "screen": "Assess Control",
+    "width": 390,
+    "exceptions": [],
+    "errors": [],
+    "fields": [
+      {
+        "label": "Note / assessment rationale (optional unless overriding a positive result)",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Document / test reference",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Scope being assessed",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Control owner",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Operational Narrative",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Evaluator Rationale",
+        "border": "1px solid rgb(203, 213, 225)",
+        "background": "rgb(255, 255, 255)"
+      }
+    ],
+    "screenshot": "assess-control-390.png"
+  },
+  {
+    "screen": "Control Profiles",
+    "width": 390,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "control-profiles-390.png"
+  },
+  {
+    "screen": "Foundation",
+    "width": 390,
+    "exceptions": [],
+    "errors": [],
+    "fields": [],
+    "screenshot": "foundation-390.png"
+  }
+]

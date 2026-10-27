@@ -1,0 +1,18 @@
+$ /workspace/scratch/25c192b77c6e/m1-verify-venv/bin/python -m black --check src/securescope/api/app.py src/securescope/app.py src/securescope/evidence/automated_checks.py src/securescope/evidence/continuous_assurance.py src/securescope/evidence/evidence_worker.py src/securescope/evidence/storage.py src/securescope/evidence/wazuh_bridge.py src/securescope/grc/assurance_requirements.py src/securescope/integrations/wazuh_collection.py src/securescope/integrations/wazuh_monitoring.py src/securescope/integrations/wazuh_service.py src/securescope/persistence/db_wazuh_service.py src/securescope/persistence/evidence_repository.py src/securescope/reporting/auditor_package_service.py src/securescope/ui/control_workspace.py src/securescope/ui/evidence_hub_ui.py src/securescope/ui/wazuh_monitoring_ui.py tests/test_nuclei_evidence_pipeline.py src/securescope/cli/verify_evidence_artifacts.py src/securescope/evidence/collection_scheduler.py src/securescope/evidence/wazuh_scheduled.py src/securescope/integrations/wazuh_collection_health.py src/securescope/persistence/evidence_schedule_repository.py src/securescope/persistence/wazuh_evidence_repository.py tests/test_m2_controls.py tests/test_m2_evidence_postgres.py tests/test_m2_health.py tests/test_m2_native_postgres.py tests/test_m2_scheduling_postgres.py tests/test_m2_upgrade_postgres.py
+All done! ✨ 🍰 ✨
+30 files would be left unchanged.
+exit_code=0
+$ /workspace/scratch/25c192b77c6e/m1-verify-venv/bin/python -m isort --check-only src/securescope/api/app.py src/securescope/app.py src/securescope/evidence/automated_checks.py src/securescope/evidence/continuous_assurance.py src/securescope/evidence/evidence_worker.py src/securescope/evidence/storage.py src/securescope/evidence/wazuh_bridge.py src/securescope/grc/assurance_requirements.py src/securescope/integrations/wazuh_collection.py src/securescope/integrations/wazuh_monitoring.py src/securescope/integrations/wazuh_service.py src/securescope/persistence/db_wazuh_service.py src/securescope/persistence/evidence_repository.py src/securescope/reporting/auditor_package_service.py src/securescope/ui/control_workspace.py src/securescope/ui/evidence_hub_ui.py src/securescope/ui/wazuh_monitoring_ui.py tests/test_nuclei_evidence_pipeline.py src/securescope/cli/verify_evidence_artifacts.py src/securescope/evidence/collection_scheduler.py src/securescope/evidence/wazuh_scheduled.py src/securescope/integrations/wazuh_collection_health.py src/securescope/persistence/evidence_schedule_repository.py src/securescope/persistence/wazuh_evidence_repository.py tests/test_m2_controls.py tests/test_m2_evidence_postgres.py tests/test_m2_health.py tests/test_m2_native_postgres.py tests/test_m2_scheduling_postgres.py tests/test_m2_upgrade_postgres.py
+exit_code=0
+$ /workspace/scratch/25c192b77c6e/m1-verify-venv/bin/python -m compileall -q src tests
+exit_code=0
+$ git diff --check
+exit_code=0
+$ /workspace/scratch/25c192b77c6e/m1-verify-venv/bin/python -m pylint --disable=all --enable=E,F,W0611 src/securescope/cli/verify_evidence_artifacts.py
+
+------------------------------------
+Your code has been rated at 10.00/10
+
+exit_code=0
+$ git diff --cached --check
+exit_code=0

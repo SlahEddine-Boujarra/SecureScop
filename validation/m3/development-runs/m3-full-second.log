@@ -1,0 +1,77 @@
+........................................................................ [  7%]
+........................................................................ [ 15%]
+......................................................................F. [ 23%]
+........................................................................ [ 31%]
+........................................................................ [ 38%]
+...............ssss..................................................... [ 46%]
+.......ssssss...ssssssssss..............................sssssssssss..... [ 54%]
+..........................ssssssssss.................................... [ 62%]
+........................................................................ [ 70%]
+........................................................................ [ 77%]
+..........s............................................................. [ 85%]
+........................................................................ [ 93%]
+.....................s......................................             [100%]
+=================================== FAILURES ===================================
+__________ test_gap_and_uncollected_asset_are_independently_reported ___________
+
+    def test_gap_and_uncollected_asset_are_independently_reported():
+        rule, bundle = technical_fixture()
+        result = evaluate_requirement(rule, bundle, NOW)
+        assert result["result"] == "FAIL"
+>       assert result["asset_results"] == {1: "FAIL", 2: "NOT COLLECTED"}
+E       AssertionError: assert {'1': 'FAIL',...OT COLLECTED'} == {1: 'FAIL', 2...OT COLLECTED'}
+E         
+E         Left contains 2 more items:
+E         {'1': 'FAIL', '2': 'NOT COLLECTED'}
+E         Right contains 2 more items:
+E         {1: 'FAIL', 2: 'NOT COLLECTED'}
+E         Use -v to get more diff
+
+tests/test_correction_pass_20261005.py:100: AssertionError
+=============================== warnings summary ===============================
+../../m1-verify-venv/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /workspace/scratch/25c192b77c6e/m1-verify-venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_isms_project_persistence.py:73: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_isms_project_persistence.py:88: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_isms_project_persistence.py:100: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_isms_project_persistence.py:113: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_m1_evidence_postgres.py:299: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_m1_evidence_postgres.py:343: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [2] tests/test_m1_evidence_postgres.py:363: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_m1_evidence_postgres.py:405: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_m1_evidence_postgres.py:524: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:139: Dedicated database not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:234: Dedicated database not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:249: Dedicated database not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:285: Dedicated database not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:304: Dedicated database not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:364: Dedicated database not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:383: Dedicated database not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:401: Dedicated database not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:431: Dedicated database not configured
+SKIPPED [1] tests/test_m2_evidence_postgres.py:457: Dedicated database not configured
+SKIPPED [1] tests/test_m2_native_postgres.py:34: Native PostgreSQL not configured
+SKIPPED [1] tests/test_m2_native_postgres.py:64: Native PostgreSQL not configured
+SKIPPED [1] tests/test_m2_native_postgres.py:94: Native PostgreSQL not configured
+SKIPPED [1] tests/test_m2_scheduling_postgres.py:57: Dedicated database not configured
+SKIPPED [1] tests/test_m2_scheduling_postgres.py:91: Dedicated database not configured
+SKIPPED [1] tests/test_m2_scheduling_postgres.py:106: Dedicated database not configured
+SKIPPED [1] tests/test_m2_scheduling_postgres.py:116: Dedicated database not configured
+SKIPPED [1] tests/test_m2_scheduling_postgres.py:151: Dedicated database not configured
+SKIPPED [1] tests/test_m2_scheduling_postgres.py:178: Dedicated database not configured
+SKIPPED [1] tests/test_m2_scheduling_postgres.py:201: Dedicated database not configured
+SKIPPED [1] tests/test_m2_upgrade_postgres.py:40: Dedicated database not configured
+SKIPPED [4] tests/test_m3_postgres.py:64: Dedicated database not configured
+SKIPPED [1] tests/test_m3_postgres.py:99: Dedicated database not configured
+SKIPPED [1] tests/test_m3_postgres.py:125: Dedicated database not configured
+SKIPPED [2] tests/test_m3_postgres.py:147: Dedicated database not configured
+SKIPPED [1] tests/test_m3_postgres.py:164: Dedicated database not configured
+SKIPPED [1] tests/test_m3_postgres.py:186: Dedicated database not configured
+SKIPPED [1] tests/test_soa_draft_migration_postgres.py:16: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+SKIPPED [1] tests/test_wazuh_monitoring_postgres.py:16: Explicit SECURESCOPE_TEST_DATABASE_URL is not configured
+FAILED tests/test_correction_pass_20261005.py::test_gap_and_uncollected_asset_are_independently_reported
+1 failed, 880 passed, 43 skipped, 1 warning in 20.05s

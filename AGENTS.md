@@ -1,0 +1,25 @@
+# SecureScope: authoritative repository instructions for Codex
+
+## Mission and priorities
+SecureScope is an **evidence-first cybersecurity exposure and ISO/IEC 27001:2022 assurance platform**, not a generic checkbox GRC dashboard. Its differentiator is **authorized automated technical evidence collection** from scanners and security monitoring, linked to explicit assets, ISMS scope and testable ISO requirements. Human consultants retain final assurance conclusions, SoA approvals, risk acceptance and audit judgments.
+
+Read `docs/codex-handoff/00_READ_FIRST.md`, `01_ARCHITECTURE.md`, `02_EVIDENCE_AND_ISO_RULES.md`, `03_UX_DECISIONS.md`, `04_ROADMAP.md`, and `05_TESTS_AND_ACCEPTANCE.md` **before coding**. Treat those as a planning handoff. Inspect actual code, migrations, schema, tests and currently checked-out branch; source code is the authority for what is implemented. If a handoff assertion conflicts with code or today's requirements, report the difference instead of assuming.
+
+## Non-negotiables
+1. Preserve current Python/Streamlit + Components v2 architecture, PostgreSQL data model and application services. FastAPI is an existing control plane. Don't propose a broad rewrite to Next.js/React unless asked. React/HTML ATLAS is **visual reference only**, not deployable business logic.
+2. Modify existing workers, repositories and service boundaries. The Nuclei worker and general Evidence Worker already exist. **Wazuh collection is an API integration, not a dedicated Wazuh worker**; periodic collection can be scheduled through the existing job/evidence infrastructure. Nmap is for authorized asset discovery and enrichment.
+3. Workspace isolation, authenticated permissions, explicit engagement/ISMS-scope association and audit logging are mandatory. Never infer scope membership from IP alone, fuzzy hostname, classification or scanner discovery. Ambiguous matches remain unassigned pending review. Do not cross-link tenants.
+4. Verified automated source evidence can be ingested without redundant consultant confirmation. Manual/imported evidence has an appropriate human review workflow. But **source trust or evidence availability is not ISO control compliance**. Only human-approved assessments determine implemented/effective control conclusions.
+5. Nuclei successful scans yield **JSONL artifacts** and canonical evidence even for zero findings. Completed scan supports vulnerability assessment coverage only (A.8.8), not remediation or total control success. Use SHA-256 provenance, source identifiers, timestamps, scope-verified asset references, deduplication and idempotency. Classification rules must be conservative and explainable.
+6. A Wazuh active agent alone must never imply verified monitoring or ISO A.8.16 = Implemented. Distinguish registered, active, telemetry verified, stale, disconnected and unknown. Missing match = 'Not verified', not 'Not monitored'. No security alert does not necessarily mean collection failure. Clock synchronization (A.8.17) requires explicit time observation.
+7. Preserve controlled document approvals, version history **in the backend**, even when the UI hides bulky queue/history panels. Policies should remain suggestion-pane + editable Word-like editor; do not replace with read-only PDF or static text.
+8. Keep original Nmap Custom Scan Builder (presets, ports/timing, NSE, command preview, authorization, parsed results), Nuclei Scan Workspace, Wazuh assets table, Asset Classification, and Risk Management register with both inherent and residual 5×5 matrices. Nmap must not execute unauthorized scans.
+9. No migrations that silently delete/recreate data; use additive migrations, backups and tests. No production credentials in repository, prompts or logs. Default-deny dangerous remediation and preserve approvals.
+10. Don't invent implemented workflows, verified ISO conformity, test results, asset counts, controls' compliance status or certification timeline. Ask for missing facts and produce explicit audit/assumption notes.
+
+## Working agreement
+- One bounded milestone per Codex task; write a short plan and impacted files before edits. Prefer test-first behavior, minimal diff, then compile/tests, and show files changed and pass/fail evidence. Do not claim tests pass unless executed.
+- First action in a new repo session: inspect README, `START_HERE.md`, relevant module files, git status, migrations and tests. Note that the archived reference (21) identifies itself as v5.4.9.dev0 in remediation, not production complete.
+- First implementation milestone: Wazuh monitoring truthfulness + security tests; then canonical evidence + ISO mapping; then UI, not the reverse. See `04_ROADMAP.md` and `06_FIRST_CODEX_TASK.md`.
+- Do not replace the real app with the prototype's fictional arrays/localStorage. Do not add OpenVAS to new visual designs merely because legacy code supports it. Do not delete existing OpenVAS integrations without authorization.
+- Respect existing team coding style, validation, migrations, and permission checks. If a feature is already working, preserve it.

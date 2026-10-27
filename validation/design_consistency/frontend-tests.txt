@@ -1,0 +1,61 @@
+✔ SoA filters and paging never mutate the full source register (149.106552ms)
+✔ dashboard attention uses existing classification and navigates canonical IDs (29.733814ms)
+✔ record HTML is escaped and empty state has no table or pagination (16.089183ms)
+✔ pagination uses canonical task refs and summary task is not editable (191.340261ms)
+✔ search preserves all records and hides single-page pagination (56.097192ms)
+✔ untrusted task text remains text and empty state has no table shell (27.452098ms)
+Workbench DOM interactions passed: selection, escaping, suggestions, manual editing, navigation, failed saves, live scores, readonly controls.
+New interactions passed: editor undo/redo, impacted assets, calendar day panel, Foundation drawer.
+Policy delivery: one Blob download per nonce, exact bytes, clean failure, URL cleanup.
+✔ tests/frontend/assurance_workbench.test.mjs (2758.82819ms)
+✔ reused component clears previous page styling without accumulating content (100.029826ms)
+✔ rerender disconnects old overflow observers and retains one section bar (33.667563ms)
+✔ profile row opens an editable, grouped drawer over its retained table (140.882315ms)
+✔ unsaved Escape preserves data until explicit discard, then restores row focus (38.988605ms)
+✔ save carries the opened version and failed writes retain edited values (34.843986ms)
+✔ readonly profile disables all editing and keyboard selection still works (16.393788ms)
+✔ assessment navigation uses the selected control identity (31.422573ms)
+✔ risk reading hides internal columns while showing full long values in its drawer (14.284607ms)
+✔ drawer keyboard focus cycles within the dialog (32.645846ms)
+✔ risk treatment is compact and opens the selected record (12.012579ms)
+✔ assessment approval never masquerades as formal risk acceptance (10.659025ms)
+✔ implementation evaluation uses only the selected control identity (15.074828ms)
+✔ creation actions are limited to registers and assessment (37.739741ms)
+✔ register header creates a register using the existing dialog and event (14.160818ms)
+✔ scope presents basic boundaries and distinct editor/history actions (15.744585ms)
+✔ treatment acceptance and monitoring do not offer an irrelevant matrix (24.377047ms)
+✔ empty context has a useful action without empty filters or table (7.890856ms)
+✔ single-page foundation retains records without pagination (11.060509ms)
+✔ historical objective requires a visible explicit confirmation (12.191285ms)
+✔ seven visible workflow steps and live pre/post comparison share one draft (265.139038ms)
+✔ matrix has 25 cells and distinct markers even for the same cell (31.291682ms)
+✔ register matrix groups risks and opens the selected existing reference (22.704998ms)
+✔ completion is separate from save and read-only users cannot invoke either (87.85782ms)
+✔ timescale warning is non-blocking and blank progress remains null on save (41.687416ms)
+✔ related treatments are read-only with linked references and individual control chips (15.312155ms)
+✔ control workspace exposes basic state and keeps requirement details in a drawer (33.767531ms)
+✔ control navigation and remediation retain canonical identifiers (58.397335ms)
+✔ read-only control viewers cannot create policies or remediation (18.069589ms)
+✔ missing evidence is neutral and explicit failures are red (11.276973ms)
+✔ control profile row opens a full workspace rather than lifecycle modal (11.082856ms)
+✔ an overdue objective can explicitly remain current (15.649493ms)
+✔ requirement table uses readable states and explicit failure color (10.503695ms)
+✔ next gap prioritizes required policy before an earlier missing evidence row (18.314423ms)
+✔ canonical remediation ID survives cross-module navigation (24.595064ms)
+✔ control header actions use existing configuration and requirement dispatch (24.607873ms)
+✔ profile table removes Type and renders semantic status badges (10.390006ms)
+✔ pagination selects the correct stable identity (188.805372ms)
+✔ search survives a component rerender and has a usable empty state (51.604527ms)
+✔ natural control IDs and numeric counts sort correctly (43.267174ms)
+✔ space selects a row without its default scrolling action (18.184408ms)
+✔ untrusted cell text never becomes markup and missing coverage has no bar (23.549838ms)
+✔ filtered export escapes spreadsheet formulas, quotes and line breaks (19.81453ms)
+✔ shrinking data clamps the current page instead of showing a blank table (23.198896ms)
+ℹ tests 50
+ℹ suites 0
+ℹ pass 50
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2775.978239

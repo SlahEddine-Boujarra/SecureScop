@@ -1,0 +1,10 @@
+...                                                                      [100%]
+=============================== warnings summary ===============================
+tests/test_workflow_actions.py::test_draft_save_from_review_and_conclusion
+tests/test_workflow_actions.py::test_implementation_action_survives_component_trigger_rerun
+tests/test_workflow_actions.py::test_conclusion_save_uses_existing_assessment_service
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/importlib/metadata/__init__.py:457: DeprecationWarning: Implicit None on return values is deprecated and will raise KeyErrors.
+    return self.metadata['Name']
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+3 passed, 3 warnings in 1.36s

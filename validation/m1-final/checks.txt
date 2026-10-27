@@ -1,0 +1,20 @@
+$ /workspace/scratch/25c192b77c6e/m1-verify-venv/bin/python -m compileall -q src tests
+Exit code: 0
+
+$ /workspace/scratch/25c192b77c6e/m1-verify-venv/bin/python -m pip check
+No broken requirements found.
+Exit code: 0
+
+$ /workspace/scratch/25c192b77c6e/m1-verify-venv/bin/python -m black --check src/securescope/persistence/evidence_repository.py tests/test_m1_evidence_postgres.py tests/test_wazuh_monitoring_postgres.py validation/m1-final/run_pglite.py
+All done! ✨ 🍰 ✨
+4 files would be left unchanged.
+Exit code: 0
+
+$ /workspace/scratch/25c192b77c6e/m1-verify-venv/bin/python -m isort --check-only src/securescope/persistence/evidence_repository.py tests/test_m1_evidence_postgres.py tests/test_wazuh_monitoring_postgres.py validation/m1-final/run_pglite.py
+Exit code: 0
+
+$ /workspace/scratch/25c192b77c6e/m1-verify-venv/bin/python -m flake8 src/securescope/persistence/evidence_repository.py tests/test_m1_evidence_postgres.py tests/test_wazuh_monitoring_postgres.py validation/m1-final/run_pglite.py
+Exit code: 0
+
+$ git diff --check
+Exit code: 0

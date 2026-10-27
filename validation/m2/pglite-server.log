@@ -1,0 +1,50 @@
+Initializing PGLite with database: memory://
+Debug level: 0
+PGlite database initialized
+PGLiteSocketServer listening on {"port":50503,"host":"127.0.0.1"}
+Client connected from 127.0.0.1:58916
+Client connected from 127.0.0.1:58922
+Client connected from 127.0.0.1:58932
+Client connected from 127.0.0.1:58948
+Client connected from 127.0.0.1:58956
+Client connected from 127.0.0.1:41138
+Client connected from 127.0.0.1:41148
+Client connected from 127.0.0.1:41156
+Client connected from 127.0.0.1:41168
+Client connected from 127.0.0.1:41176
+Client connected from 127.0.0.1:41180
+Client connected from 127.0.0.1:41182
+Client connected from 127.0.0.1:41188
+Client connected from 127.0.0.1:41192
+Client connected from 127.0.0.1:41208
+Client connected from 127.0.0.1:41214
+Client connected from 127.0.0.1:41230
+Client connected from 127.0.0.1:41244
+Client connected from 127.0.0.1:41258
+Client connected from 127.0.0.1:41262
+Client connected from 127.0.0.1:41272
+Client connected from 127.0.0.1:41286
+Client connected from 127.0.0.1:41296
+Client connected from 127.0.0.1:41302
+Client connected from 127.0.0.1:41312
+Client connected from 127.0.0.1:41328
+Client connected from 127.0.0.1:41344
+Client connected from 127.0.0.1:41350
+Client connected from 127.0.0.1:41358
+Client connected from 127.0.0.1:41372
+Client connected from 127.0.0.1:41380
+Client connected from 127.0.0.1:41384
+Client connected from 127.0.0.1:41386
+Client connected from 127.0.0.1:41402
+Client connected from 127.0.0.1:41404
+Client connected from 127.0.0.1:41410
+Client connected from 127.0.0.1:41426
+Client connected from 127.0.0.1:41434
+Client connected from 127.0.0.1:41450
+Client connected from 127.0.0.1:41462
+Client connected from 127.0.0.1:41464
+Client connected from 127.0.0.1:41476
+Client connected from 127.0.0.1:41480
+
+Shutting down PGLiteSocketServer...
+Server stopped

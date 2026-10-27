@@ -1,0 +1,27 @@
+{
+  "base_revision_from_supplied_metadata": "c162317af65f93e0f1077f49ee6fb13282906d4d",
+  "domain_repository_migration_changes": [],
+  "version": "5.4.9.dev0",
+  "updated_presentation_files": [
+    "src/securescope/app.py",
+    "src/securescope/ui/components/navigation.py",
+    "src/securescope/ui/components/primitives.py",
+    "src/securescope/ui/components_v2/assurance_pages.js",
+    "src/securescope/ui/components_v2/assurance_pages.py",
+    "src/securescope/ui/components_v2/assurance_plan.py",
+    "src/securescope/ui/components_v2/assurance_workbench.js",
+    "src/securescope/ui/components_v2/assurance_workbench.py",
+    "src/securescope/ui/components_v2/policy_editor.py",
+    "src/securescope/ui/components_v2/stitch_components.py",
+    "src/securescope/ui/control_assessment_ui.py",
+    "src/securescope/ui/securescope_ui_theme.py",
+    "src/securescope/ui/styles/assessment_workspace.css",
+    "src/securescope/ui/styles/assurance_redesign.css",
+    "src/securescope/ui/styles/components.css",
+    "src/securescope/ui/styles/legacy.css",
+    "src/securescope/ui/styles/sidebar.css",
+    "src/securescope/ui/styles/tokens.css",
+    "src/securescope/ui/workflow_sections.py"
+  ],
+  "verification": "Tracked diff review; domain, repositories, migrations and configuration recipes unchanged. App changes move style injection and use existing navigation adapter."
+}

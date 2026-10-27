@@ -1,0 +1,3 @@
+PASS: flake8 on changed Python files.
+PASS: Python 3.11 AST compatibility.
+PASS: git diff --check.

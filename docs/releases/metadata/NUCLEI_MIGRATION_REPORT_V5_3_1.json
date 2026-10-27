@@ -1,0 +1,12 @@
+{
+  "release": "SecureScope v5.3.0 OpenVAS/Nuclei",
+  "result": "passed",
+  "changes": [
+    "Removed the superseded local REST scanner implementation and references.",
+    "Kept the existing two-engine interface position and replaced the second engine with Nuclei.",
+    "Added a local CLI command builder, PostgreSQL worker, exact-attempt persistence, JSONL parser and PDF finalization.",
+    "Preserved OpenVAS, Nmap, Wazuh, ISO assessment, CISO Assistant and client workspaces."
+  ],
+  "nuclei_api_key_requirement": "No API key is required for local open-source scans.",
+  "optional_cloud_authentication": "Use nuclei -auth outside SecureScope when dashboard upload is intentionally enabled."
+}
